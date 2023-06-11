@@ -1,5 +1,5 @@
 :root {
-    --primary: #084c61;
+    --primary: #ffffff;
   }
   
   .btn {
@@ -8,6 +8,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    margin-bottom: 40px;
   }
   
   .btn--primary {
@@ -18,7 +19,7 @@
   
   .btn--outline {
     background-color: transparent;
-    color: #084c61;
+    color: #ffffff;
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;

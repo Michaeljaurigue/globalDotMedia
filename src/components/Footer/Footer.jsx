@@ -27,7 +27,7 @@ function Footer() {
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
-              to="https://www.facebook.com/michael.jaurigue/"
+              to="https://www.facebook.com/globaldotmedia/"
               target="_blank"
               aria-label="Facebook"
             >
@@ -35,7 +35,7 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link instagram"
-              to="https://www.instagram.com/michaeljaurigue/"
+              to="https://www.instagram.com/globaldotmedia"
               target="_blank"
               aria-label="Instagram"
             >
@@ -43,15 +43,15 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link twitter"
-              to="https://twitter.com/thatdudemj/"
+              to="https://twitter.com/globaldotmedia"
               target="_blank"
               aria-label="Twitter"
             >
               <i class="fab fa-twitter" />
             </Link>
             <Link
-              class="social-icon-link twitter"
-              to="https://www.linkedin.com/in/mjaurigue/"
+              class="social-icon-link linkedin"
+              to="https://uk.linkedin.com/in/enyosung"
               target="_blank"
               aria-label="LinkedIn"
             >

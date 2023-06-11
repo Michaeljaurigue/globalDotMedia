@@ -1,6 +1,6 @@
 .footer-container {
     width: 100%;
-    background-color: #db504a;
+    background-color: #6a00ffc1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,11 +32,11 @@
   }
   
   .footer-link-items > h2 {
-    color: #084c61;
+    color: #fff;
   }
   
   .footer-link-items a {
-    color: #084c61;
+    color: #fff;
     text-decoration: none;
     /* margin-bottom: 0.5rem; */
   }
@@ -56,7 +56,7 @@
   
   /* Social Icons */
   .social-icon-link {
-    color: #e3b505;
+    color: #fff;
     font-size: 24px;
   }
   
@@ -88,7 +88,7 @@
   }
   
   .social-logo {
-    color: #084c61;
+    color: #fff;
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -103,7 +103,7 @@
   }
   
   .website-rights {
-    color: #084c61;
+    color: #fff;
   }
   
   @media screen and (max-width: 820px) {
