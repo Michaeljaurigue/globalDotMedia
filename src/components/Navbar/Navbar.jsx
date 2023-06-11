@@ -86,7 +86,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                MaAd Blog
+                Blog
               </Link>
             </li>
             <li className="nav-item">
@@ -113,7 +113,7 @@ function Navbar() {
               onMouseLeave={handleDropdownToggle}
             >
               <Link to="/maad-blog/businesspodcasts/" className="nav-links">
-                Business Podcasts
+                Podcast
               </Link>
               {isDropdownOpen && (
                 <ul className="nav-dropdown">

@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
+import NotFound from "../pages/NotFound/NotFound";
+import Footer from "../components/Footer/Footer";
 
 function App() {
   return (
@@ -17,9 +19,10 @@ function App() {
           <Route path="/artwork" exact Component={Artwork} />
           <Route path="/resume" exact Component={Resume} />
           <Route path="/contact" exact Component={Contact} /> */}
+          <Route path="*" exact Component={NotFound} />
         </Routes>
+        <Footer />
       </Router>
-      {/* <Footer /> */}
     </div>
   );
 }

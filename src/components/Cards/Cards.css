@@ -68,7 +68,7 @@
     max-width: calc((100%) - 60px);
     font-size: 12px;
     font-weight: 700;
-    color: #084c61;
+    /* color: #084c61; */
     background-color: #1f1f1f;
     box-sizing: border-box;
   }

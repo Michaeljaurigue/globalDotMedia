@@ -2,7 +2,7 @@ import React from "react";
 import "../../App/App.css";
 import { Button } from "../Button/Button";
 import "../HeroSection/HeroSection.css";
-import FormGuide from "../../Form-1/FormGuide";
+import FormGuide from "../FormGuide/FormGuide";
 
 function HeroSection() {
   return (

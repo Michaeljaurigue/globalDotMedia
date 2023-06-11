@@ -1,12 +1,18 @@
 .cards {
   padding: 1rem;
   background: transparent;
+  opacity: 0;
+transform: translateY(50px);
+animation: fadeInUp 1s ease-out forwards;
 }
 
-.cards__title {
+.card__title {
   text-align: center;
   color: #6a00ffc1;
   font-size: 50px;
+  opacity: 0;
+transform: translateY(50px);
+animation: fadeInUp 1s ease-out forwards;
 }
 
 .cards__container {
@@ -32,6 +38,9 @@
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  opacity: 0;
+transform: translateY(50px);
+animation: fadeInUp 2s ease-out forwards;
 }
 
 .cards__item__link {
@@ -101,6 +110,17 @@
   line-height: 24px;
 }
 
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;

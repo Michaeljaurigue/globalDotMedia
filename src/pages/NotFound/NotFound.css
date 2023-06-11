@@ -1,0 +1,40 @@
+.not_found {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.not_found__title {
+  text-align: center;
+  margin: auto;
+  font-size: 10px;
+  color: grey;
+  font-size: 30px;
+}
+
+.not_found__link {
+  text-decoration: none;
+  color: #6a00ffc1;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.not_found__link:hover {
+  color: rgb(0, 162, 255);
+  animation: hoverAnimation 1s ease-in-out infinite;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #00a2ff, 0 0 20px #00a2ff, 0 0 30px #00a2ff, 0 0 40px #00a2ff, 0 0 50px #00a2ff, 0 0 60px #00a2ff, 0 0 70px #00a2ff;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

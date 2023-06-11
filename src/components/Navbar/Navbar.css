@@ -16,9 +16,17 @@
 }
 
 .navbar-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+  color: #084c61;
+  display: flex;
+  justify-self: flex-start;
+  max-width: 4rem;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  max-height: 4rem;
+  padding-right: 200px;
 }
 
 .navbar-logo-img {
@@ -31,7 +39,7 @@
   justify-items: space-between;
   height: 80px;
   width: 1300px;
-  max-width: 1500px;
+  max-width: 1200px;
 }
 
 .navbar-container-items {
@@ -149,7 +157,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1400px) {
   .NavbarItems {
     position: relative;
   }
@@ -169,7 +177,7 @@
   .nav-menu.active {
     display: flex;
     justify-content: flex-start;
-    background: #db504a;
+    background: #6a00ff;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

@@ -6,6 +6,8 @@ import HomePackage from "./HomePackage/HomePackage";
 import AdditionalServices from "./AdditionalServices/AdditionalServices";
 import StepsContainerLeft from "../../components/StepsContainerLeft/StepsContainerLeft";
 import StepsContainerRight from "../../components/StepsContainerRight/StepsContainerRight";
+import ClientTestimonials from "../../components/ClientTestimonials/ClientTestimonials";
+import FormMain from "../../components/FormMain/FormMain";
 
 function Home() {
   return (
@@ -38,22 +40,22 @@ function Home() {
         p="We build you a modern website that is specifically designed to turn
         prospects into customers. We take care of everything for you so you
         can get on with running your business."
-        src="/public/images/home-4.jpg"
+        src="/images/home-4.jpg"
       />
       <StepsContainerRight
         header="Step Two: Creative"
         p="Our design and copywriting team will create a modern website designed to convert visitors into leads and leads into customers."
-        src="/public/images/home-5.jpg"
+        src="/images/home-6.jpg"
       />
       <StepsContainerLeft
         header="Step Three: Social Media"
         p="Every day our social media experts will post unique content specific to your business and interesting to your followers."
-        src="/public/images/home-4.jpg"
+        src="/images/home-7.jpg"
       />
       <StepsContainerRight
         header="Step Four: Digital Advertising"
         p="Our ad specialist will analyse the best approach to an act your perfect customers and then design and launch your campaign."
-        src="/public/images/home-5.jpg"
+        src="/images/home-8.jpg"
       />
 
       <div className="home__section-one">
@@ -72,6 +74,13 @@ function Home() {
           realti
         </p>
       </div>
+
+      <ClientTestimonials
+        link1="https://www.youtube.com/embed/_2GlvjuaBoo"
+        link2="https://www.youtube.com/embed/zphArpt5T9Q"
+      />
+
+      <FormMain />
     </div>
   );
 }
