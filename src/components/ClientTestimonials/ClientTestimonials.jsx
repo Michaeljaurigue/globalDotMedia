@@ -1,7 +1,7 @@
 import React from "react";
 import "./ClientTestimonials.css";
 
-function ClientTestimonials(props) {
+function ClientTestimonials() {
   return (
     <div className="client_testimonials">
       <h1 className="client_testimonials-h1">Client Testimonials</h1>
@@ -11,7 +11,7 @@ function ClientTestimonials(props) {
             width="560"
             height="315"
             className="client_testimonials-video"
-            src={props.link1}
+            src="https://www.youtube.com/embed/_2GlvjuaBoo"
             title="Testimonial 1"
             frameBorder="0"
             allowFullScreen
@@ -23,7 +23,7 @@ function ClientTestimonials(props) {
             width="560"
             height="315"
             className="client_testimonials-video"
-            src={props.link2}
+            src="https://www.youtube.com/embed/zphArpt5T9Q"
             title="Testimonial 2"
             frameBorder="0"
             allowFullScreen

@@ -7,12 +7,31 @@
 body {
   font-family: sans-serif;
   margin: 0 auto;
-  
 }
 
 .app {
   width: 100%;
   margin: 0 auto;
+  overflow: auto; /* Set overflow property to auto */
+  scroll-behavior: smooth; /* Optional: Smooth scrolling behavior */
+}
+
+/* Customize the scrollbar */
+.app::-webkit-scrollbar {
+  width: 10px;
+}
+
+.app::-webkit-scrollbar-track {
+  background-color: #6a00ffc1;
+}
+
+.app::-webkit-scrollbar-thumb {
+  background-color: #084c61;
+  border-radius: 20px;
+}
+
+.app::-webkit-scrollbar-thumb:hover {
+  background-color: #065675;
 }
 
 /* 

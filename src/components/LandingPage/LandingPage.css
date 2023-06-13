@@ -1,0 +1,15 @@
+.LandingPage__container_1 {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+    padding: 0 40px;    
+}
+
+.LandingPage__h1 {
+    margin: 50px;
+  text-align: center;
+}
+
+.LandingPage__p {
+  text-align: center;
+}

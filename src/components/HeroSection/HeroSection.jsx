@@ -3,17 +3,63 @@ import "../../App/App.css";
 import { Button } from "../Button/Button";
 import "../HeroSection/HeroSection.css";
 import FormGuide from "../FormGuide/FormGuide";
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect } from "react";
 
 function HeroSection() {
+  const boxVariant1 = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0, // Slide up animation
+      transition: { duration: 1 },
+    },
+    hidden: {
+      opacity: 0,
+      scale: 0,
+      y: 100, // Start position off the screen
+    },
+  };
+  const boxVariant2 = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0, // Slide up animation
+      transition: { duration: 1.5 },
+    },
+    hidden: {
+      opacity: 0,
+      scale: 0,
+      y: 100, // Start position off the screen
+    },
+  };
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <div className="hero__container">
-      {/* <img
-        src="../../images/hero-home.png"
-        alt="Hero Background"
-        className="hero-home-img"
-      /> */}
+      
       <div className="hero__container_items">
-        <div className="hero__container_left">
+        
+        <motion.div
+          ref={ref}
+          variants={boxVariant1}
+          initial="hidden"
+          animate={control}
+          className="hero__container_left"
+        >
           <h1>Global.Media</h1>
           <h2>Everything you need to promote your business</h2>
           <p>
@@ -31,9 +77,16 @@ function HeroSection() {
               Contact Us
             </Button>
           </div>
-        </div>
+        </motion.div>
         <div className="hero__container_right">
-          <FormGuide />
+          <motion.div
+            ref={ref}
+            variants={boxVariant1}
+            initial="hidden"
+            animate={control}
+          >
+            <FormGuide />
+          </motion.div>
         </div>
       </div>
     </div>

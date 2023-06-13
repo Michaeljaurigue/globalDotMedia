@@ -16,17 +16,16 @@
 }
 
 .navbar-logo {
-  color: #084c61;
+  color: #6a00ffc1;
   display: flex;
   justify-self: flex-start;
   max-width: 4rem;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   max-height: 4rem;
-  padding-right: 200px;
+  margin-right: 100px;
 }
 
 .navbar-logo-img {
@@ -92,8 +91,9 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #a5a5a5;
+  border-bottom: 4px solid #6a00ffc1;
   transition: all 0.2s ease-out;
+  color: #6a00ffc1;
 }
 
 .fa-bars {
@@ -117,26 +117,50 @@
   position: absolute;
   top: 100%;
   left: 0;
-  max-width: 200px;
-  background-color: #8b8b8b;
+  max-width: 400px; /* Adjust the width as needed */
+  background-color: #fff; /* Change the background color to make it stand out */
   padding-bottom: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   animation: dropdownFadeIn 0.3s ease-in-out;
+  max-height: 500px;
+  overflow-y: scroll;
+  z-index: 2; /* Increase the z-index to ensure it appears above other elements */
+  /* Add scrollbar styles */
+  scrollbar-width: thin;
+  scrollbar-color: #084c61 #f5f5f5; /* Change the colors to your preference */
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: #084c61;
+    border-radius: 20px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #065675;
+  }
 }
 
 .nav-item:hover .nav-dropdown {
   display: block;
+  color: #6a00ffc1;
 }
 
 .nav-dropdown-item {
   list-style: none;
   margin: 2rem;
+  color: #6a00ffc1;
 }
 
 .nav-dropdown-item:hover {
-  background-color: #084c61;
-  color: #5d5d5d;
+  background-color: #eeeeee;
+  color: #6a00ffc1;
   border-radius: 4px;
   transition: 250ms;
 }
@@ -162,6 +186,10 @@
     position: relative;
   }
 
+  .navbar-logo {
+    margin-right: 0px;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -176,8 +204,9 @@
 
   .nav-menu.active {
     display: flex;
-    justify-content: flex-start;
-    background: #6a00ff;
+    justify-content: center;
+    align-items: center;
+    background: #b4b4b4;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -196,7 +225,7 @@
 
   .nav-links:hover {
     background-color: #fff;
-    color: #084c61;
+    color: #6a00ffc1;
     border-radius: 0;
   }
 

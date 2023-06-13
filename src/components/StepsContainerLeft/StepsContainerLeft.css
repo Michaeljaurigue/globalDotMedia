@@ -5,8 +5,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
-  opacity: 0; /* Initial opacity set to 0 */
-  animation: slideInAnimation 1s ease-in-out forwards; /* Animation added */
+  opacity: 0;
+  animation: slideInAnimation 1s ease-in-out forwards;
 }
 
 .home__section-steps-left-container {
@@ -15,37 +15,36 @@
   justify-content: center;
   flex: 1;
   padding: 10px;
-  max-width: 500px;
-  margin-right: 100px;
+  max-width: 400px; /* Adjust the size as needed */
+  margin-right: 50px; /* Reduce the margin */
 }
 
 .home__section-steps-left-container-header {
   text-align: center;
   color: #6a00ffc1;
-  font-size: 50px;
+  font-size: 40px; /* Reduce the font size */
   opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 2s ease-out forwards;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
 }
 
 .home__section-steps-left-container-p {
-  font-size: 18px;
+  font-size: 16px; /* Reduce the font size */
   text-align: center;
   opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 2s ease-out forwards;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
 }
 
 .home__section-steps-right-container {
-  /* flex: 1; */
   text-align: right;
 }
 
 .home__section-steps-right-container-img {
-  max-width: 400px; /* Adjust the size as needed */
+  max-width: 300px; /* Adjust the size as needed */
   height: auto;
   animation: imageAnimation 1s ease-in-out infinite alternate;
-  margin-bottom: 50px;
+  margin-bottom: 30px; /* Reduce the margin */
 }
 
 @keyframes imageAnimation {
@@ -59,18 +58,15 @@ animation: fadeInUp 2s ease-out forwards;
 
 @keyframes slideInAnimation {
   0% {
-    opacity: 0; /* Start with opacity set to 0 */
-    transform: translateX(-100px); /* Start position outside the viewport */
+    opacity: 0;
+    transform: translateX(-100px);
   }
   100% {
-    opacity: 1; /* End with opacity set to 1 */
-    transform: translateX(0); /* End position at 0 translation */
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-/* opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 1s ease-out forwards; */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -82,14 +78,15 @@ animation: fadeInUp 1s ease-out forwards; */
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
+  /* Adjust the breakpoint to target iPhone SE */
   .home__section-steps-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 40px 40px;
+    height: auto; /* Remove the fixed height */
+    padding: 30px 20px; /* Adjust the padding */
   }
 
   .home__section-steps-left-container {
@@ -97,14 +94,18 @@ animation: fadeInUp 1s ease-out forwards; */
     justify-content: center;
     align-items: center;
     margin-right: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Reduce the margin */
   }
 
   .home__section-steps-left-container-header {
-    font-size: 70px;
+    font-size: 30px; /* Reduce the font size */
   }
 
   .home__section-steps-left-container-p {
-    font-size: 24px;
+    font-size: 14px; /* Reduce the font size */
+  }
+
+  .home__section-steps-right-container-img {
+    max-width: 200px; /* Reduce the image size */
   }
 }

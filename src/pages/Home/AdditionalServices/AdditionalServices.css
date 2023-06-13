@@ -19,7 +19,7 @@ animation: fadeInUp 1s ease-out forwards;
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1500px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -74,9 +74,9 @@ animation: fadeInUp 2s ease-out forwards;
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 700;
-  color: #084c61;
+  color: #ffffff;
   background-color: #1f1f1f;
   box-sizing: border-box;
 }
