@@ -112,6 +112,9 @@
     margin-top: 50px;
   }
 
+  .hero__container_right {
+    display: none;
+  }
   .hero__container_items {
     flex-direction: column;
     justify-content: center;
@@ -126,7 +129,7 @@
     font-size: 30px;
   }
   .hero__container_left > p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

@@ -58,11 +58,14 @@ function MobileMarketing() {
         }
         h1eleventh={"Mobile Marketing Service Package"}
         peleventh={
+          // Instead of having each point being it's own prop, pass it in as an array. Bulletpoint prop.
           <BulletPointChart
             packageName={"Mobile Marketing Service Package"}
-            one={"Devise mobile marketing strategy"}
-            two={"Mobile app demo development – FREE"}
-            three={"Published mobile app on Android and iTunes"}
+            bulletPoints={[
+              "Devise mobile marketing strategy",
+              "Mobile app demo development – FREE",
+              "Published mobile app on Android and iTunes",
+            ]}
             four={"Integrate mobile across your marketing channels"}
             five={"Design mobile-friendly responsive website and landing pages"}
             six={"Optimise website for mobile search"}

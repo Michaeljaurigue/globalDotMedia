@@ -22,6 +22,10 @@ import PayPerClickMarketing from "../pages/Services/pay-per-click-marketing/pay-
 import SearchEngineOptimization from "../pages/Services/search-engine-optimization/search-engine-optimization";
 import VideoMarketing from "../pages/Services/video-marketing/video-marketing";
 import WebsiteDevelopment from "../pages/Services/website-development/website-development";
+
+import MaadBlog from "../pages/MaadBlog/Maadblog";
+import blog1 from "../pages/MaadBlog/BlogPages/BlogPost/blog1";
+
 import FAQ from "../pages/MISC/FAQ/FAQ";
 import RefundPolicy from "../pages/MISC/RefundPolicy/RefundPolicy";
 import NotFound from "../pages/NotFound/NotFound";
@@ -121,6 +125,13 @@ function App() {
             exact
             Component={WebsiteDevelopment}
           />
+          <Route path="/maad-blog/" exact Component={MaadBlog} />
+          <Route
+            path="/eny-talks-on-the-joyful-path-podcast-with-lydia/"
+            exact
+            Component={blog1}
+          />
+
           <Route path="/faq/" exact Component={FAQ} />
           <Route path="/refund-policy/" exact Component={RefundPolicy} />
           <Route path="*" exact Component={NotFound} />

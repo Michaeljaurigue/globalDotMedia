@@ -81,7 +81,7 @@ function Navbar() {
                   </li>
                   <li className="nav-dropdown-item">
                     <Link
-                      to="/email-marketing/"
+                      to="/our-services/email-marketing/"
                       className="nav-dropdown-link"
                       onClick={closeMobileMenu}
                     >
@@ -208,12 +208,13 @@ function Navbar() {
                 </ul>
               )}
             </li>
-            <li className="nav-item">
-              <Link
-                to="/maad-blog/"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+
+            <li
+              className="nav-item"
+              onMouseEnter={handleDropdownToggle}
+              onMouseLeave={handleDropdownToggle}
+            >
+              <Link to="/maad-blog/" className="nav-links">
                 Blog
               </Link>
             </li>
@@ -226,7 +227,7 @@ function Navbar() {
                 Testimonials
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/events/"
                 className="nav-links"
@@ -234,7 +235,7 @@ function Navbar() {
               >
                 Events
               </Link>
-            </li>
+            </li> */}
             <li
               className="nav-item"
               onMouseEnter={handleDropdownToggle}

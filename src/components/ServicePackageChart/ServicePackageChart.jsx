@@ -31,7 +31,18 @@ const BulletPointChart = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
+        {(props.bulletPoints ?? []).map((point, i) => {
+          return (
+            <tr>
+              <td
+                style={{ ...styles.td, ...(i % 2 == 0 && styles.alternateRow) }}
+              >
+                {point}
+              </td>
+            </tr>
+          );
+        })}
+        {/* <tr>
           <td style={styles.td}>{props.one}</td>
         </tr>
         <tr>
@@ -89,7 +100,7 @@ const BulletPointChart = (props) => {
         </tr>
         <tr>
           <td style={styles.td}>{props.seventeen}</td>
-        </tr>
+        </tr> */}
       </tbody>
     </table>
   );

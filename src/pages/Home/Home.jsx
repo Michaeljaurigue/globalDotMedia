@@ -121,13 +121,13 @@ function Home() {
         </h1>
         <p className="home__section-one-p">
           The marketing package costs £300 per month or £3000 per year. The
-          service deliverables are as follows: A fast modern website including
-          hosting and SSL certificate. Daily social media posts to Facebook and
-          Linkedin or Twitter. A fully manged Google Ads or Facebook advertisng
-          campaign. In addition to the above we will also Set up Google
-          Analytics and Google Search Console on your website Provide you will a
-          personal marketing dashboard so you can review your campaigns in
-          realti
+          service deliverables are as follows: a fast, modern website, including
+          hosting and an SSL certificate; daily social media posts on Facebook
+          and LinkedIn or Twitter; a fully managed Google Ads or Facebook
+          advertising campaign. Additionally, we will set up Google Analytics
+          and Google Search Console on your website. We will also provide you
+          with a personal marketing dashboard, allowing you to review your
+          campaigns in real time.
         </p>
       </div>
 

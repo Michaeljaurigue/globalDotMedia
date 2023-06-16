@@ -1,9 +1,9 @@
 .cards {
-  padding: 1rem;
+  /* padding: 1rem; */
   background: transparent;
   opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 1s ease-out forwards;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 .card__title {
@@ -11,8 +11,8 @@ animation: fadeInUp 1s ease-out forwards;
   color: #6a00ffc1;
   font-size: 50px;
   opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 1s ease-out forwards;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 .cards__container {
@@ -39,8 +39,8 @@ animation: fadeInUp 1s ease-out forwards;
   margin: 0 1rem;
   border-radius: 10px;
   opacity: 0;
-transform: translateY(50px);
-animation: fadeInUp 2s ease-out forwards;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
 }
 
 .cards__item__link {
@@ -109,7 +109,6 @@ animation: fadeInUp 2s ease-out forwards;
   font-size: 18px;
   line-height: 24px;
 }
-
 
 @keyframes fadeInUp {
   0% {
