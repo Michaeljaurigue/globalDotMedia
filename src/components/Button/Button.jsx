@@ -10,21 +10,21 @@ export const Button = ({
   children,
   type,
   onClick,
-  buttonStyle,
-  buttonSize,
+  buttonstyle,
+  buttonsize,
   path,
 }) => {
-  // if buttonStyle is not defined, then default to 'btn--primary'
-  // if buttonSize is not defined, then default to 'btn--medium'
-  const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
+  // if buttonstyle is not defined, then default to 'btn--primary'
+  // if buttonsize is not defined, then default to 'btn--medium'
+  const checkbuttonstyle = STYLES.includes(buttonstyle)
+    ? buttonstyle
     : STYLES[0];
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  const checkbuttonsize = SIZES.includes(buttonsize) ? buttonsize : SIZES[0];
 
   return (
     <Link to="/contact" className="btn-mobile">
       <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        className={`btn ${checkbuttonstyle} ${checkbuttonsize}`}
         onClick={onClick}
         type={type}
         path={path}

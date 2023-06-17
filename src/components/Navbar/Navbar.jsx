@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/Logo.jpeg";
 import "./Navbar.css";
@@ -16,6 +16,19 @@ function Navbar() {
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  //write down logic that closes dropdown menu if escape key is clicked
+  useEffect(() => {
+    const closeDropdownMenu = (e) => {
+      if (e.keyCode === 27) {
+        setIsDropdownOpen(false);
+      }
+    };
+    window.addEventListener("keydown", closeDropdownMenu);
+    return () => {
+      window.removeEventListener("keydown", closeDropdownMenu);
+    };
+  }, []);
 
   return (
     <>

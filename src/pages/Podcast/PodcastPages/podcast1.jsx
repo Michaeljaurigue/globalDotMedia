@@ -1,7 +1,7 @@
 import React from "react";
 import PodcastPost from "../../../components/PodcastPost/PodcastPost";
 
-const podcast1 = () => {
+const Podcast1 = () => {
   const podcastId = "podcast1";
 
   return (
@@ -11,4 +11,4 @@ const podcast1 = () => {
   );
 };
 
-export default podcast1;
+export default Podcast1;

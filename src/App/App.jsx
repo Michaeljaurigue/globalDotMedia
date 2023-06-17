@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import Footer from "../Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Home from "../pages/Home/Home";
@@ -26,10 +26,10 @@ import VideoMarketing from "../pages/Services/video-marketing/video-marketing";
 import WebsiteDevelopment from "../pages/Services/website-development/website-development";
 
 import MaadBlog from "../pages/MaadBlog/Maadblog";
-import blog1 from "../pages/MaadBlog/BlogPages/BlogPost/blog1";
+import Blog1 from "../pages/MaadBlog/BlogPages/BlogPost/Blog1";
 
 import Podcast from "../pages/Podcast/BusinessPodcasts";
-import podcast1 from "../pages/Podcast/PodcastPages/podcast1";
+import Podcast1 from "../pages/Podcast/PodcastPages/Podcast1";
 import Testimonials from "../pages/Testimonials/Testimonials";
 import Contact from "../pages/Contact/Contact";
 import FAQ from "../pages/MISC/FAQ/FAQ";
@@ -118,13 +118,13 @@ function App() {
           <Route path="/maad-blog/" element={<MaadBlog />} />
           <Route
             path="/eny-talks-on-the-joyful-path-podcast-with-lydia/"
-            element={<blog1 />}
+            element={<Blog1 />}
           />
 
           <Route path="/testimonials/" element={<Testimonials />} />
 
           <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
-          <Route path="/podcast1/" element={<podcast1 />} />
+          <Route path="/podcast1/" element={<Podcast1 />} />
           <Route path="/contact/" element={<Contact />} />
           <Route path="/faq/" element={<FAQ />} />
           <Route path="/refund-policy/" element={<RefundPolicy />} />

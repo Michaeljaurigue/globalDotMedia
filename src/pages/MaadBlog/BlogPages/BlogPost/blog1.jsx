@@ -1,7 +1,7 @@
 import React from "react";
 import BlogPost from "../../../../components/BlogPost/BlogPost";
 
-const blog1 = () => {
+const Blog1 = () => {
   const blogId = "blog1";
 
   return (
@@ -11,4 +11,4 @@ const blog1 = () => {
   );
 };
 
-export default blog1;
+export default Blog1;

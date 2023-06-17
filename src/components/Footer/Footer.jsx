@@ -17,6 +17,7 @@ function Footer() {
 
     return () => {
       if (logoRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         logoRef.current.removeEventListener("click", handleClick);
       }
     };
@@ -24,9 +25,9 @@ function Footer() {
 
   return (
     <div className="footer-container">
-      <div class="footer_container_items">
-        <div class="social-media-wrap">
-          <div class="footer-logo">
+      <div className="footer_container_items">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
             <Link to="/" className="social-logo" ref={logoRef}>
               <img
                 src="/images/logo.jpg"
@@ -36,45 +37,45 @@ function Footer() {
             </Link>
           </div>
 
-          <small class="website-rights">Global.Media © 2023</small>
-          <div class="social-icons">
+          <small className="website-rights">Global.Media © 2023</small>
+          <div className="social-icons">
             <Link
-              class="social-icon-link facebook"
+              className="social-icon-link facebook"
               to="https://www.facebook.com/globaldotmedia/"
               target="_blank"
               aria-label="Facebook"
             >
-              <i class="fab fa-facebook-f" />
+              <i className="fab fa-facebook-f" />
             </Link>
             <Link
-              class="social-icon-link instagram"
+              className="social-icon-link instagram"
               to="https://www.instagram.com/globaldotmedia"
               target="_blank"
               aria-label="Instagram"
             >
-              <i class="fab fa-instagram" />
+              <i className="fab fa-instagram" />
             </Link>
             <Link
-              class="social-icon-link twitter"
+              className="social-icon-link twitter"
               to="https://twitter.com/globaldotmedia"
               target="_blank"
               aria-label="Twitter"
             >
-              <i class="fab fa-twitter" />
+              <i className="fab fa-twitter" />
             </Link>
             <Link
-              class="social-icon-link linkedin"
+              className="social-icon-link linkedin"
               to="https://uk.linkedin.com/in/enyosung"
               target="_blank"
               aria-label="LinkedIn"
             >
-              <i class="fab fa-linkedin" />
+              <i className="fab fa-linkedin" />
             </Link>
           </div>
         </div>
 
         {/* About Section */}
-        <div class="footer_section">
+        <div className="footer_section">
           <h2>About</h2>
           <p>London Office: 207 Regent Street, London W1B 3HH</p>
           <p>Cornwall Office: Eden House, Forge Lane, Saltash, PL12 6LX</p>
@@ -84,7 +85,7 @@ function Footer() {
         </div>
 
         {/* Company Section */}
-        <div class="footer_section">
+        <div className="footer_section">
           <h2>Company</h2>
 
           <Link className="footer-link-item" to="/maad-blog" ref={logoRef}>
@@ -102,13 +103,13 @@ function Footer() {
         </div>
 
         {/* Newsletter Sign Up */}
-        <div class="footer_section">
+        <div className="footer_section">
           <h2>Newsletter Sign Up</h2>
           <p>
             Join our mailing list to receive digital marketing tips and
             resources
           </p>
-          <form class="footer-email-form">
+          <form className="footer-email-form">
             <input
               type="email"
               className="footer-input"

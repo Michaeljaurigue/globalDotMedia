@@ -59,8 +59,8 @@ function HeroHeader(props) {
           <div className="hero-btns">
             <Button
               className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn--large"
+              buttonstyle="btn--outline"
+              buttonsize="btn--large"
               path="/projects"
             >
               Contact Us

@@ -1,8 +1,8 @@
 .form {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.513);
   color: black;
   max-width: 100%;
-min-width: 1vw;
+  min-width: 1vw;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -10,7 +10,23 @@ min-width: 1vw;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  
+}
+
+.form_button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 1s, color 2s;
+}
+
+.form_button:hover {
+  background-color: #6a00ff;
+  color: white;
 }
 
 .form_title {
@@ -34,6 +50,17 @@ textarea {
 .consent-container {
   display: flex;
   align-items: center;
+}
+
+.form_message {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 1s, color 2s;
 }
 
 .consent-container {
