@@ -55,3 +55,49 @@ p {
   color: #555;
   text-align: justify;
 }
+
+.blog-post__share {
+  margin-top: 20px;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.share-button--facebook {
+  background-color: #3b5998;
+}
+
+.share-button--linkedin {
+  background-color: #0077b5;
+}
+
+.share-button--twitter {
+  background-color: #1da1f2;
+}
+
+.share-button--instagram {
+  background-color: #c13584;
+}
+
+.share-button--email {
+  background-color: #ff0000;
+}
+
+.share-button i {
+  margin-right: 5px;
+}
+
+.share-button:hover {
+  opacity: 0.8;
+}

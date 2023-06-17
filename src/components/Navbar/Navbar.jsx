@@ -47,7 +47,11 @@ function Navbar() {
               onMouseEnter={handleDropdownToggle}
               onMouseLeave={handleDropdownToggle}
             >
-              <Link to="/our-services/" className="nav-links">
+              <Link
+                to="/our-services/"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Services
               </Link>
               {isDropdownOpen && (
@@ -214,7 +218,11 @@ function Navbar() {
               onMouseEnter={handleDropdownToggle}
               onMouseLeave={handleDropdownToggle}
             >
-              <Link to="/maad-blog/" className="nav-links">
+              <Link
+                to="/maad-blog/"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Blog
               </Link>
             </li>
@@ -241,10 +249,14 @@ function Navbar() {
               onMouseEnter={handleDropdownToggle}
               onMouseLeave={handleDropdownToggle}
             >
-              <Link to="/maad-blog/businesspodcasts/" className="nav-links">
+              <Link
+                to="/maad-blog/businesspodcasts/"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Podcast
               </Link>
-              {isDropdownOpen && (
+              {/* {isDropdownOpen && (
                 <ul className="nav-dropdown">
                   <li className="nav-dropdown-item">
                     <Link
@@ -274,7 +286,7 @@ function Navbar() {
                     </Link>
                   </li>
                 </ul>
-              )}
+              )} */}
             </li>
             <li className="nav-item">
               <Link

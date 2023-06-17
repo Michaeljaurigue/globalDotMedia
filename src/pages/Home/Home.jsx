@@ -5,13 +5,11 @@ import { useInView } from "react-intersection-observer";
 
 import { useEffect } from "react";
 import "../../App/App.css";
-import HeroSection from "../../components/HeroSection/HeroSection";
 import "./Home.css";
 import HomePackage from "./HomePackage/HomePackage";
 import AdditionalServices from "./AdditionalServices/AdditionalServices";
 import StepsContainerLeft from "../../components/StepsContainerLeft/StepsContainerLeft";
 import StepsContainerRight from "../../components/StepsContainerRight/StepsContainerRight";
-import ClientTestimonials from "../../components/ClientTestimonials/ClientTestimonials";
 import FormMain from "../../components/FormMain/FormMain";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
 
@@ -22,19 +20,6 @@ function Home() {
       scale: 1,
       y: 0, // Slide up animation
       transition: { duration: 1 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
-  const boxVariant2 = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 2 },
     },
     hidden: {
       opacity: 0,
@@ -56,7 +41,6 @@ function Home() {
 
   return (
     <div>
-      {/* <HeroSection /> */}
       <HeroHeader
         link={"/images/home-0.jpg"}
         h1={"Global.Media"}
@@ -137,7 +121,7 @@ function Home() {
         initial="hidden"
         animate={control}
       >
-        <ClientTestimonials />
+        {/* <ClientTestimonials /> */}
       </motion.div>
 
       <FormMain />

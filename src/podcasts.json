@@ -1,0 +1,40 @@
+{
+  "podcasts": {
+    "podcast1": {
+      "id": "podcast1",
+      "title": "Podcast Title 1",
+      "description": "Podcast description goes here.",
+      "image": "/images/services-4.jpg",
+      "date": "2023-06-01",
+      "author": "John Doe",
+      "applePodcastsUrl": "https://example.com/apple-podcasts-url1",
+      "spotifyUrl": "https://example.com/spotify-url1",
+      "appleEmbedCode": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/gb/podcast/the-laws-of-attraction/id1552279309?i=1000508939903\"></iframe>",
+      "spotifyEmbedCode": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/gb/podcast/the-laws-of-attraction/id1552279309?i=1000508939904\"></iframe>"
+    },
+    "podcast2": {
+      "id": "podcast2",
+      "title": "Podcast Title 2",
+      "description": "Podcast description goes here.",
+      "image": "/images/services-4.jpg",
+      "date": "2023-06-01",
+      "author": "John Doe",
+      "applePodcastsUrl": "https://example.com/apple-podcasts-url1",
+      "spotifyUrl": "https://example.com/spotify-url1",
+      "appleEmbedCode": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/gb/podcast/the-laws-of-attraction/id1552279309?i=1000508939903\"></iframe>",
+      "spotifyEmbedCode": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/gb/podcast/the-laws-of-attraction/id1552279309?i=1000508939904\"></iframe>"
+    },
+    "podcast3": {
+      "id": "podcast3",
+      "title": "Podcast Title 3",
+      "description": "Podcast description goes here.",
+      "image": "/images/services-4.jpg",
+      "date": "2023-06-01",
+      "author": "John Doe",
+      "applePodcastsUrl": "https://example.com/apple-podcasts-url1",
+      "spotifyUrl": "https://example.com/spotify-url1",
+      "appleEmbedCode": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/gb/podcast/the-laws-of-attraction/id1552279309?i=1000508939903\"></iframe>",
+      "spotifyEmbedCode": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/gb/podcast/the-laws-of-attraction/id1552279309?i=1000508939904\"></iframe>"
+    }
+  }
+}

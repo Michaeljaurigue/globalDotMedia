@@ -1,64 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../App/App.css";
 import { Button } from "../Button/Button";
 import "./HeroHeader.css";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import FormGuide from "../FormGuide/FormGuide";
-
 import { useInView } from "react-intersection-observer";
-
-import { useEffect } from "react";
 
 function HeroHeader(props) {
   const boxVariant1 = {
     visible: {
       opacity: 1,
       scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 1 },
     },
     hidden: {
       opacity: 0,
       scale: 0,
-      y: 100, // Start position off the screen
     },
   };
 
   const boxVariant2 = {
-    // New box variant for the second section
     visible: {
       opacity: 1,
       scale: 1,
-      y: 0,
-      transition: { duration: 1 },
     },
     hidden: {
       opacity: 0,
       scale: 0,
-      y: 100,
     },
   };
 
-  const control1 = useAnimation(); // New control for the first section
-  const control2 = useAnimation(); // New control for the second section
-  const [ref1, inView1] = useInView(); // New ref and inView for the first section
-  const [ref2, inView2] = useInView(); // New ref and inView for the second section
+  const [ref1, inView1] = useInView();
+  const [ref2, inView2] = useInView();
+  const [isVisible1, setIsVisible1] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
 
   useEffect(() => {
-    if (inView1) {
-      control1.start("visible");
-    } else {
-      control1.start("hidden");
-    }
-  }, [control1, inView1]);
+    setIsVisible1(inView1);
+  }, [inView1]);
 
   useEffect(() => {
-    if (inView2) {
-      control2.start("visible");
-    } else {
-      control2.start("hidden");
-    }
-  }, [control2, inView2]);
+    setIsVisible2(inView2);
+  }, [inView2]);
 
   return (
     <div className="hero__container">
@@ -68,11 +50,11 @@ function HeroHeader(props) {
           ref={ref1}
           variants={boxVariant1}
           initial="hidden"
-          animate={control1}
+          animate={isVisible1 ? "visible" : "hidden"}
           className="hero__container_left"
         >
           <h1>{props.h1}</h1>
-          <h2>{props.h2}</h2> {/* Fixed missing closing tag */}
+          <h2>{props.h2}</h2>
           <p>{props.p}</p>
           <div className="hero-btns">
             <Button
@@ -90,7 +72,7 @@ function HeroHeader(props) {
             ref={ref2}
             variants={boxVariant2}
             initial="hidden"
-            animate={control2}
+            animate={isVisible2 ? "visible" : "hidden"}
           >
             <FormGuide />
           </motion.div>

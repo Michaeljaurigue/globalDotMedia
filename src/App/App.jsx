@@ -1,5 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import React, { useState, useEffect } from "react";
 // import Footer from "../Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Home from "../pages/Home/Home";
@@ -26,6 +28,10 @@ import WebsiteDevelopment from "../pages/Services/website-development/website-de
 import MaadBlog from "../pages/MaadBlog/Maadblog";
 import blog1 from "../pages/MaadBlog/BlogPages/BlogPost/blog1";
 
+import Podcast from "../pages/Podcast/BusinessPodcasts";
+import podcast1 from "../pages/Podcast/PodcastPages/podcast1";
+import Testimonials from "../pages/Testimonials/Testimonials";
+import Contact from "../pages/Contact/Contact";
 import FAQ from "../pages/MISC/FAQ/FAQ";
 import RefundPolicy from "../pages/MISC/RefundPolicy/RefundPolicy";
 import NotFound from "../pages/NotFound/NotFound";
@@ -36,106 +42,95 @@ function App() {
     <div className="app">
       <Router>
         <Navbar />
+
         <Routes>
-          <Route path="/" exact Component={Home} />
-          <Route path="/about/" exact Component={About} />
-          <Route path="/our-services/" exact Component={Services} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about/" element={<About />} />
+          <Route path="/our-services/" element={<Services />} />
           <Route
             path="/book-publishing-and-marketing-service/"
-            exact
-            Component={BookPublishingAndMarketingService}
+            element={<BookPublishingAndMarketingService />}
           />
           <Route
             path="/social-media-marketing/"
-            exact
-            Component={SocialMediaMarketing}
+            element={<SocialMediaMarketing />}
           />
           <Route
             path="/digital-marketing-training/"
-            exact
-            Component={DigitalMarketingTraining}
+            element={<DigitalMarketingTraining />}
           />
           <Route
             path="/our-services/creative-media-advertising/"
-            exact
-            Component={CreativeMediaAdvertising}
+            element={<CreativeMediaAdvertising />}
           />
           <Route
             path="/our-services/digital-marketing-packages/"
-            exact
-            Component={DigitalMarketingPackages}
+            element={<DigitalMarketingPackages />}
           />
           <Route
             path="/our-services/linkedin-lead-generation/"
-            exact
-            Component={LinkedInLeadGeneration}
+            element={<LinkedInLeadGeneration />}
           />
           <Route
             path="/our-services/content-marketing/"
-            exact
-            Component={ContentMarketing}
+            element={<ContentMarketing />}
           />
           <Route
             path="/our-services/local-marketing/"
-            exact
-            Component={LocalMarketing}
+            element={<LocalMarketing />}
           />
           <Route
             path="/our-services/market-research/"
-            exact
-            Component={MarketResearch}
+            element={<MarketResearch />}
           />
           <Route
             path="/our-services/email-marketing/"
-            exact
-            Component={EmailMarketing}
+            element={<EmailMarketing />}
           />
           <Route
             path="/our-services/mobile-marketing/"
-            exact
-            Component={MobileMarketing}
+            element={<MobileMarketing />}
           />
           <Route
             path="/our-services/offline-marketing-consultancy/"
-            exact
-            Component={OfflineMarketingConsultancy}
+            element={<OfflineMarketingConsultancy />}
           />
           <Route
             path="/our-services/online-training/"
-            exact
-            Component={OnlineTraining}
+            element={<OnlineTraining />}
           />
           <Route
             path="/our-services/pay-per-click-marketing/"
-            exact
-            Component={PayPerClickMarketing}
+            element={<PayPerClickMarketing />}
           />
           <Route
             path="/our-services/search-engine-optimization/"
-            exact
-            Component={SearchEngineOptimization}
+            element={<SearchEngineOptimization />}
           />
           <Route
             path="/our-services/video-marketing/"
-            exact
-            Component={VideoMarketing}
+            element={<VideoMarketing />}
           />
           <Route
             path="/our-services/website-development/"
-            exact
-            Component={WebsiteDevelopment}
+            element={<WebsiteDevelopment />}
           />
-          <Route path="/maad-blog/" exact Component={MaadBlog} />
+          <Route path="/maad-blog/" element={<MaadBlog />} />
           <Route
             path="/eny-talks-on-the-joyful-path-podcast-with-lydia/"
-            exact
-            Component={blog1}
+            element={<blog1 />}
           />
 
-          <Route path="/faq/" exact Component={FAQ} />
-          <Route path="/refund-policy/" exact Component={RefundPolicy} />
-          <Route path="*" exact Component={NotFound} />
+          <Route path="/testimonials/" element={<Testimonials />} />
+
+          <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
+          <Route path="/podcast1/" element={<podcast1 />} />
+          <Route path="/contact/" element={<Contact />} />
+          <Route path="/faq/" element={<FAQ />} />
+          <Route path="/refund-policy/" element={<RefundPolicy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
+
         <Footer />
       </Router>
     </div>

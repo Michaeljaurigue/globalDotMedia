@@ -1,4 +1,4 @@
-.container {
+.faq__container {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
@@ -9,16 +9,16 @@
     margin-top: 20px;
   } */
   
-  h2 {
+  .faq__container-h1 {
     text-align: center;
     /* margin: 50px; */
   }
   
-  h3 {
+  .faq__container-h3 {
     margin-top: 30px;
   }
   
-  p {
+  .faq__container-p {
     /* margin-top: 10px; */
   }
   
