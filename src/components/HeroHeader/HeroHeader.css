@@ -1,6 +1,7 @@
 .hero__container {
   /* height: calc(100vh - 44px); */
-  height: 100%;
+  /* height: 100%; */
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -9,7 +10,7 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 
@@ -24,6 +25,7 @@
 
 .hero__container_items {
   /* width: 100%; */
+  height: 100vh;
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -56,7 +58,7 @@
 .hero__container_left > h1 {
   margin-top: 8px;
   color: #ffffffc1;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   font-style: normal;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -66,7 +68,7 @@
 .hero__container_left > h2 {
   margin-top: 8px;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
@@ -77,15 +79,17 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 100;
+  align-items: center;
+  text-align: center;
 }
 
-.hero__container_right_img {
+/* .hero__container_right_img {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   max-height: 600px;
-}
+} */
 
 .hero-btns {
   margin: 10px;
@@ -113,7 +117,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 40px 40px;
+    /* padding-top: 40vh */
     /* margin-top: 50px; */
   }
 
@@ -124,6 +128,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20vh;
   }
 
   .hero__container_left > h1 {
@@ -131,18 +136,27 @@
   }
 
   .hero__container_left > h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .hero__container_left > p {
-    font-size: 1rem;
+    font-size: 16px;
+    word-spacing: -0.1em;
   }
 }
 
 @media screen and (max-width: 700px) {
   .hero__container {
-    height: calc(
+    /* height: calc(
       100vh - 88px
-    ); /* Subtract the height of the navbar and next element */
+    );  */
+    height: 120vh;
+    /* Subtract the height of the navbar and next element */
+  }
+  .hero-home-img {
+    height: 120vh;
+  }
+  .hero__container_items {
+    padding-top: 20vh;
   }
 
   .hero__container_left > h1 {
@@ -150,9 +164,9 @@
   }
 
   .hero__container_left > h2 {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
   .hero__container_left > p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }

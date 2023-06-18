@@ -8,7 +8,7 @@ const BlogPost = ({ id }) => {
     title,
     url,
     description,
-    img,
+    image,
     author,
     date,
     h1,
@@ -59,7 +59,7 @@ const BlogPost = ({ id }) => {
   return (
     <div className="blog-post">
       <h1 className="blog-post__title">{title}</h1>
-      <img className="blog-post__image" src={img} alt={title} />
+      <img className="blog-post__image" src={image} alt={title} />
 
       <div className="blog-post__info">
         <span className="blog-post__author">{author}</span>

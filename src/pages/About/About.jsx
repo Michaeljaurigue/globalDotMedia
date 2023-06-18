@@ -4,10 +4,18 @@ import HeroHeader from "../../components/HeroHeader/HeroHeader";
 import LandingPage from "../../components/LandingPage/LandingPage";
 import ClientTestimonials from "../../components/ClientTestimonials/ClientTestimonials";
 import FormMain from "../../components/FormMain/FormMain";
+import { Helmet } from "react-helmet";
 
 function About() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About - Global.Media</title>
+        <link rel="canonical" href="http://globaldotmedia.com/about/" />
+        <meta name="description" content="About Global.Media. We are a new breed of marketers bred for the digital marketplace. We are driven by the mission to make our clients famous to their target clients by implementing results-based innovative marketing strategies that combine the massive reach of digital platforms with tried and trusted traditional advertising mediums." />
+      </Helmet>
+      ;
       <HeroHeader
         link={"/images/about-1.jpg"}
         h1={"Global.Media"}

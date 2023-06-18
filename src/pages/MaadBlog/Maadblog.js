@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import blogsData from "../../blogs.json";
 import "./Maadblog.css";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
+import { Helmet } from "react-helmet";
 
 const Maadblog = () => {
   const { blogs } = blogsData;
@@ -34,6 +35,16 @@ const Maadblog = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Maad Blog - Global.Media</title>
+        <link rel="canonical" href="http://globaldotmedia.com/maad-blog/" />
+        <meta
+          name="Maad Blog"
+          description="Discover insightful interviews with business owners and expert advice on marketing practices and business matters. Stay updated with the latest strategies to grow your business effectively. Explore the Maad Blog by Global.Media."
+        />
+      </Helmet>
+      ;
       <HeroHeader
         h1={"Maad Blog"}
         h2={

@@ -5,13 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
 }
 
 .footer_container_items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Updated */
+  justify-content: center;
   max-width: 1200px;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .footer-logo {
-  margin-top: 20px; /* Updated */
+  margin-top: 20px; 
 }
 
 .social-logo-img {
@@ -115,7 +114,7 @@
   outline: none;
 }
 
-.btn {
+.footer-btn {
   padding: 8px 16px;
   background-color: #fff;
   color: #6a00ff;
@@ -125,7 +124,7 @@
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.footer-btn:hover {
   background-color: #e9e9e9;
 }
 

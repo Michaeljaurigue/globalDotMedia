@@ -3,7 +3,6 @@ import "./email-marketing.css";
 import HeroHeader from "../../../components/HeroHeader/HeroHeader";
 import ClientTestimonials from "../../../components/ClientTestimonials/ClientTestimonials";
 import FormMain from "../../../components/FormMain/FormMain";
-import Cards from "../../../components/Cards/Cards";
 import LandingPage from "../../../components/LandingPage/LandingPage";
 
 function EmailMarketing() {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import testimonialsData from "../../testimonials.json";
 import "./Testimonials.css";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
+import { Helmet } from "react-helmet";
 
 const Testimonials = () => {
   const { testimonials } = testimonialsData;
@@ -39,12 +40,18 @@ const Testimonials = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Testimonials - Global.Media</title>
+        <link rel="canonical" href="http://globaldotmedia.com/testimonials" />
+      </Helmet>
+      ;
       <HeroHeader
         h1={"Testimonials"}
         h2={
           "We are very proud of the service we provide and stand by every product we carry. Scroll down to read our testimonials from our happy customers."
         }
-        link={"/images/content-marketing.jpg"}
+        link={"/images/testimonials.jpg"}
       />
       <h1 className="testimonials-h1">Testimonials</h1>
       <div className="testimonials-container">

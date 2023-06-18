@@ -1,5 +1,5 @@
 .form {
-  background-color: rgba(255, 255, 255, 0.513);
+  background-color: rgba(160, 160, 160, 0.608);
   color: black;
   max-width: 100%;
   min-width: 1vw;
@@ -13,7 +13,7 @@
 }
 
 .form_button {
-  width: 100%;
+  /* width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -21,16 +21,33 @@
   color: black;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 1s, color 2s;
+  transition: background-color 1s, color 2s; */
+  padding: 8px 20px;
+  border-radius: 4px;
+  /* outline: solid; */
+  border: none;
+  cursor: pointer;
+  /* margin-bottom: 40px; */
+  /* margin-top: 10px; */
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+  padding: 8px 20px;
+  font-size: 1rem;
 }
 
 .form_button:hover {
-  background-color: #6a00ff;
-  color: white;
+  background: white;
+  color: #242424;
+  transition: all 0.3s ease-out;
 }
 
 .form_title {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   color: black;
 }
 
@@ -72,6 +89,7 @@ textarea {
   }
 
   .form_title {
+    /* margin: 5px; */
   }
 
   .form_fieldset {

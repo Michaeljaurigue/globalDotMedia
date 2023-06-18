@@ -4,10 +4,21 @@ import LandingPage from "../../components/LandingPage/LandingPage";
 import ClientTestimonials from "../../components/ClientTestimonials/ClientTestimonials";
 import FormMain from "../../components/FormMain/FormMain";
 import ServicesList from "./ServicesList/ServicesList";
+import { Helmet } from "react-helmet";
 
 function Services() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Services - Global.Media</title>
+        <link rel="canonical" href="http://globaldotmedia.com/our-services" />
+        <meta
+          name="description"
+          content="Global.Media is a full-service creative media marketing and Advertising agency with offices in London and Cornwall."
+        />
+      </Helmet>
+      ;
       <HeroHeader
         link={"/images/services-14.jpg"}
         h1={"Our Services"}

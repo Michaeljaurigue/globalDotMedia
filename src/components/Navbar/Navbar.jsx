@@ -11,13 +11,12 @@ function Navbar() {
 
   const closeMobileMenu = () => {
     setClick(false);
-    window.scrollTo(0, 0); // Scroll to top of the page
+    window.scrollTo(0, 0); 
   };
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  //write down logic that closes dropdown menu if escape key is clicked
   useEffect(() => {
     const closeDropdownMenu = (e) => {
       if (e.keyCode === 27) {
@@ -248,15 +247,6 @@ function Navbar() {
                 Testimonials
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                to="/events/"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Events
-              </Link>
-            </li> */}
             <li
               className="nav-item"
               onMouseEnter={handleDropdownToggle}
@@ -269,37 +259,7 @@ function Navbar() {
               >
                 Podcast
               </Link>
-              {/* {isDropdownOpen && (
-                <ul className="nav-dropdown">
-                  <li className="nav-dropdown-item">
-                    <Link
-                      to="/projects/sublink1"
-                      className="nav-dropdown-link"
-                      onClick={closeMobileMenu}
-                    >
-                      Sublink 1
-                    </Link>
-                  </li>
-                  <li className="nav-dropdown-item">
-                    <Link
-                      to="/projects/sublink2"
-                      className="nav-dropdown-link"
-                      onClick={closeMobileMenu}
-                    >
-                      Sublink 2
-                    </Link>
-                  </li>
-                  <li className="nav-dropdown-item">
-                    <Link
-                      to="/projects/sublink3"
-                      className="nav-dropdown-link"
-                      onClick={closeMobileMenu}
-                    >
-                      Sublink 3
-                    </Link>
-                  </li>
-                </ul>
-              )} */}
+      
             </li>
             <li className="nav-item">
               <Link

@@ -12,6 +12,7 @@ import StepsContainerLeft from "../../components/StepsContainerLeft/StepsContain
 import StepsContainerRight from "../../components/StepsContainerRight/StepsContainerRight";
 import FormMain from "../../components/FormMain/FormMain";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const boxVariant1 = {
@@ -41,6 +42,16 @@ function Home() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home - Global.Media</title>
+        <link rel="canonical" href="http://globaldotmedia.com/" />
+        <meta
+          name="description"
+          content="A website designed to convert leads into customers, plus daily social media posts and a fully managed advertising campaign all for one low monthly fee."
+        />
+      </Helmet>
+      ;
       <HeroHeader
         link={"/images/home-0.jpg"}
         h1={"Global.Media"}
@@ -49,7 +60,6 @@ function Home() {
           "A website designed to convert leads into customers, plus daily social media posts and a fully managed advertising campaign all for one low monthly fee."
         }
       />
-
       <div className="home__section-one">
         <div className="home__section-one-container"></div>
         <h1 className="home__section-one-h1">
@@ -62,7 +72,6 @@ function Home() {
           running your business.
         </p>
       </div>
-
       <HomePackage />
       <AdditionalServices />
       <div className="home__section-one">
@@ -79,25 +88,21 @@ function Home() {
         can get on with running your business."
         src="/images/home-4.jpg"
       />
-
       <StepsContainerRight
         header="Step Two: Creative"
         p="Our design and copywriting team will create a modern website designed to convert visitors into leads and leads into customers."
         src="/images/home-6.jpg"
       />
-
       <StepsContainerLeft
         header="Step Three: Social Media"
         p="Every day our social media experts will post unique content specific to your business and interesting to your followers."
         src="/images/home-7.jpg"
       />
-
       <StepsContainerRight
         header="Step Four: Digital Advertising"
         p="Our ad specialist will analyse the best approach to an act your perfect customers and then design and launch your campaign."
         src="/images/home-8.jpg"
       />
-
       <div className="home__section-one">
         <div className="home__section-one-container"></div>
         <h1 className="home__section-one-h1">
@@ -114,7 +119,6 @@ function Home() {
           campaigns in real time.
         </p>
       </div>
-
       <motion.div
         ref={ref}
         variants={boxVariant1}
@@ -123,7 +127,6 @@ function Home() {
       >
         {/* <ClientTestimonials /> */}
       </motion.div>
-
       <FormMain />
     </div>
   );

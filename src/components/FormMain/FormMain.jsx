@@ -57,15 +57,15 @@ function FormMain() {
               <textarea id="message" name="message" required></textarea>
             </div>
             <div className="form_main-group">
-              <div className="form_main-group-row">
+              {/* <div className="form_main-group-row">
                 <div className="form_main-group-item">
                   <label htmlFor="captcha">I'm not a robot:</label>
                   <input type="text" id="captcha" name="captcha" required />
                 </div>
                 <div className="form_main-group-item">
-                  {/* Add your CAPTCHA component here */}
+                  Add your CAPTCHA component here
                 </div>
-              </div>
+              </div> */}
             </div>
             <input className="form_main-button" type="submit" value="Send" />
           </>

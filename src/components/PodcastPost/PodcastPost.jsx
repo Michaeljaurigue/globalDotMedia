@@ -11,34 +11,36 @@ const PodcastPost = ({ id }) => {
     author,
     applePodcastsUrl,
     spotifyUrl,
-    appleEmbedCode,
-    spotifyEmbedCode,
+    p,
   } = podcastsData.podcasts[id];
 
   return (
     <div className="podcast-post">
       <h1 className="podcast-post__title">{title}</h1>
       <img className="podcast-post__image" src={image} alt={title} />
-
+      <p className="podcast-post__description">{description}</p>
       <div className="podcast-post__info">
         <span className="podcast-post__author">{author}</span>
         <span className="podcast-post__date">{date}</span>
 
-        <p className="podcast-post__description">{description}</p>
-
-        <div className="podcast-post__embed-code">
-          <h3>Listen on Apple Podcasts</h3>
-          <div dangerouslySetInnerHTML={{ __html: appleEmbedCode }}></div>
-
-          <h3>Listen on Spotify</h3>
-          <div dangerouslySetInnerHTML={{ __html: spotifyEmbedCode }}></div>
-        </div>
+        <p>{p}</p>
 
         <div className="podcast-post__links">
+          <h2>Listen to the podcast on:</h2>
           <a href={applePodcastsUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              className="podcast-post__logo"
+              src="/images/apple-podcasts-logo.png"
+              alt="Apple Podcasts"
+            />
             Apple Podcasts
           </a>
           <a href={spotifyUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              className="podcast-post__logo"
+              src="/images/spotify-logo.png"
+              alt="Spotify"
+            />
             Spotify
           </a>
         </div>

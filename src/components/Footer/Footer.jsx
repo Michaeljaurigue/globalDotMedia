@@ -115,7 +115,7 @@ function Footer() {
               className="footer-input"
               placeholder="Enter your email"
             />
-            <button className="btn">Subscribe</button>
+            <button className="footer-btn">Subscribe</button>
           </form>
         </div>
       </div>
