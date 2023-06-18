@@ -47,7 +47,6 @@ const Podcast = () => {
           content="Welcome to Global.Media's Business Podcast page. We have a wide range of podcasts for you to listen to."
         />
       </Helmet>
-      ;
       <HeroHeader
         h1={"Podcast"}
         h2={
@@ -60,6 +59,8 @@ const Podcast = () => {
         <h2 className="podcast-posts-h2">
           Welcome to Global.Media's Business Podcast page!
         </h2>
+      </div>
+      <div className="podcast-posts-container">
         <p className="podcast-posts-p">
           "Here at Global.Media, we love sharing ideas and insights to help our
           network build their businesses. The LearnIn is our new podcast series
@@ -68,37 +69,30 @@ const Podcast = () => {
           producers, The Podcast Guys, without whom producing these podcasts may
           not have happened right now. Dan and the team take all of the pressure
           off us by handling the technical and organizing side of doing the
-          podcasts.
-          <h2 className="podcast-posts-h2">
-            {" "}
-            So what can you expect on The LearnIn?
-          </h2>
-          <p className="podcast-posts-p">
-            We aim to share the methods we use to generate leads for businesses
-            using LinkedIn lead generation. We know that you can follow
-            instructions to the letter and still miss out on the results that
-            you want. That is why we will be inviting amazing guests –
-            entrepreneurs, experts, and marketers – to share their experiences
-            and hacks to help you sharpen your LinkedIn marketing even more.
-            They will be invited to discuss using LinkedIn to make connections,
-            generate leads, improve brand awareness, foster business
-            relationships and partnerships, share content, and drive traffic to
-            your website. We also aim to give you answers to the questions you
-            want to ask. So you can send us questions as and when you like or
-            save them for our Questions and Answers episodes. Enjoy The LearnIn,
-            which is available on all major podcast platforms, including Apple
-            Podcasts and Spotify.
-          </p>
-          <h2 className="podcast-posts-h2">
-            {" "}
-            Every episode will also be available here!
-          </h2>
-          <img
-            src="/images/global.media-app-banner.jpg"
-            alt="globaldotmedia-app-banner"
-            className="podcast-posts-img"
-          />
-          <p className="podcast-posts-p"></p>
+          podcasts. So what can you expect on The LearnIn?
+        </p>
+        <p className="podcast-posts-p">
+          We aim to share the methods we use to generate leads for businesses
+          using LinkedIn lead generation. We know that you can follow
+          instructions to the letter and still miss out on the results that you
+          want. That is why we will be inviting amazing guests – entrepreneurs,
+          experts, and marketers – to share their experiences and hacks to help
+          you sharpen your LinkedIn marketing even more. They will be invited to
+          discuss using LinkedIn to make connections, generate leads, improve
+          brand awareness, foster business relationships and partnerships, share
+          content, and drive traffic to your website. We also aim to give you
+          answers to the questions you want to ask. So you can send us questions
+          as and when you like or save them for our Questions and Answers
+          episodes. Enjoy The LearnIn, which is available on all major podcast
+          platforms, including Apple Podcasts and Spotify. Every episode will
+          also be available here!
+        </p>
+        <img
+          src="/images/global.media-app-banner.jpg"
+          alt="globaldotmedia-app-banner"
+          className="podcast-posts-img"
+        />
+        <p className="podcast-posts-p">
           Global.Media App Banner: Here, you can listen to our weekly insightful
           interviews with business owners featured on Eny’s Happy Hour – a
           weekly show on www.businessradio.co.uk. Grab the downloadable podcasts
