@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/Logo.jpeg";
 import "./Navbar.css";
@@ -11,7 +11,7 @@ function Navbar() {
 
   const closeMobileMenu = () => {
     setClick(false);
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   };
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -29,9 +29,65 @@ function Navbar() {
     };
   }, []);
 
+  const dropdownRef = useRef();
+  useEffect(() => {
+    const closeDropdownMenu = (e) => {
+      if (e.keyCode === 27) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", closeDropdownMenu);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("keydown", closeDropdownMenu);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const navbarRef = useRef(null);
+  // ...
+
+  // Add this useEffect to handle closing the dropdown when the Escape key is pressed
+  useEffect(() => {
+    const handleEscapePress = (e) => {
+      if (e.key === "Escape") {
+        setClick(false);
+        setIsDropdownOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleEscapePress);
+    return () => {
+      window.removeEventListener("keydown", handleEscapePress);
+    };
+  }, []);
+
+  // Add this useEffect to handle closing the dropdown when scrolling past navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbarHeight =
+        navbarRef.current?.getBoundingClientRect().height || 0;
+      if (window.scrollY > navbarHeight) {
+        setClick(false);
+        setIsDropdownOpen(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" ref={navbarRef}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} alt="Logo" className="navbar-logo-img" />
@@ -62,12 +118,24 @@ function Navbar() {
               <Link
                 to="/our-services/"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleDropdownToggle();
+                }} // prevent the link navigation on click and toggle the dropdown instead
               >
                 Services
               </Link>
               {isDropdownOpen && (
-                <ul className="nav-dropdown">
+                <ul className="nav-dropdown" ref={dropdownRef}>
+                  <li className="nav-dropdown-item">
+                    <Link
+                      to="/our-services/"
+                      className="nav-dropdown-link"
+                      onClick={closeMobileMenu}
+                    >
+                      All Services
+                    </Link>
+                  </li>
                   <li className="nav-dropdown-item">
                     <Link
                       to="/book-publishing-and-marketing-service/"
@@ -259,7 +327,6 @@ function Navbar() {
               >
                 Podcast
               </Link>
-      
             </li>
             <li className="nav-item">
               <Link

@@ -57,14 +57,13 @@ function HeroHeader(props) {
           <h2>{props.h2}</h2>
           <p>{props.p}</p>
           <div className="hero-btns">
-            <Button
-              className="btns"
-              buttonstyle="btn--outline"
+            <input
+              className="form_button"
+              buttonstyle="btn--primary"
               buttonsize="btn--large"
-              path="/projects"
-            >
-              Contact Us
-            </Button>
+              type="submit"
+              value="Contact Us"
+            />
           </div>
         </motion.div>
         <div className="hero__container_right">

@@ -128,7 +128,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
   }
 
   .hero__container_left > h1 {
@@ -149,14 +149,14 @@
     /* height: calc(
       100vh - 88px
     );  */
-    height: 120vh;
+    /* height: 120vh; */
     /* Subtract the height of the navbar and next element */
   }
   .hero-home-img {
-    height: 120vh;
+    width: 100vw;
   }
   .hero__container_items {
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
   }
 
   .hero__container_left > h1 {
