@@ -25,7 +25,7 @@ import VideoMarketing from "../pages/Services/video-marketing/video-marketing";
 import WebsiteDevelopment from "../pages/Services/website-development/website-development";
 
 import MaadBlog from "../pages/MaadBlog/Maadblog";
-import Blog1 from "../pages/MaadBlog/BlogPages/BlogPost/Blog1";
+import BlogOne from "../pages/MaadBlog/BlogPages/BlogPost/BlogOne";
 import Blog2 from "../pages/MaadBlog/BlogPages/BlogPost/Blog2";
 import Blog3 from "../pages/MaadBlog/BlogPages/BlogPost/Blog3";
 import Blog4 from "../pages/MaadBlog/BlogPages/BlogPost/Blog4";
@@ -138,7 +138,7 @@ function App() {
           <Route path="/maad-blog/" element={<MaadBlog />} />
           <Route
             path="/eny-talks-on-the-joyful-path-podcast-with-lydia/"
-            element={<Blog1 />}
+            element={<BlogOne />}
           />
           <Route
             path="/how-to-use-new-linkedin-campaign-manager/"
