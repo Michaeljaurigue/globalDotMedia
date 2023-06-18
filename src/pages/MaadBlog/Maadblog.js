@@ -44,7 +44,6 @@ const Maadblog = () => {
           description="Discover insightful interviews with business owners and expert advice on marketing practices and business matters. Stay updated with the latest strategies to grow your business effectively. Explore the Maad Blog by Global.Media."
         />
       </Helmet>
-      ;
       <HeroHeader
         h1={"Maad Blog"}
         h2={

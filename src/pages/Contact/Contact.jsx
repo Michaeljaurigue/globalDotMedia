@@ -1,6 +1,5 @@
 import React from "react";
 // import "./Contact.css";
-import HeroHeader from "../../components/HeroHeader/HeroHeader";
 import { Helmet } from "react-helmet";
 import FormMain from "../../components/FormMain/FormMain";
 import "./Contact.css";
