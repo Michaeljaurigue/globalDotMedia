@@ -41,7 +41,7 @@ import Blog13 from "../pages/MaadBlog/BlogPages/BlogPost/Blog13";
 import Blog14 from "../pages/MaadBlog/BlogPages/BlogPost/Blog14";
 
 import Podcast from "../pages/Podcast/BusinessPodcasts";
-import Podcast1 from "../pages/Podcast/PodcastPages/Podcast1";
+import PodcastOne from "../pages/Podcast/PodcastPages/PodcastOne";
 import Podcast2 from "../pages/Podcast/PodcastPages/Podcast2";
 // import Podcast3 from "../pages/Podcast/PodcastPages/Podcast3";
 // import Podcast4 from "../pages/Podcast/PodcastPages/Podcast4";
@@ -199,7 +199,7 @@ function App() {
           <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
           <Route
             path="/the-learnin-podcast-episode-3-making-the-law-of-attraction-work-for-you-on-linkedin/"
-            element={<Podcast1 />}
+            element={<PodcastOne />}
           />
           <Route
             path="/the-learnin-podcast-why-you-must-tune-in/"
