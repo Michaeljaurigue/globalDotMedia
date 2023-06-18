@@ -31,18 +31,21 @@ const BulletPointChart = (props) => {
         </tr>
       </thead>
       <tbody>
-        {(props.bulletPoints ?? []).map((point, i) => {
+        {/* {(props.bulletPoints ?? []).map((point, i) => {
           return (
             <tr>
               <td
-                style={{ ...styles.td, ...(i % 2 == 0 && styles.alternateRow) }}
+                style={{
+                  ...styles.td,
+                  ...(i % 2 === 0 && styles.alternateRow),
+                }}
               >
                 {point}
               </td>
             </tr>
           );
-        })}
-        {/* <tr>
+        })} */}
+        <tr>
           <td style={styles.td}>{props.one}</td>
         </tr>
         <tr>
@@ -100,26 +103,10 @@ const BulletPointChart = (props) => {
         </tr>
         <tr>
           <td style={styles.td}>{props.seventeen}</td>
-        </tr> */}
+        </tr>
       </tbody>
     </table>
   );
 };
-
-// {<BulletPointChart
-//     packageName={""}
-//     one={""}
-//     two={""}
-//     three={""}
-//     four={""}
-//     five={""}
-//     six={""}
-//     seven={""}
-//     eight={""}
-//     nine={""}
-//     ten={""}
-//     eleven={""}
-//     twelve={""}
-//     />}
 
 export default BulletPointChart;

@@ -5,19 +5,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 function StepsContainerRight(props) {
-  const boxVariant = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 1 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
   const boxVariant2 = {
     visible: {
       opacity: 1,

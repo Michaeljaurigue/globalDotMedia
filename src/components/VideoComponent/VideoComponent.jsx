@@ -1,5 +1,5 @@
 import React from "react";
-import "./VideoComponent.css"; // Import a CSS file for styling
+import "./VideoComponent.css"; 
 
 const VideoComponent = (props) => {
   return (

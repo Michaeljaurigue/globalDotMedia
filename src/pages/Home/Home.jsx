@@ -1,8 +1,6 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-
 import { useInView } from "react-intersection-observer";
-
 import { useEffect } from "react";
 import "../../App/App.css";
 import "./Home.css";
@@ -51,7 +49,6 @@ function Home() {
           content="A website designed to convert leads into customers, plus daily social media posts and a fully managed advertising campaign all for one low monthly fee."
         />
       </Helmet>
-      ;
       <HeroHeader
         link={"/images/home-0.jpg"}
         h1={"Global.Media"}

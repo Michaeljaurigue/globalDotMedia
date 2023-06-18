@@ -45,7 +45,6 @@ const Testimonials = () => {
         <title>Testimonials - Global.Media</title>
         <link rel="canonical" href="http://globaldotmedia.com/testimonials" />
       </Helmet>
-      ;
       <HeroHeader
         h1={"Testimonials"}
         h2={

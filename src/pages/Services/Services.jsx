@@ -18,7 +18,6 @@ function Services() {
           content="Global.Media is a full-service creative media marketing and Advertising agency with offices in London and Cornwall."
         />
       </Helmet>
-      ;
       <HeroHeader
         link={"/images/services-14.jpg"}
         h1={"Our Services"}

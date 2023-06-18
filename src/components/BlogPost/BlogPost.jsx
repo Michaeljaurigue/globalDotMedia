@@ -4,20 +4,8 @@ import "./BlogPost.css";
 import RelatedBlogPosts from "../RelatedBlogPosts/RelatedBlogPosts";
 
 const BlogPost = ({ id }) => {
-  const {
-    title,
-    url,
-    description,
-    image,
-    author,
-    date,
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    relatedIds,
-  } = blogsData.blogs[id];
+  const { title, url, image, author, date, h1, h2, h3, h4, p } =
+    blogsData.blogs[id];
 
   const shareOnFacebook = () => {
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(

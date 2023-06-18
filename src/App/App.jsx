@@ -25,7 +25,7 @@ import VideoMarketing from "../pages/Services/video-marketing/video-marketing";
 import WebsiteDevelopment from "../pages/Services/website-development/website-development";
 
 import MaadBlog from "../pages/MaadBlog/Maadblog";
-// import Blog1 from "../pages/MaadBlog/BlogPages/BlogPost/Blog1";
+import Blog1 from "../pages/MaadBlog/BlogPages/BlogPost/Blog1";
 import Blog2 from "../pages/MaadBlog/BlogPages/BlogPost/Blog2";
 import Blog3 from "../pages/MaadBlog/BlogPages/BlogPost/Blog3";
 import Blog4 from "../pages/MaadBlog/BlogPages/BlogPost/Blog4";
@@ -41,7 +41,7 @@ import Blog13 from "../pages/MaadBlog/BlogPages/BlogPost/Blog13";
 import Blog14 from "../pages/MaadBlog/BlogPages/BlogPost/Blog14";
 
 import Podcast from "../pages/Podcast/BusinessPodcasts";
-// import Podcast1 from "../pages/Podcast/PodcastPages/Podcast1";
+import Podcast1 from "../pages/Podcast/PodcastPages/Podcast1";
 import Podcast2 from "../pages/Podcast/PodcastPages/Podcast2";
 // import Podcast3 from "../pages/Podcast/PodcastPages/Podcast3";
 // import Podcast4 from "../pages/Podcast/PodcastPages/Podcast4";
@@ -136,10 +136,10 @@ function App() {
           />
 
           <Route path="/maad-blog/" element={<MaadBlog />} />
-          {/* <Route
+          <Route
             path="/eny-talks-on-the-joyful-path-podcast-with-lydia/"
             element={<Blog1 />}
-          /> */}
+          />
           <Route
             path="/how-to-use-new-linkedin-campaign-manager/"
             element={<Blog2 />}
@@ -197,10 +197,10 @@ function App() {
           <Route path="/testimonials/" element={<Testimonials />} />
 
           <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
-          {/* <Route
+          <Route
             path="/the-learnin-podcast-episode-3-making-the-law-of-attraction-work-for-you-on-linkedin/"
             element={<Podcast1 />}
-          /> */}
+          />
           <Route
             path="/the-learnin-podcast-why-you-must-tune-in/"
             element={<Podcast2 />}

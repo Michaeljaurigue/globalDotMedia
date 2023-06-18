@@ -1,91 +1,10 @@
 import React from "react";
 import CardItem from "../../../components/CardItem/CardItem";
 import "./ServicesList.css";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+
 
 function ServicesList() {
-  const boxVariant = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 0.3 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
-  const boxVariant2 = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 0.5 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
-
-  const boxVariant3 = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 1 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
-
-  const boxVariant4 = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 1.5 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
-
-  const boxVariant5 = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0, // Slide up animation
-      transition: { duration: 2 },
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 100, // Start position off the screen
-    },
-  };
-
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-
+ 
   return (
     <div className="cards">
       <h1 className="card__title">Our Services</h1>

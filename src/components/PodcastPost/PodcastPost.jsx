@@ -22,9 +22,7 @@ const PodcastPost = ({ id }) => {
       <div className="podcast-post__info">
         <span className="podcast-post__author">{author}</span>
         <span className="podcast-post__date">{date}</span>
-
         <p>{p}</p>
-
         <div className="podcast-post__links">
           <h2>Listen to the podcast on:</h2>
           <a href={applePodcastsUrl} target="_blank" rel="noopener noreferrer">
