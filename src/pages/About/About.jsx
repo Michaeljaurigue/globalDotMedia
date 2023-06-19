@@ -19,12 +19,12 @@ function About() {
       </Helmet>
       <HeroHeader
         link={"/images/about-1.jpg"}
-        h1={"Global.Media"}
+        h1={"Your Sales Machine!"}
         h2={"A full-service creative media marketing and Advertising agency."}
         p={"We are a new breed of marketers bred for the digital marketplace."}
       />
       <LandingPage
-        h1first={"Your Sales machine!"}
+        h1first={"About Us"}
         pfirst={
           "Global.Media is a full-service creative media marketing and Advertising agency with branches in London and Truro, Cornwall.Global.Media provides you with guaranteed lead generation, captivating content and modern marketing strategies so that you can reach a greater audience, enabling you to attract, engage and retain new customers. Our marketing experts offer you access to first-rate design, media and technology partners who will create attention-grabbing advertising and effective marketing campaigns that engage your target audience. We give clients VISIBILITY and CREDIBILITY that builds TRUST that leads to more CUSTOMERS! We work with you to develop the right strategy, action plan and expertise to target, attract and engage your ideal clients on mass media (billboards, radio, TV, publications and locations) as well as digital platforms including social networks, pay-per-click (PPC), email, newsletter, SEO (Search optimisation), video, mobile app or on their website. Our dedicated in-house creative experts provide a complete marketing mix so we create, launch and manage every aspect of your campaign from concept to producing digital assets and sourcing the right marketing techniques and platforms to engage the target audience for your unique business and the objectives you want to achieve."
         }

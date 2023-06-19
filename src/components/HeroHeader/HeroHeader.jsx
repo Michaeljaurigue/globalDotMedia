@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../../App/App.css";
-import { Button } from "../Button/Button";
 import "./HeroHeader.css";
 import { motion } from "framer-motion";
 import FormGuide from "../FormGuide/FormGuide";
