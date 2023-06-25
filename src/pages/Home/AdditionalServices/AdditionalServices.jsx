@@ -1,8 +1,11 @@
 import React from "react";
 import CardItem from "../../../components/CardItem/CardItem";
 import "./AdditionalServices.css";
+import useScrollToTop from "../../../utils/useScrollToTop";
 
 function AdditionalServices() {
+  useScrollToTop();
+
   return (
     <div className="cards">
       <h1 className="card__title">Additional Services</h1>
@@ -13,7 +16,7 @@ function AdditionalServices() {
               src="/images/home-4.jpg"
               text="We source, design and send 2000 emails 4 times a month to your target market – we collect and verify target recipients based on industry, job title, and location. Choose your Email Marketing options "
               label="Targeted Email Marketing"
-              path="https://globaldotmedia.com/our-services/email-marketing/"
+              path="/our-services/email-marketing/"
             />
 
             <CardItem
@@ -28,14 +31,14 @@ function AdditionalServices() {
               src="/images/home-6.jpg"
               text="Our accredited marketing courses are developed in partnership with the world-renowned Internet Business School. You can also choose our new 1 to 1 Digital Marketing Training."
               label="Marketing Training"
-              path="https://globaldotmedia.com/digital-marketing-training/"
+              path="/digital-marketing-training/"
             />
 
             <CardItem
               src="/images/home-7.jpg"
               text="Our Book writing service works with aspiring authors to create their book, get published and market your new book. Choose  at Book Writing, Publishing & Marketing Services."
               label="Book Publishing and Marketing"
-              path="https://globaldotmedia.com/book-publishing-and-marketing-service/"
+              path="/book-publishing-and-marketing-service/"
             />
           </ul>
         </div>

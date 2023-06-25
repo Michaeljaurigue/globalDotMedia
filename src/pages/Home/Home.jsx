@@ -11,8 +11,10 @@ import StepsContainerRight from "../../components/StepsContainerRight/StepsConta
 import FormMain from "../../components/FormMain/FormMain";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
 import { Helmet } from "react-helmet";
+import useScrollToTop from "../../utils/useScrollToTop";
 
 function Home() {
+  useScrollToTop();
   const boxVariant1 = {
     visible: {
       opacity: 1,

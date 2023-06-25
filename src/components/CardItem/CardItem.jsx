@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CardItem.css";
+import useScrollToTop from "../../utils/useScrollToTop";
 
 function CardItem(props) {
+  useScrollToTop();
   return (
     <>
       <li className="cards__item">

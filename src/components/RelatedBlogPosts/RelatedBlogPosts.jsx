@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import blogsData from "../../blogs.json";
 import "./RelatedBlogPosts.css";
+import { Link } from "react-router-dom";
+import useScrollToTop from "../../utils/useScrollToTop";
 
 const RelatedBlogPosts = () => {
+  useScrollToTop();
   const [recommendations, setRecommendations] = useState([]);
 
   // Generate three random blog post recommendations
@@ -38,7 +41,9 @@ const RelatedBlogPosts = () => {
             <div key={id} className="recommendation-card">
               <h2>{blog.title}</h2>
               <img src={blog.image} alt={blog.title} />
-              <a href={blog.url}>Read More</a>
+              <div className="button-container">
+                <Link to={blog.id}>Read More</Link>
+              </div>
             </div>
           );
         })}

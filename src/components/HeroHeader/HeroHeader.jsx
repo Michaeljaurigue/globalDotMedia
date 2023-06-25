@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../App/App.css";
+import { Button } from "../Button/Button";
 import "./HeroHeader.css";
 import { motion } from "framer-motion";
 import FormGuide from "../FormGuide/FormGuide";
@@ -56,13 +57,14 @@ function HeroHeader(props) {
           <h2>{props.h2}</h2>
           <p>{props.p}</p>
           <div className="hero-btns">
-            <input
-              className="form_button"
-              buttonstyle="btn--primary"
+            <Button
+              className="btns"
+              buttonstyle="btn--outline"
               buttonsize="btn--large"
-              type="submit"
-              value="Contact Us"
-            />
+              path="/contact"
+            >
+              Contact Us
+            </Button>
           </div>
         </motion.div>
         <div className="hero__container_right">

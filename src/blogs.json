@@ -1,6 +1,6 @@
 {
   "blogs": {
-    "blog1": {
+    "/beny-talks-on-the-joyful-path-podcast-with-lydia": {
       "id": "/beny-talks-on-the-joyful-path-podcast-with-lydia/",
       "title": "Eny talks with Lydia on The Joyful Path Podcast",
       "url": "https://globaldotmedia.com/eny-talks-on-the-joyful-path-podcast-with-lydia/",
@@ -34,7 +34,7 @@
       "featured": false
     },
 
-    "blog2": {
+    "/how-to-use-new-linkedin-campaign-manager": {
       "id": "/how-to-use-new-linkedin-campaign-manager/",
       "title": "How to use new LinkedIn Campaign Manager",
       "url": "https://globaldotmedia.com/how-to-use-the-new-linkedin-campaign-manager-to-get-more-clients/",
@@ -64,7 +64,7 @@
       ],
       "featured": false
     },
-    "blog3": {
+    "/linkedin-is-changing-you-should-change-your-marketing-strategy-too": {
       "id": "/linkedin-is-changing-you-should-change-your-marketing-strategy-too/",
       "title": "LinkedIn Is Changing…You Should Change Your Marketing strategy Too.￼",
       "url": "https://globaldotmedia.com/linkedin-is-changing-you-should-change-your-marketing-strategy-too/",
@@ -90,7 +90,7 @@
       ],
       "featured": false
     },
-    "blog4": {
+    "/why-southwest-businesses-need-the-global-media-app-right-now": {
       "id": "/why-southwest-businesses-need-the-global-media-app-right-now",
       "title": "Why Southwest Businesses need the Global.Media App right now",
       "url": "https://globaldotmedia.com/why-southwest-businesses-need-the-global-media-app-right-now",
@@ -122,7 +122,7 @@
       ],
       "featured": false
     },
-    "blog5": {
+    "/the-7-real-benefits-of-social-media-marketing-for-business-updated": {
       "id": "/the-7-real-benefits-of-social-media-marketing-for-business-updated",
       "title": "The 7 Real Benefits Of Social Media Marketing For Business – updated",
       "url": "https://globaldotmedia.com/the-7-real-benefits-of-social-media-marketing-for-business-updated",
@@ -145,7 +145,7 @@
       "categories": ["Blog", "Small Business", "Social media marketing"],
       "featured": false
     },
-    "blog6": {
+    "/internet-marketing-profits-course-free-30-day-trial": {
       "id": "/internet-marketing-profits-course-free-30-day-trial",
       "title": "Internet Marketing Profits Course – FREE 30 Day Trial",
       "url": "https://globaldotmedia.com/internet-marketing-profits-course-free-30-day-trial",
@@ -190,7 +190,7 @@
       ],
       "featured": false
     },
-    "blog7": {
+    "/8-strategies-to-make-linkedin-work-for-your-business-interview-with-chris-lewis": {
       "id": "/8-strategies-to-make-linkedin-work-for-your-business-interview-with-chris-lewis",
       "title": "8 strategies to make LinkedIn work for your business – Interview with Chris Lewis",
       "url": "https://globaldotmedia.com/8-strategies-to-make-linkedin-work-for-your-business-interview-with-chris-lewis",
@@ -222,7 +222,7 @@
       ],
       "featured": false
     },
-    "blog8": {
+    "/making-the-law-of-attraction-work-for-your-marketing-campaigns": {
       "id": "/making-the-law-of-attraction-work-for-your-marketing-campaigns",
       "title": "Making the Law Of Attraction work for your Marketing Campaigns",
       "url": "https://globaldotmedia.com/making-the-law-of-attraction-work-for-your-marketing-campaigns",
@@ -260,7 +260,7 @@
       ],
       "featured": false
     },
-    "blog9": {
+    "/the-big-reason-your-business-email-marketing-is-not-working-marketing-magic-tip": {
       "id": "/the-big-reason-your-business-email-marketing-is-not-working-marketing-magic-tip",
       "title": "The BIG Reason Your Business’ Email Marketing Is Not working – Marketing Magic Tip",
       "url": "https://globaldotmedia.com/the-big-reason-your-business-email-marketing-is-not-working-marketing-magic-tip",
@@ -296,7 +296,7 @@
       ],
       "featured": false
     },
-    "blog10": {
+    "/12-foolproof-creative-methods-to-make-your-business-memorable-marketing-magic-tip": {
       "id": "/12-foolproof-creative-methods-to-make-your-business-memorable-marketing-magic-tip",
       "title": "12 Foolproof Creative Methods to make Your Business Memorable – Marketing Magic Tip",
       "url": "https://globaldotmedia.com/12-foolproof-creative-methods-to-make-your-business-memorable-marketing-magic-tip",
@@ -334,7 +334,7 @@
       ],
       "featured": false
     },
-    "blog11": {
+    "/what-will-leading-marketers-look-like-in-post-covid19": {
       "id": "/what-will-leading-marketers-look-like-in-post-covid19",
       "title": "What will Leading Marketers look like in Post-COVID19",
       "url": "https://globaldotmedia.com/what-will-leading-marketers-look-like-in-post-covid19",
@@ -367,7 +367,7 @@
       ],
       "featured": false
     },
-    "blog12": {
+    "/what-is-googles-mobile-first-indexing-and-what-does-it-mean-for-your-business-website-videoblog": {
       "id": "/what-is-googles-mobile-first-indexing-and-what-does-it-mean-for-your-business-website-videoblog",
       "title": "What is Google’s Mobile-First Indexing, and What Does It Mean For Your Business Website? videoblog",
       "url": "https://globaldotmedia.com/what-is-googles-mobile-first-indexing-and-what-does-it-mean-for-your-business-website-videoblog",
@@ -402,7 +402,7 @@
       ],
       "featured": false
     },
-    "blog13": {
+    "/seven-key-things-clients-can-do-to-get-the-best-results-from-your-marketing-agency": {
       "id": "/seven-key-things-clients-can-do-to-get-the-best-results-from-your-marketing-agency",
       "title": "Seven Key Things Clients Can Do To Get The Best Results From Your Marketing Agency",
       "url": "https://globaldotmedia.com/seven-key-things-clients-can-do-to-get-the-best-results-from-your-marketing-agency",
@@ -436,7 +436,7 @@
       ],
       "featured": false
     },
-    "blog14": {
+    "/linkedin-masterclass-series-live-webinars-secrets-to-start-getting-clients-on-linkedin-free-webinar-on-2-july-2020": {
       "id": "/linkedin-masterclass-series-live-webinars-secrets-to-start-getting-clients-on-linkedin-free-webinar-on-2-july-2020",
       "title": "LinkedIn Masterclass Series Live Webinars – Secrets To Start Getting Clients On LinkedIn – Free webinar on 2 July 2020",
       "url": "https://globaldotmedia.com/linkedin-masterclass-series-live-webinars-secrets-to-start-getting-clients-on-linkedin-free-webinar-on-2-july-2020",
@@ -463,6 +463,47 @@
         "Lead Generation",
         "LinkedIn"
       ],
+      "featured": false
+    },
+    "/marketing-in-a-crisis-9-reasons-to-turn-up-your-marketing-right-now-marketing-magic-tip": {
+      "id": "/marketing-in-a-crisis-9-reasons-to-turn-up-your-marketing-right-now-marketing-magic-tip",
+      "title": "Marketing in a Crisis: 9 reasons to Turn Up Your Marketing Right Now – Marketing Magic Tip",
+      "url": "https://globaldotmedia.com/marketing-in-a-crisis-9-reasons-to-turn-up-your-marketing-right-now-marketing-magic-tip",
+      "description": "Marketing in a crisis Eny Osung video blog cover photo",
+      "h1": "Marketing in a Crisis: 9 reasons to Turn Up Your Marketing Right Now – Marketing Magic Tip",
+      "image": "/images/blogImages/blog15.jpg",
+      "h2": "by EnyOsung",
+      "h3": "3rd May 2020",
+      "h4": "in Articles, Blog, Business tips, Entrepreneurs, Lead Generation, Marketing, Marketing in a crisis, Marketing Magic Tip, Mobile app, Small Business, Social media marketing, Startups, video blog, Website marketing",
+      "p": "Having huge sections of the population on lockdown, social isolation, and sudden drop in commerce is affecting all businesses. Many fear that business will dry up as clients are preoccupied with what is arguably a once in a century event...",
+      "keywords": [
+        "Marketing",
+        "Crisis",
+        "Entrepreneurs",
+        "Lead Generation",
+        "Business tips",
+        "Marketing in a crisis",
+        "Marketing Magic Tip"
+      ],
+      "author": "EnyOsung",
+      "date": "2023-06-21",
+      "categories": [
+        "Articles",
+        "Blog",
+        "Business tips",
+        "Entrepreneurs",
+        "Lead Generation",
+        "Marketing",
+        "Marketing in a crisis",
+        "Marketing Magic Tip",
+        "Mobile app",
+        "Small Business",
+        "Social media marketing",
+        "Startups",
+        "video blog",
+        "Website marketing"
+      ],
+      "embedSrc": "https://www.youtube.com/embed/oPxS2arW9RQ",
       "featured": false
     }
   }

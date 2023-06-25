@@ -3,8 +3,11 @@ import blogsData from "../../blogs.json";
 import "./Maadblog.css";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import useScrollToTop from "../../utils/useScrollToTop";
 
 const Maadblog = () => {
+  useScrollToTop();
   const { blogs } = blogsData;
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
@@ -30,7 +33,7 @@ const Maadblog = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(1, 1);
   }, [currentPage]);
 
   return (
@@ -54,17 +57,11 @@ const Maadblog = () => {
       <h1 className="blog-posts-h1">Blog Posts</h1>
       <div className="blog-posts-container">
         {paginatedPosts.map((blog) => (
-          <a
-            key={blog.id}
-            href={blog.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="blog-card"
-          >
+          <Link key={blog.id} to={blog.id} className="blog-card">
             <img src={blog.image} alt={blog.title} />
             <h1>{blog.h1}</h1>
             <p>{blog.description}</p>
-          </a>
+          </Link>
         ))}
       </div>
       <div className="pagination">

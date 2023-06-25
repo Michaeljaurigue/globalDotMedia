@@ -1,11 +1,21 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import blogsData from "../../blogs.json";
 import "./BlogPost.css";
 import RelatedBlogPosts from "../RelatedBlogPosts/RelatedBlogPosts";
 
-const BlogPost = ({ id }) => {
-  const { title, url, image, author, date, h1, h2, h3, h4, p } =
-    blogsData.blogs[id];
+const BlogPost = () => {
+  const { slug = "" } = useParams();
+  const slugPath = slug ? `/${slug}` : "";
+  const blog = blogsData.blogs[slugPath];
+
+  console.log(blog);
+  if (!blog) {
+    // Handle the case when the blog post with the given ID is not found
+    return <div>Blog post not found</div>;
+  }
+
+  const { title, url, h1, image, h2, h3, h4, p, author, date, embedSrc } = blog;
 
   const shareOnFacebook = () => {
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
@@ -53,16 +63,22 @@ const BlogPost = ({ id }) => {
         <span className="blog-post__author">{author}</span>
         <span className="blog-post__date">{date}</span>
 
-        {/* <h1 className="blog-post__title">
-          <a href={url}>{title}</a>
-        </h1> */}
         <h2 className="blog-post__subtitle">{h1}</h2>
         <h3 className="blog-post__subtitle">{h2}</h3>
         <h4 className="blog-post__subtitle">{h3}</h4>
 
         <p className="blog-post__content">{p}</p>
         <h4 className="blog-post__subtitle">{h4}</h4>
-        <RelatedBlogPosts relatedIds={blogsData.blogs[id].relatedIds} />
+        <iframe
+          className="blog-post__video"
+          src={embedSrc}
+          title={title}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowFullScreen
+        ></iframe>
+
+        <RelatedBlogPosts relatedIds={blog.relatedIds} />
 
         <div className="blog-post__share">
           <button

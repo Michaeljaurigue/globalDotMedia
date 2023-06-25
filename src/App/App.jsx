@@ -25,29 +25,11 @@ import VideoMarketing from "../pages/Services/video-marketing/video-marketing";
 import WebsiteDevelopment from "../pages/Services/website-development/website-development";
 
 import MaadBlog from "../pages/MaadBlog/Maadblog";
-import BlogOne from "../pages/MaadBlog/BlogPages/BlogPost/BlogOne";
-import Blog2 from "../pages/MaadBlog/BlogPages/BlogPost/Blog2";
-import Blog3 from "../pages/MaadBlog/BlogPages/BlogPost/Blog3";
-import Blog4 from "../pages/MaadBlog/BlogPages/BlogPost/Blog4";
-import Blog5 from "../pages/MaadBlog/BlogPages/BlogPost/Blog5";
-import Blog6 from "../pages/MaadBlog/BlogPages/BlogPost/Blog6";
-import Blog7 from "../pages/MaadBlog/BlogPages/BlogPost/Blog7";
-import Blog8 from "../pages/MaadBlog/BlogPages/BlogPost/Blog8";
-import Blog9 from "../pages/MaadBlog/BlogPages/BlogPost/Blog9";
-import Blog10 from "../pages/MaadBlog/BlogPages/BlogPost/Blog10";
-import Blog11 from "../pages/MaadBlog/BlogPages/BlogPost/Blog11";
-import Blog12 from "../pages/MaadBlog/BlogPages/BlogPost/Blog12";
-import Blog13 from "../pages/MaadBlog/BlogPages/BlogPost/Blog13";
-import Blog14 from "../pages/MaadBlog/BlogPages/BlogPost/Blog14";
+import BlogPost from "../components/BlogPost/BlogPost";
 
 import Podcast from "../pages/Podcast/BusinessPodcasts";
 import PodcastOne from "../pages/Podcast/PodcastPages/PodcastOne";
 import Podcast2 from "../pages/Podcast/PodcastPages/Podcast2";
-// import Podcast3 from "../pages/Podcast/PodcastPages/Podcast3";
-// import Podcast4 from "../pages/Podcast/PodcastPages/Podcast4";
-// import Podcast5 from "../pages/Podcast/PodcastPages/Podcast5";
-// import Podcast6 from "../pages/Podcast/PodcastPages/Podcast6";
-// import Podcast7 from "../pages/Podcast/PodcastPages/Podcast7";
 
 import Testimonials from "../pages/Testimonials/Testimonials";
 import Contact from "../pages/Contact/Contact";
@@ -136,63 +118,8 @@ function App() {
           />
 
           <Route path="/maad-blog/" element={<MaadBlog />} />
-          <Route
-            path="/eny-talks-on-the-joyful-path-podcast-with-lydia/"
-            element={<BlogOne />}
-          />
-          <Route
-            path="/how-to-use-new-linkedin-campaign-manager/"
-            element={<Blog2 />}
-          />
-          <Route
-            path="/linkedin-is-changing-you-should-change-your-marketing-strategy-too/"
-            element={<Blog3 />}
-          />
-          <Route
-            path="/why-southwest-businesses-need-the-global-media-app-right-now"
-            element={<Blog4 />}
-          />
 
-          <Route
-            path="/the-7-real-benefits-of-social-media-marketing-for-business-updated/"
-            element={<Blog5 />}
-          />
-          <Route
-            path="/internet-marketing-profits-course-free-30-day-trial/"
-            element={<Blog6 />}
-          />
-          <Route
-            path="/8-strategies-to-make-linkedin-work-for-your-business-interview-with-chris-lewis"
-            element={<Blog7 />}
-          />
-          <Route
-            path="/making-the-law-of-attraction-work-for-your-marketing-campaigns/"
-            element={<Blog8 />}
-          />
-          <Route
-            path="/the-big-reason-your-business-email-marketing-is-not-working-marketing-magic-tip"
-            element={<Blog9 />}
-          />
-          <Route
-            path="/12-foolproof-creative-methods-to-make-your-business-memorable-marketing-magic-tip"
-            element={<Blog10 />}
-          />
-          <Route
-            path="/what-will-leading-marketers-look-like-in-post-covid19"
-            element={<Blog11 />}
-          />
-          <Route
-            path="/what-is-googles-mobile-first-indexing-and-what-does-it-mean-for-your-business-website-videoblog"
-            element={<Blog12 />}
-          />
-          <Route
-            path="/seven-key-things-clients-can-do-to-get-the-best-results-from-your-marketing-agency"
-            element={<Blog13 />}
-          />
-          <Route
-            path="/linkedin-masterclass-series-live-webinars-secrets-to-start-getting-clients-on-linkedin-free-webinar-on-2-july-2020"
-            element={<Blog14 />}
-          />
+          <Route path="/:slug*" element={<BlogPost />} />
 
           <Route path="/testimonials/" element={<Testimonials />} />
 
