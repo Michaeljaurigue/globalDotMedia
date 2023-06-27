@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import testimonialsData from "../../testimonials.json";
 import "./Testimonials.css";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
@@ -18,8 +18,12 @@ const Testimonials = () => {
     endIndex
   );
 
+  const testimonialsRef = useRef(null);
+  const isButtonClickedRef = useRef(false);
+
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+    isButtonClickedRef.current = true;
   };
 
   const handleNextPage = () => {
@@ -35,7 +39,14 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (isButtonClickedRef.current) {
+    const testimonialsElement = testimonialsRef.current;
+    if (testimonialsElement) {
+      const testimonialsOffsetTop = testimonialsElement.offsetTop;
+      window.scrollTo({ top: testimonialsOffsetTop, behavior: "smooth" });
+    }
+    isButtonClickedRef.current = false;
+  }
   }, [currentPage]);
 
   return (
@@ -52,8 +63,8 @@ const Testimonials = () => {
         }
         link={"/images/testimonials.jpg"}
       />
-      <h1 className="testimonials-h1">Testimonials</h1>
-      <div className="testimonials-container">
+      <h1 ref={testimonialsRef} className="testimonials-h1">Testimonials</h1>
+      <div  className="testimonials-container">
         {paginatedTestimonials.map((testimonial, index) => (
           <div key={`testimonial${index + 1}`} className="testimonial">
             <h3>{testimonial.quote}</h3>

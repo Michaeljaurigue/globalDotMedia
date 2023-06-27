@@ -1,10 +1,10 @@
 import React from "react";
 import CardItem from "../../../components/CardItem/CardItem";
 import "./HomePackage.css";
-import useScrollToTop from "../../../utils/useScrollToTop";
+
 
 function HomePackage() {
-  useScrollToTop();
+
   return (
     <div className="cards">
       <div className="card__title">Included in the Package</div>

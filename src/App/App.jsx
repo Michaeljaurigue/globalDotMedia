@@ -124,14 +124,14 @@ function App() {
           <Route path="/testimonials/" element={<Testimonials />} />
 
           <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
-          <Route
+          {/* <Route
             path="/the-learnin-podcast-episode-3-making-the-law-of-attraction-work-for-you-on-linkedin/"
             element={<PodcastOne />}
           />
           <Route
             path="/the-learnin-podcast-why-you-must-tune-in/"
             element={<Podcast2 />}
-          />
+          /> */}
 
           <Route path="/contact/" element={<Contact />} />
           <Route path="/faq/" element={<FAQ />} />

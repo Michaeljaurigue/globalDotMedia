@@ -1,23 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import blogsData from "../../blogs.json";
 import "./Maadblog.css";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import useScrollToTop from "../../utils/useScrollToTop";
 
 const Maadblog = () => {
-  useScrollToTop();
   const { blogs } = blogsData;
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
+  const postsPerPage = 10;
   const totalPages = Math.ceil(Object.keys(blogs).length / postsPerPage);
   const startIndex = (currentPage - 1) * postsPerPage;
   const endIndex = startIndex + postsPerPage;
   const paginatedPosts = Object.values(blogs).slice(startIndex, endIndex);
+  const blogsRef = useRef(null);
+  const isButtonClickedRef = useRef(false);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+    isButtonClickedRef.current = true;
   };
 
   const handleNextPage = () => {
@@ -33,8 +34,16 @@ const Maadblog = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(1, 1);
+    if (isButtonClickedRef.current) {
+      const blogsElement = blogsRef.current;
+      if (blogsElement) {
+        const blogsOffsetTop = blogsElement.offsetTop;
+        window.scrollTo({ top: blogsOffsetTop, behavior: "smooth" });
+      }
+      isButtonClickedRef.current = false;
+    }
   }, [currentPage]);
+
 
   return (
     <div>
@@ -54,7 +63,7 @@ const Maadblog = () => {
         }
         link={"/images/market-research.jpg"}
       />
-      <h1 className="blog-posts-h1">Blog Posts</h1>
+      <h1 ref={blogsRef} className="blog-posts-h1">Blog Posts</h1>
       <div className="blog-posts-container">
         {paginatedPosts.map((blog) => (
           <Link key={blog.id} to={blog.id} className="blog-card">

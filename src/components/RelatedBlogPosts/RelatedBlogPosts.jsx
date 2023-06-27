@@ -41,8 +41,8 @@ const RelatedBlogPosts = () => {
             <div key={id} className="recommendation-card">
               <h2>{blog.title}</h2>
               <img src={blog.image} alt={blog.title} />
-              <div className="button-container">
-                <Link to={blog.id}>Read More</Link>
+              <div >
+                <Link className="button-link" to={blog.id}>Read More</Link>
               </div>
             </div>
           );
