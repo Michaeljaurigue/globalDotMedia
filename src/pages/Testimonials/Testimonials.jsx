@@ -29,12 +29,14 @@ const Testimonials = () => {
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      isButtonClickedRef.current = true;
     }
   };
 
   const handlePreviousPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      isButtonClickedRef.current = true;
     }
   };
 
