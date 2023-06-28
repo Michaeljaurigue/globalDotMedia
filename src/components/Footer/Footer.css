@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .footer_container_items {
@@ -12,6 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
+  margin-top: 40px;
 }
 
 .social-media-wrap {
