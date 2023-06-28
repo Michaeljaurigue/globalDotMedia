@@ -37,6 +37,7 @@ import Testimonials from "../pages/Testimonials/Testimonials";
 import Contact from "../pages/Contact/Contact";
 import FAQ from "../pages/MISC/FAQ/FAQ";
 import RefundPolicy from "../pages/MISC/RefundPolicy/RefundPolicy";
+import TermsAndConditions from "../pages/MISC/TermsAndConditions/TermsAndConditions";
 import NotFound from "../pages/NotFound/NotFound";
 import Footer from "../components/Footer/Footer";
 
@@ -139,6 +140,7 @@ function App() {
           <Route path="/faq/" element={<FAQ />} />
           <Route path="/refund-policy/" element={<RefundPolicy />} />
           <Route path="/cookie-policy/" element={<CookiePolicy />} />
+          <Route path="/terms-and-conditions/" element={<TermsAndConditions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

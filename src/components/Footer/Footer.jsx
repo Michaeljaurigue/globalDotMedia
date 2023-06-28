@@ -94,10 +94,10 @@ function Footer() {
           <Link className="footer-link-item" to="/faq" ref={logoRef}>
             FAQ
           </Link>
-          <Link className="footer-link-item" to="/refund-policy" ref={logoRef}>
+          <Link className="footer-link-item" to="/refund-policy/" ref={logoRef}>
             Refund Policy
           </Link>
-          <Link className="footer-link-item" to="/terms" ref={logoRef}>
+          <Link className="footer-link-item" to="/terms-and-conditions/" ref={logoRef}>
             Terms & Privacy
           </Link>
         </div>

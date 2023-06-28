@@ -1,10 +1,10 @@
 import React from "react";
 import "./RefundPolicy.css"; // Import the CSS stylesheet
 
-const TermsAndConditions = () => {
+const RefundPolicy = () => {
   return (
     <div className="terms-container">
-      <h2>Terms and Conditions</h2>
+      <h2>Refund Policy</h2>
       <h3>Online Advertising</h3>
       <p>
         globaldotmedia.com’s management (package) costs are non-refundable for
@@ -166,4 +166,4 @@ const TermsAndConditions = () => {
   );
 };
 
-export default TermsAndConditions;
+export default RefundPolicy;
