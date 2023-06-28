@@ -48,7 +48,7 @@ function StepsContainerLeft(props) {
           <img
             className="home__section-steps-right-container-img"
             src={props.src || "/public/images/home-4.jpg"}
-            alt="home-4"
+            alt={props.alt || "Global.Media Marketing Image"}
           />
         </div>
       </motion.div>
