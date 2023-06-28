@@ -156,7 +156,7 @@ function Navbar() {
                   </li>
                   <li className="nav-dropdown-item">
                     <Link
-                      to="/social-media-marketing/"
+                      to="/our-services/social-media-marketing/"
                       className="nav-dropdown-link"
                       onClick={closeMobileMenu}
                     >

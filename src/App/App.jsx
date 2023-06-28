@@ -28,8 +28,6 @@ import MaadBlog from "../pages/MaadBlog/Maadblog";
 import BlogPost from "../components/BlogPost/BlogPost";
 
 import Podcast from "../pages/Podcast/BusinessPodcasts";
-import PodcastOne from "../pages/Podcast/PodcastPages/PodcastOne";
-import Podcast2 from "../pages/Podcast/PodcastPages/Podcast2";
 
 import Testimonials from "../pages/Testimonials/Testimonials";
 import Contact from "../pages/Contact/Contact";
@@ -53,7 +51,7 @@ function App() {
             element={<BookPublishingAndMarketingService />}
           />
           <Route
-            path="/social-media-marketing/"
+            path="/our-services/social-media-marketing/"
             element={<SocialMediaMarketing />}
           />
           <Route
