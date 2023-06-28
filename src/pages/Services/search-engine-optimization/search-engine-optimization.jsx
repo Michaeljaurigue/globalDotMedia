@@ -55,28 +55,26 @@ function SearchEngineOptimization() {
         h1eleventh={""}
         peleventh={
           <BulletPointChart
-            packageName={"Search Engine Optimisation Service Package"}
-            one={
-              "Review existing SEO factors – on-page, off-page & local search."
-            }
-            two={"Propose SEO changes / activities."}
-            three={
-              "Analyse purchase paths/user experience & propose improvements."
-            }
-            four={"Optimise website-wide on-page factors."}
-            five={"Identify link-building opportunities."}
-            six={"Optimise off-page SEO factors."}
-            seven={"Produce SEO-optimised product / services descriptions."}
-            eight={"Complete citations."}
-            nine={"Propose options for mobile-friendly website."}
-            ten={"Produce optimised content for mobile website."}
-            eleven={"Set up Google+ and Google Business profiles."}
-            twelve={"Propose options for gathering user reviews."}
-            thirteen={"Complete rich snippets and meta descriptions."}
-            fourteen={"Optimise existing content for SEO."}
-            fifteen={"On-going testing and review of SEO factors."}
-            sixteen={"Analyse performance metrics and report monthly."}
-          />
+          packageName={"Search Engine Optimisation Service Package"}
+          bulletPoints={[
+            "Review existing SEO factors – on-page, off-page & local search.",
+            "Propose SEO changes / activities.",
+            "Analyse purchase paths/user experience & propose improvements.",
+            "Optimise website-wide on-page factors.",
+            "Identify link-building opportunities.",
+            "Optimise off-page SEO factors.",
+            "Produce SEO-optimised product / services descriptions.",
+            "Complete citations.",
+            "Propose options for mobile-friendly website.",
+            "Produce optimised content for mobile website.",
+            "Set up Google+ and Google Business profiles.",
+            "Propose options for gathering user reviews.",
+            "Complete rich snippets and meta descriptions.",
+            "Optimise existing content for SEO.",
+            "On-going testing and review of SEO factors.",
+            "Analyse performance metrics and report monthly.",
+          ]}
+        />
         }
       />
       <ClientTestimonials />

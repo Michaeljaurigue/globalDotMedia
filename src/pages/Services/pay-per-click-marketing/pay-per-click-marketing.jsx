@@ -61,25 +61,22 @@ function PayPerClickMarketing() {
         h1eleventh={""}
         peleventh={
           <BulletPointChart
-            packageName={"Pay-Per-Click Marketing Service Package"}
-            one={""}
-            two={"Review paid search initiatives."}
-            three={
-              "Propose PPC campaigns for desktop and mobile – Google, Bing, facebook, Twitter & 1 more social network."
-            }
-            four={"Design, launch & manage image-based PPC campaigns."}
-            five={"Design landing pages for ads."}
-            six={
-              "Identify affiliates for mutually beneficial affiliate marketing campaigns."
-            }
-            seven={"Setup retargeting campaigns where data is available."}
-            eight={"Test platforms and ad types for effectiveness."}
-            nine={
-              "Monitor and continuously improve targeting, keywords, bids and ads."
-            }
-            ten={"Propose conversion rate optimisation initiatives."}
-            eleven={"Analyse performance and report monthly."}
-          />
+          packageName={"Pay-Per-Click Marketing Service Package"}
+          bulletPoints={[
+            "Review paid search initiatives.",
+            "Propose PPC campaigns for desktop and mobile – Google, Bing, facebook, Twitter & 1 more social network.",
+            "Design, launch & manage image-based PPC campaigns.",
+            "Design landing pages for ads.",
+            "Identify affiliates for mutually beneficial affiliate marketing campaigns.",
+            "Setup retargeting campaigns where data is available.",
+            "Test platforms and ad types for effectiveness.",
+            "Monitor and continuously improve targeting, keywords, bids and ads.",
+            "Propose conversion rate optimisation initiatives.",
+            "Analyse performance and report monthly.",
+
+          ]}
+        />
+
         }
       />
       <ClientTestimonials />

@@ -57,26 +57,18 @@ function OnlineTraining() {
         h1eleventh={""}
         peleventh={
           <BulletPointChart
-            packageName={"What You Get with our Online Training Courses"}
-            one={"Market your business more effectively"}
-            two={"Increase brand recognition"}
-            three={
-              "Promote your products and services directly to those that want them"
-            }
-            four={"Increase your visibility and reputation online"}
-            five={"Attract new clients"}
-            six={"Reach your ideal target market"}
-            seven={"Increase your profits"}
-            eight={""}
-            nine={""}
-            ten={""}
-            eleven={""}
-            twelve={""}
-            thirteen={""}
-            fourteen={""}
-            fifteen={""}
-            sixteen={""}
-          />
+          packageName={"What You Get with our Online Training Courses"}
+          bulletPoints={[
+            "Market your business more effectively",
+            "Increase brand recognition",
+            "Promote your products and services directly to those that want them",
+            "Increase your visibility and reputation online",
+            "Attract new clients",
+            "Reach your ideal target market",
+            "Increase your profits",
+          ]}
+        />
+
         }
       />
       <ClientTestimonials />

@@ -51,29 +51,22 @@ function OfflineMarketingConsultancy() {
         h1eleventh={"Mobile Marketing Service Package"}
         peleventh={
           <BulletPointChart
-            packageName={"Traditional Marketing Consultancy Package"}
-            one={
-              "We work with businesses to understand and access the full range of offline marketing options they can use to gain an advantage over their competitors."
-            }
-            two={"Offline marketing options for your business."}
-            three={
-              "Potential numbers of people that you can reach with each marketing option."
-            }
-            four={
-              "Costs of designing and launching traditional marketing campaigns."
-            }
-            five={
-              "Companies that can help you with your campaign and the costs of their services. Our service will help your business to identify."
-            }
-            six={
-              "Integrate your offline and online marketing activities. This enables potential customers to get consistent messages from your marketing campaigns."
-            }
-            seven={"Review and optimise offline marketing campaigns."}
-            eight={
-              "Support to identify and implement Conversion Rate Optimisation strategies."
-            }
-            nine={"Analytics and reporting as appropriate."}
-          />
+          packageName={"Traditional Marketing Consultancy Package"}
+          bulletPoints={[
+            "We work with businesses to understand and access the full range of offline marketing options they can use to gain an advantage over their competitors.",
+            "Offline marketing options for your business.",
+            "Potential numbers of people that you can reach with each marketing option.",
+            "Costs of designing and launching traditional marketing campaigns.",
+            "Companies that can help you with your campaign and the costs of their services. Our service will help your business to identify.",
+            "Integrate your offline and online marketing activities. This enables potential customers to get consistent messages from your marketing campaigns.",
+            "Review and optimise offline marketing campaigns.",
+            "Support to identify and implement Conversion Rate Optimisation strategies.",
+            "Analytics and reporting to measure the success of your offline marketing campaigns.",
+
+          ]}
+        
+        />
+   
         }
       />
       <ClientTestimonials />

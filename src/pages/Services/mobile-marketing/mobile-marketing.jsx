@@ -65,18 +65,17 @@ function MobileMarketing() {
               "Devise mobile marketing strategy",
               "Mobile app demo development – FREE",
               "Published mobile app on Android and iTunes",
+              "Integrate mobile across your marketing channels",
+              "Design mobile-friendly responsive website and landing pages",
+              "Optimise website for mobile search",
+              "Propose, design, launch and manage mobile advertising campaigns",
+              "Design mobile-friendly emails",
+              "Implement SMS and MMS",
+              "Review and optimise mobile communications",
+              "Conversion Rate Optimisation",
+              "Analytics and reporting monthly",
             ]}
-            four={"Integrate mobile across your marketing channels"}
-            five={"Design mobile-friendly responsive website and landing pages"}
-            six={"Optimise website for mobile search"}
-            seven={
-              "Propose, design, launch and manage mobile advertising campaigns"
-            }
-            eight={"Design mobile-friendly emails"}
-            nine={"Implement SMS and MMS"}
-            ten={"Review and optimise mobile communications"}
-            eleven={"Conversion Rate Optimisation"}
-            twelve={"Analytics and reporting monthly"}
+          
           />
         }
       />
