@@ -1,5 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CookieConsent, { Cookies, getCookieConsentValue, resetCookieConsentValue } from "react-cookie-consent";
+
+
 
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
@@ -23,6 +26,7 @@ import PayPerClickMarketing from "../pages/Services/pay-per-click-marketing/pay-
 import SearchEngineOptimization from "../pages/Services/search-engine-optimization/search-engine-optimization";
 import VideoMarketing from "../pages/Services/video-marketing/video-marketing";
 import WebsiteDevelopment from "../pages/Services/website-development/website-development";
+import CookiePolicy from "../pages/MISC/CookiePolicy/CookiePolicy";
 
 import MaadBlog from "../pages/MaadBlog/Maadblog";
 import BlogPost from "../components/BlogPost/BlogPost";
@@ -134,10 +138,34 @@ function App() {
           <Route path="/contact/" element={<Contact />} />
           <Route path="/faq/" element={<FAQ />} />
           <Route path="/refund-policy/" element={<RefundPolicy />} />
+          <Route path="/cookie-policy/" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />
+       
+<CookieConsent
+        location="bottom"
+        buttonText="I Understand"
+        cookieName="myWebsiteCookieConsent"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+        enableDeclineButton
+        onAccept={(acceptedByScrolling) => {
+          if (acceptedByScrolling) {
+            console.log("Accept was triggered by user scrolling");
+          } else {
+            console.log("Accept was triggered by clicking the Accept button");
+          }
+        }}
+        onDecline={() => {
+          console.log("User declined cookies");
+        }}
+      >
+        This website uses cookies to enhance the user experience.{' '}
+        <span style={{ fontSize: "10px" }}> <a href="/cookie-policy" style={{ color: "#fff" }}>Learn more</a></span>
+      </CookieConsent>
       </Router>
     </div>
   );
