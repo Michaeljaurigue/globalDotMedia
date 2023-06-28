@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CookieConsent, { Cookies, getCookieConsentValue, resetCookieConsentValue } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 
 
 
@@ -147,7 +147,7 @@ function App() {
 <CookieConsent
         location="bottom"
         buttonText="I Understand"
-        cookieName="myWebsiteCookieConsent"
+        cookieName="GlobalDotMediaCookieConsent"
         style={{ background: "#2B373B" }}
         buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
         expires={150}
