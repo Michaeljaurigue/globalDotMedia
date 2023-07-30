@@ -97,7 +97,11 @@ function Footer() {
           <Link className="footer-link-item" to="/refund-policy/" ref={logoRef}>
             Refund Policy
           </Link>
-          <Link className="footer-link-item" to="/terms-and-conditions/" ref={logoRef}>
+          <Link
+            className="footer-link-item"
+            to="/terms-and-conditions/"
+            ref={logoRef}
+          >
             Terms & Privacy
           </Link>
         </div>
@@ -115,7 +119,7 @@ function Footer() {
               className="footer-input"
               placeholder="Enter your email"
             />
-            <button className="footer-btn">Subscribe</button>
+            <button className="footer-btn">Subscribe Here Please</button>
           </form>
         </div>
       </div>
