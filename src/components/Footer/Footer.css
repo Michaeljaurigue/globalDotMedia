@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .footer_container_items {
@@ -24,7 +23,7 @@
 }
 
 .footer-logo {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .social-logo-img {
