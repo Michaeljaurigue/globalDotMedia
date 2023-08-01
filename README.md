@@ -15,25 +15,6 @@ Interactive UI animations
 Live Demo
 You can access the live website here at http://globaldotmedia.xyz/
 
-Installation and Setup
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/Michaeljaurigue/globaldotmedia.git
-Install the dependencies:
-
-bash
-Copy code
-cd globaldotmedia
-npm install
-Run the application:
-
-sql
-Copy code
-npm start
-The website should be live on http://localhost:3000.
-
 Dependencies
 This project was bootstrapped with Create React App and uses the following main dependencies:
 
