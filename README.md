@@ -1,3 +1,14 @@
+Note to TripleTen Reviewer: Pages for Review
+This project contains numerous pages, however for the purpose of review, please focus on the following key pages:
+
+Home Page (/)
+Maad Blog Page (/maad-blog/)
+You can access these directly using the following links:
+
+Home Page: http://globaldotmedia.xyz/
+Maad Blog Page: http://globaldotmedia.xyz/maad-blog/
+These pages encompass the main features and design elements of the site and are representative of the coding practices used throughout the project.
+
 GlobalDotMedia.xyz
 GlobalDotMedia.xyz is a dynamic website created for Global.Media, a full-service creative media marketing and advertising agency with branches in London and Truro, Cornwall. This project is part of the TripleTen bootcamp.
 
