@@ -92,6 +92,10 @@ function Navbar() {
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} alt="Logo" className="navbar-logo-img" />
           </Link>
+          <div className="contact-info">
+            <p className="phone-number">07599 527195</p>
+            <p className="email">eny@globaldotmedia.com</p>
+          </div>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>

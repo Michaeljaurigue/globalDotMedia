@@ -53,22 +53,23 @@ function OnlineTraining() {
         h1ninth={""}
         pninth={""}
         h1tenth={"About The Courses"}
-        ptenth={"This course is perfect for you if you’re a Business Owner, Budding Entrepreneur or want to start a marketing business but not sure how to do it properly."}
+        ptenth={
+          "This course is perfect for you if you’re a Business Owner, Budding Entrepreneur or want to start a marketing business but not sure how to do it properly."
+        }
         h1eleventh={""}
         peleventh={
           <BulletPointChart
-          packageName={"What You Get with our Online Training Courses"}
-          bulletPoints={[
-            "Market your business more effectively",
-            "Increase brand recognition",
-            "Promote your products and services directly to those that want them",
-            "Increase your visibility and reputation online",
-            "Attract new clients",
-            "Reach your ideal target market",
-            "Increase your profits",
-          ]}
-        />
-
+            packageName={"What You Get with our Online Training Courses"}
+            bulletPoints={[
+              "Market your business more effectively",
+              "Increase brand recognition",
+              "Promote your products and services directly to those that want them",
+              "Increase your visibility and reputation online",
+              "Attract new clients",
+              "Reach your ideal target market",
+              "Increase your profits",
+            ]}
+          />
         }
       />
       <ClientTestimonials />

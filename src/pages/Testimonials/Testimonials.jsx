@@ -42,13 +42,13 @@ const Testimonials = () => {
 
   useEffect(() => {
     if (isButtonClickedRef.current) {
-    const testimonialsElement = testimonialsRef.current;
-    if (testimonialsElement) {
-      const testimonialsOffsetTop = testimonialsElement.offsetTop;
-      window.scrollTo({ top: testimonialsOffsetTop, behavior: "smooth" });
+      const testimonialsElement = testimonialsRef.current;
+      if (testimonialsElement) {
+        const testimonialsOffsetTop = testimonialsElement.offsetTop;
+        window.scrollTo({ top: testimonialsOffsetTop, behavior: "smooth" });
+      }
+      isButtonClickedRef.current = false;
     }
-    isButtonClickedRef.current = false;
-  }
   }, [currentPage]);
 
   return (
@@ -65,17 +65,35 @@ const Testimonials = () => {
         }
         link={"/images/testimonials.jpg"}
       />
-      <h1 ref={testimonialsRef} className="testimonials-h1">Testimonials</h1>
-      <div  className="testimonials-container">
+      <h1 ref={testimonialsRef} className="testimonials-h1">
+        Testimonials
+      </h1>
+      <div className="testimonials-container">
         {paginatedTestimonials.map((testimonial, index) => (
           <div key={`testimonial${index + 1}`} className="testimonial">
             <h3>{testimonial.quote}</h3>
             <p>{testimonial.date}</p>
             <p>{testimonial.comment}</p>
-            <p>{testimonial.author}</p>
+            <p>
+              <span role="img" aria-label="person icon">
+                👤
+              </span>{" "}
+              {/* Person emoji */}
+              {testimonial.author}
+            </p>
+            <div className="video-container">
+              <iframe
+                src={testimonial.embedSrc}
+                title={`Video testimonial ${index + 1}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         ))}
       </div>
+
       <div className="pagination">
         <button
           className="pagination-button"
@@ -88,7 +106,7 @@ const Testimonials = () => {
           (pageNumber) => (
             <button
               key={pageNumber}
-              className={`pagination-button ${
+              className={`pagination-button page-number ${
                 pageNumber === currentPage ? "active" : ""
               }`}
               onClick={() => handlePageChange(pageNumber)}
@@ -97,6 +115,7 @@ const Testimonials = () => {
             </button>
           )
         )}
+
         <button
           className="pagination-button"
           onClick={handleNextPage}

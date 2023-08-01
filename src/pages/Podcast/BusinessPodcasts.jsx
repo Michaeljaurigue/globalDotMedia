@@ -9,18 +9,18 @@ const Podcast = () => {
   const { blogs } = blogsData;
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
-  const podcastsCount = Object.values(blogs).filter((blog) => blog.podcast === true).length;
-const totalPages = Math.ceil(podcastsCount / postsPerPage);
+  const podcastsCount = Object.values(blogs).filter(
+    (blog) => blog.podcast === true
+  ).length;
+  const totalPages = Math.ceil(podcastsCount / postsPerPage);
 
   const startIndex = (currentPage - 1) * postsPerPage;
   const endIndex = startIndex + postsPerPage;
 
- // Filter blogs based on podcast property and page value
- const paginatedPodcasts = Object.values(blogs)
- .filter((blog) => blog.podcast === true)
- .slice(startIndex, endIndex);
-
-
+  // Filter blogs based on podcast property and page value
+  const paginatedPodcasts = Object.values(blogs)
+    .filter((blog) => blog.podcast === true)
+    .slice(startIndex, endIndex);
 
   const podcastsRef = useRef(null);
   const isButtonClickedRef = useRef(false);
@@ -54,9 +54,10 @@ const totalPages = Math.ceil(podcastsCount / postsPerPage);
       isButtonClickedRef.current = false;
     }
   }, [currentPage]);
+
   const renderPageNumbers = () => {
     const pageNumbers = [];
-  
+
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.push(
         <button
@@ -68,10 +69,9 @@ const totalPages = Math.ceil(podcastsCount / postsPerPage);
         </button>
       );
     }
-  
+
     return pageNumbers;
   };
-  
 
   return (
     <div>
@@ -175,64 +175,63 @@ const totalPages = Math.ceil(podcastsCount / postsPerPage);
           @globaldotmedia, Facebook us @Global.Media, or link up with me on
           LinkedIn @enyosung. Enjoy the interviews!"
         </p>
-        <h2 ref={podcastsRef}  className="podcast-posts-h2">
+        <h2 ref={podcastsRef} className="podcast-posts-h2">
           Recent Podcasts
         </h2>
-      
+
         <div className="podcast-posts-container">
-    {paginatedPodcasts.map((podcast) => (
-      <Link to={podcast.id}
-        key={podcast.id}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="podcast-card"
-      >
-        <img src={podcast.image} alt={podcast.title} />
-        <h1>{podcast.h1}</h1>
-        <p>{podcast.description}</p>
-        </Link>
-    ))}
-  </div>
-      <div className="pagination">
-        <button
-          className="pagination-button"
-          onClick={handlePreviousPage}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-        {renderPageNumbers()}
-        {Array.from({ length: totalPages }, (_, index) => index + 1)
-  .filter((pageNumber) =>
-    Object.values(blogs).some(
-      (blog) => blog.podcast === true && blog.page === pageNumber
-    )
-  )
-  .map((pageNumber) => (
-    <button
-      key={pageNumber}
-      className={`pagination-button ${
-        pageNumber === currentPage ? "active" : ""
-      }`}
-      onClick={() => handlePageChange(pageNumber)}
-    >
-      {pageNumber}
-    </button>
-  ))}
+          {paginatedPodcasts.map((podcast) => (
+            <Link
+              to={podcast.id}
+              key={podcast.id}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="podcast-card"
+            >
+              <img src={podcast.image} alt={podcast.title} />
+              <h1>{podcast.h1}</h1>
+              <p>{podcast.description}</p>
+            </Link>
+          ))}
+        </div>
+        <div className="pagination">
+          <button
+            className="pagination-button"
+            onClick={handlePreviousPage}
+            disabled={currentPage === 1}
+          >
+            Previous
+          </button>
+          <div className="pagination-numbers">{renderPageNumbers()}</div>
+          {Array.from({ length: totalPages }, (_, index) => index + 1)
+            .filter((pageNumber) =>
+              Object.values(blogs).some(
+                (blog) => blog.podcast === true && blog.page === pageNumber
+              )
+            )
+            .map((pageNumber) => (
+              <button
+                key={pageNumber}
+                className={`pagination-button ${
+                  pageNumber === currentPage ? "active" : ""
+                }`}
+                onClick={() => handlePageChange(pageNumber)}
+              >
+                {pageNumber}
+              </button>
+            ))}
 
-
-        <button
-          className="pagination-button"
-          onClick={handleNextPage}
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
+          <button
+            className="pagination-button"
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
 export default Podcast;
-
