@@ -15,6 +15,8 @@ Interactive UI animations
 Live Demo
 You can access the live website here at http://globaldotmedia.xyz/
 
+GitHub Repository: https://github.com/Michaeljaurigue/globaldotmedia
+
 Dependencies
 This project was bootstrapped with Create React App and uses the following main dependencies:
 
