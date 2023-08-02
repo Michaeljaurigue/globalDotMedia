@@ -23,6 +23,8 @@ function Footer() {
     };
   }, []);
 
+  //footer comments
+
   return (
     <div className="footer-container">
       <div className="footer_container_items">
