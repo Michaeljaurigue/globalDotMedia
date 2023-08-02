@@ -2,8 +2,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
 
-
-
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Home from "../pages/Home/Home";
@@ -140,34 +138,42 @@ function App() {
           <Route path="/faq/" element={<FAQ />} />
           <Route path="/refund-policy/" element={<RefundPolicy />} />
           <Route path="/cookie-policy/" element={<CookiePolicy />} />
-          <Route path="/terms-and-conditions/" element={<TermsAndConditions />} />
+          <Route
+            path="/terms-and-conditions/"
+            element={<TermsAndConditions />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />
-       
-<CookieConsent
-        location="bottom"
-        buttonText="I Understand"
-        cookieName="GlobalDotMediaCookieConsent"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={150}
-        enableDeclineButton
-        onAccept={(acceptedByScrolling) => {
-          if (acceptedByScrolling) {
-            console.log("Accept was triggered by user scrolling");
-          } else {
-            console.log("Accept was triggered by clicking the Accept button");
-          }
-        }}
-        onDecline={() => {
-          console.log("User declined cookies");
-        }}
-      >
-        This website uses cookies to enhance the user experience.{' '}
-        <span style={{ fontSize: "10px" }}> <a href="/cookie-policy" style={{ color: "#fff" }}>Learn more</a></span>
-      </CookieConsent>
+
+        <CookieConsent
+          location="bottom"
+          buttonText="I Understand"
+          cookieName="GlobalDotMediaCookieConsent"
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          expires={150}
+          enableDeclineButton
+          onAccept={(acceptedByScrolling) => {
+            if (acceptedByScrolling) {
+              console.log("Accept was triggered by user scrolling");
+            } else {
+              console.log("Accept was triggered by clicking the Accept button");
+            }
+          }}
+          onDecline={() => {
+            console.log("User declined cookies");
+          }}
+        >
+          This website uses cookies to enhance the user experience.{" "}
+          <span style={{ fontSize: "10px" }}>
+            {" "}
+            <a href="/cookie-policy" style={{ color: "#fff" }}>
+              Learn more
+            </a>
+          </span>
+        </CookieConsent>
       </Router>
     </div>
   );

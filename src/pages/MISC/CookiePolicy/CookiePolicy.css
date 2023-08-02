@@ -1,27 +1,26 @@
 .cookie_policy__container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    padding: 20px;
-  }
-  /* .cookie_policy {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+/* .cookie_policy {
     margin-top: 20px;
   } */
-  
-  .cookie_policy__container-h1 {
-    text-align: center;
-    margin-top: 30px;
-    /* margin: 50px; */
-  }
-  
-  .cookie_policy__container-h3 {
-    margin-top: 30px;
-  }
-  
-  .cookie_policy__container-p {
-    /* margin-top: 10px; */
-    margin-bottom: 10px;
-  }
-  
+
+.cookie_policy__container-h1 {
+  text-align: center;
+  margin-top: 30px;
+  /* margin: 50px; */
+}
+
+.cookie_policy__container-h3 {
+  margin-top: 30px;
+}
+
+.cookie_policy__container-p {
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}

@@ -1,0 +1,73 @@
+.testimon-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimon {
+  opacity: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.testimon.active {
+  opacity: 1;
+  display: block;
+}
+
+.testimon-quote {
+  font-size: 2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.testimon-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.testimon-icon {
+  margin-right: 10px;
+}
+
+.testimon-designation {
+  font-size: 1em;
+  color: grey;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.dot.active {
+  background-color: #333;
+}

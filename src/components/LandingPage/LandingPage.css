@@ -12,5 +12,7 @@
 }
 
 .LandingPage__p {
-  text-align: center;
+  margin-bottom: 1.5rem; /* Adding some spacing after each paragraph */
+  line-height: 1.6; /* Increasing the line height for better readability */
+  text-align: center; /* Justifying the text */
 }

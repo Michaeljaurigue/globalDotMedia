@@ -46,7 +46,6 @@ const Maadblog = () => {
     }
   }, [currentPage]);
 
-
   return (
     <div>
       <Helmet>
@@ -65,7 +64,9 @@ const Maadblog = () => {
         }
         link={"/images/market-research.jpg"}
       />
-      <h1 ref={blogsRef} className="blog-posts-h1">Blog Posts</h1>
+      <h1 ref={blogsRef} className="blog-posts-h1">
+        Blog Posts
+      </h1>
       <div className="blog-posts-container">
         {paginatedPosts.map((blog) => (
           <Link key={blog.id} to={blog.id} className="blog-card">
@@ -75,9 +76,10 @@ const Maadblog = () => {
           </Link>
         ))}
       </div>
+
       <div className="pagination">
         <button
-          className="pagination-button"
+          className="pagination-button previous"
           onClick={handlePreviousPage}
           disabled={currentPage === 1}
         >
@@ -97,7 +99,7 @@ const Maadblog = () => {
           )
         )}
         <button
-          className="pagination-button"
+          className="pagination-button next"
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
         >
