@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.client_testimonials-h1 {
+.client_testimonials__title {
   max-width: 1200px;
   font-size: 50px;
   font-weight: 700;
@@ -17,19 +17,19 @@
   margin: 20px;
 }
 
-.client_testimonials-container {
+.client_testimonials__container {
   display: flex;
   justify-content: center;
 }
 
-.client_testimonials-column {
+.client_testimonials__column {
   flex-basis: 50%;
   padding: 0 10px;
   margin: 10px;
 }
 
 @media screen and (max-width: 1200px) {
-  .client_testimonials-container {
+  .client_testimonials__container {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@
     flex-direction: column;
   }
 
-  iframe {
+  .client_testimonials__video {
     border: none;
     margin-bottom: 20px;
     max-width: 100%;

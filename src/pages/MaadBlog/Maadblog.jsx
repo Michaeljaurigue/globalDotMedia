@@ -89,7 +89,7 @@ const Maadblog = () => {
           (pageNumber) => (
             <button
               key={pageNumber}
-              className={`pagination-button ${
+              className={`pagination-numbers ${
                 pageNumber === currentPage ? "active" : ""
               }`}
               onClick={() => handlePageChange(pageNumber)}

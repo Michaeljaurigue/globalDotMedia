@@ -2,9 +2,9 @@ import React from "react";
 import "./Button.css";
 import { Link } from "react-router-dom";
 
-const STYLES = ["btn--primary", "btn--outline"];
+const STYLES = ["button--primary", "button--outline"];
 
-const SIZES = ["btn--medium", "btn--large"];
+const SIZES = ["button--medium", "button--large"];
 
 export const Button = ({
   children,
@@ -14,17 +14,17 @@ export const Button = ({
   buttonsize,
   path,
 }) => {
-  // if buttonstyle is not defined, then default to 'btn--primary'
-  // if buttonsize is not defined, then default to 'btn--medium'
+  // if buttonstyle is not defined, then default to 'button--primary'
+  // if buttonsize is not defined, then default to 'button--medium'
   const checkbuttonstyle = STYLES.includes(buttonstyle)
     ? buttonstyle
     : STYLES[0];
   const checkbuttonsize = SIZES.includes(buttonsize) ? buttonsize : SIZES[0];
 
   return (
-    <Link to="/contact" className="btn-mobile">
+    <Link to="/contact" className="button-mobile">
       <button
-        className={`btn ${checkbuttonstyle} ${checkbuttonsize}`}
+        className={`button ${checkbuttonstyle} ${checkbuttonsize}`}
         onClick={onClick}
         type={type}
         path={path}

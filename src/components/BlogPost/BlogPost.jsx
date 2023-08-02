@@ -152,31 +152,31 @@ const BlogPost = () => {
         <RelatedBlogPosts relatedIds={blog.relatedIds} />{" "}
         <div className="blog-post__share">
           <button
-            className="share-button share-button--facebook"
+            className="blog-post__share-button blog-post__share-button--facebook"
             onClick={shareOnFacebook}
           >
             <i className="fab fa-facebook-f"></i>
           </button>
           <button
-            className="share-button share-button--linkedin"
+            className="blog-post__share-button blog-post__share-button--linkedin"
             onClick={shareOnLinkedIn}
           >
             <i className="fab fa-linkedin"></i>
           </button>
           <button
-            className="share-button share-button--twitter"
+            className="blog-post__share-button blog-post__share-button--twitter"
             onClick={shareOnTwitter}
           >
             <i className="fab fa-twitter"></i>
           </button>
           <button
-            className="share-button share-button--instagram"
+            className="blog-post__share-button blog-post__share-button--instagram"
             onClick={shareOnInstagram}
           >
             <i className="fab fa-instagram"></i>
           </button>
           <button
-            className="share-button share-button--email"
+            className="blog-post__share-button blog-post__share-button--email"
             onClick={shareByEmail}
           >
             <i className="fas fa-envelope"></i>

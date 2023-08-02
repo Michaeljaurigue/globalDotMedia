@@ -24,23 +24,23 @@ function Footer() {
   }, []);
 
   return (
-    <div className="footer-container">
-      <div className="footer_container_items">
-        <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to="/" className="social-logo" ref={logoRef}>
+    <div className="footer">
+      <div className="footer__items">
+        <div className="footer__media">
+          <div className="footer__logo">
+            <Link to="/" className="footer__logo-link" ref={logoRef}>
               <img
                 src="/images/logo.jpg"
                 alt="logo"
-                className="social-logo-img"
+                className="footer__logo-img"
               />
             </Link>
           </div>
 
-          <small className="website-rights">Global.Media © 2023</small>
-          <div className="social-icons">
+          <small className="footer__rights">Global.Media © 2023</small>
+          <div className="footer__icons">
             <Link
-              className="social-icon-link facebook"
+              className="footer__icon-link facebook"
               to="https://www.facebook.com/globaldotmedia/"
               target="_blank"
               aria-label="Facebook"
@@ -48,7 +48,7 @@ function Footer() {
               <i className="fab fa-facebook-f" />
             </Link>
             <Link
-              className="social-icon-link instagram"
+              className="footer__icon-link instagram"
               to="https://www.instagram.com/globaldotmedia"
               target="_blank"
               aria-label="Instagram"
@@ -56,7 +56,7 @@ function Footer() {
               <i className="fab fa-instagram" />
             </Link>
             <Link
-              className="social-icon-link twitter"
+              className="footer__icon-link twitter"
               to="https://twitter.com/globaldotmedia"
               target="_blank"
               aria-label="Twitter"
@@ -64,7 +64,7 @@ function Footer() {
               <i className="fab fa-twitter" />
             </Link>
             <Link
-              className="social-icon-link linkedin"
+              className="footer__icon-link linkedin"
               to="https://uk.linkedin.com/in/enyosung"
               target="_blank"
               aria-label="LinkedIn"
@@ -75,7 +75,7 @@ function Footer() {
         </div>
 
         {/* About Section */}
-        <div className="footer_section">
+        <div className="footer__section">
           <h2>About</h2>
           <p>London Office: 207 Regent Street, London W1B 3HH</p>
           <p>Cornwall Office: Eden House, Forge Lane, Saltash, PL12 6LX</p>
@@ -85,37 +85,45 @@ function Footer() {
         </div>
 
         {/* Company Section */}
-        <div className="footer_section">
+        <div className="footer__section">
           <h2>Company</h2>
 
-          <Link className="footer-link-item" to="/maad-blog" ref={logoRef}>
+          <Link className="footer__link-item" to="/maad-blog" ref={logoRef}>
             Blog
           </Link>
-          <Link className="footer-link-item" to="/faq" ref={logoRef}>
+          <Link className="footer__link-item" to="/faq" ref={logoRef}>
             FAQ
           </Link>
-          <Link className="footer-link-item" to="/refund-policy/" ref={logoRef}>
+          <Link
+            className="footer__link-item"
+            to="/refund-policy/"
+            ref={logoRef}
+          >
             Refund Policy
           </Link>
-          <Link className="footer-link-item" to="/terms-and-conditions/" ref={logoRef}>
+          <Link
+            className="footer__link-item"
+            to="/terms-and-conditions/"
+            ref={logoRef}
+          >
             Terms & Privacy
           </Link>
         </div>
 
         {/* Newsletter Sign Up */}
-        <div className="footer_section">
+        <div className="footer__section">
           <h2>Newsletter Sign Up</h2>
           <p>
             Join our mailing list to receive digital marketing tips and
             resources
           </p>
-          <form className="footer-email-form">
+          <form className="footer__email-form">
             <input
               type="email"
-              className="footer-input"
+              className="footer__input"
               placeholder="Enter your email"
             />
-            <button className="footer-btn">Subscribe</button>
+            <button className="footer__btn">Subscribe</button>
           </form>
         </div>
       </div>

@@ -5,7 +5,7 @@ import CardItem from "../CardItem/CardItem";
 function Cards(props) {
   return (
     <div className="cards">
-      <h1>{props.h1}</h1>
+      <h1 className="cards__title">{props.h1}</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">

@@ -88,40 +88,44 @@ function Navbar() {
   return (
     <>
       <nav className="navbar" ref={navbarRef}>
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img src={logo} alt="Logo" className="navbar-logo-img" />
+        <div className="navbar__container">
+          <Link to="/" className="navbar__logo" onClick={closeMobileMenu}>
+            <img src={logo} alt="Logo" className="navbar__logo__img" />
           </Link>
-          <div className="contact-info">
-            <p className="phone-number">07599 527195</p>
-            <p className="email">eny@globaldotmedia.com</p>
+          <div className="navbar__contact-info">
+            <p className="navbar__phone-number">07599 527195</p>
+            <p className="navbar__email">eny@globaldotmedia.com</p>
           </div>
-          <div className="menu-icon" onClick={handleClick}>
+          <div className="navbar__menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <ul
+            className={
+              click ? "navbar__menu navbar__menu_active" : "navbar__menu"
+            }
+          >
+            <li className="navbar__item">
+              <Link to="/" className="navbar__links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="navbar__item">
               <Link
                 to="/about/"
-                className="nav-links"
+                className="navbar__links"
                 onClick={closeMobileMenu}
               >
                 About
               </Link>
             </li>
             <li
-              className="nav-item"
+              className="navbar__item"
               onMouseEnter={handleDropdownToggle}
               onMouseLeave={handleDropdownToggle}
             >
               <Link
                 to="/our-services/"
-                className="nav-links"
+                className="navbar__links"
                 onClick={(e) => {
                   e.preventDefault();
                   handleDropdownToggle();
@@ -130,164 +134,164 @@ function Navbar() {
                 Services
               </Link>
               {isDropdownOpen && (
-                <ul className="nav-dropdown" ref={dropdownRef}>
-                  <li className="nav-dropdown-item">
+                <ul className="navbar__dropdown" ref={dropdownRef}>
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       All Services
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/book-publishing-and-marketing-service/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Book Publishing and Marketing Service
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/digital-marketing-training/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Digital Marketing Training
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/social-media-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Social Media Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/email-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Email Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/creative-media-advertising/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Creative Media Advertising
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/digital-marketing-packages/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Digital Marketing Packages
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/linkedin-lead-generation/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       LinkedIn Lead Generation
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/content-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Content Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/local-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Local Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/market-research/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Market Research
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/mobile-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Mobile Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/offline-marketing-consultancy/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Offline Marketing Consultancy
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/online-training/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Online Training
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/pay-per-click-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Pay-Per-Click Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/search-engine-optimization/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Search Engine Optimization
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/video-marketing/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Video Marketing
                     </Link>
                   </li>
-                  <li className="nav-dropdown-item">
+                  <li className="navbar__dropdown-item">
                     <Link
                       to="/our-services/website-development/"
-                      className="nav-dropdown-link"
+                      className="navbar__dropdown-link"
                       onClick={closeMobileMenu}
                     >
                       Website Development
@@ -298,44 +302,44 @@ function Navbar() {
             </li>
 
             <li
-              className="nav-item"
+              className="navbar__item"
               onMouseEnter={handleDropdownToggle}
               onMouseLeave={handleDropdownToggle}
             >
               <Link
                 to="/maad-blog/"
-                className="nav-links"
+                className="navbar__links"
                 onClick={closeMobileMenu}
               >
                 Blog
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="navbar__item">
               <Link
                 to="/testimonials/"
-                className="nav-links"
+                className="navbar__links"
                 onClick={closeMobileMenu}
               >
                 Testimonials
               </Link>
             </li>
             <li
-              className="nav-item"
+              className="navbar__item"
               onMouseEnter={handleDropdownToggle}
               onMouseLeave={handleDropdownToggle}
             >
               <Link
                 to="/maad-blog/businesspodcasts/"
-                className="nav-links"
+                className="navbar__links"
                 onClick={closeMobileMenu}
               >
                 Podcast
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="navbar__item">
               <Link
                 to="/contact/"
-                className="nav-links"
+                className="navbar__links"
                 onClick={closeMobileMenu}
               >
                 Contact

@@ -43,14 +43,6 @@
 }
 
 .blog-post__video {
-  /* width: 100%;
-  max-width: 500px;
-  min-height: 300px;
-  display: block;
-  margin: 10px auto 10px auto; */
-  /* width: 100%;
-  max-width: 600px;
-  height: 400px; */
   aspect-ratio: 16/9;
   display: block;
   margin: 0 auto;
@@ -75,7 +67,7 @@ p {
   margin-top: 20px;
 }
 
-.share-button {
+.blog-post__share-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -89,31 +81,31 @@ p {
   cursor: pointer;
 }
 
-.share-button--facebook {
+.blog-post__share-button--facebook {
   background-color: #3b5998;
 }
 
-.share-button--linkedin {
+.blog-post__share-button--linkedin {
   background-color: #0077b5;
 }
 
-.share-button--twitter {
+.blog-post__share-button--twitter {
   background-color: #1da1f2;
 }
 
-.share-button--instagram {
+.blog-post__share-button--instagram {
   background-color: #c13584;
 }
 
-.share-button--email {
+.blog-post__share-button--email {
   background-color: #ff0000;
 }
 
-.share-button i {
+.blog-post__share-button i {
   margin-right: 5px;
 }
 
-.share-button:hover {
+.blog-post__share-button:hover {
   opacity: 0.8;
 }
 
@@ -138,11 +130,6 @@ p {
 
 @media (max-width: 768px) {
   .blog-post__video {
-    /* width: 100%;
-    min-width: 200px;
-    min-height: 300px;
-    display: block;
-    margin: 0px; */
     padding: 0px;
   }
 }
