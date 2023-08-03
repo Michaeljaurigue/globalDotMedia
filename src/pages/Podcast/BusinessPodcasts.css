@@ -1,5 +1,5 @@
 /* BusinessPodcasts.css */
-.podcast-posts-text-container {
+.podcast__text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,30 +15,30 @@
   margin-bottom: 20px;
 }
 
-.podcast-posts-h1,
-.podcast-posts-h2,
-.podcast-posts-p {
+.podcast__header--primary,
+.podcast__header--secondary,
+.podcast__paragraph {
   text-align: center;
 }
 
-.podcast-posts-h1 {
+.podcast__header--primary {
   font-size: 50px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.podcast-posts-h2 {
+.podcast__header--secondary {
   font-size: 24px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.podcast-posts-p {
+.podcast__paragraph {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.podcast-posts-container {
+.podcast__card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +47,7 @@
   padding: 0 50px;
 }
 
-.podcast-card {
+.podcast__card {
   width: 300px;
   margin: 10px;
   padding: 10px;
@@ -58,31 +58,31 @@
   color: #333;
 }
 
-.podcast-card img {
+.podcast__card-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
 }
 
-.podcast-card h1 {
+.podcast__card-header--primary {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-.podcast-card p {
+.podcast__card-paragraph {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.pagination {
+.podcast__pagination {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.pagination-button {
+.podcast__pagination__button {
   padding: 8px 12px;
   margin: 0 5px;
   border: none;
@@ -93,22 +93,22 @@
   border-radius: 4px;
 }
 
-.pagination-button:hover {
+.podcast__pagination__button:hover {
   background-color: #ccc;
 }
 
-.pagination-button.active {
+.podcast__pagination__active {
   background-color: #333;
   color: #fff;
 }
 
-.pagination-button:disabled {
+.podcast__pagination__button:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
 @media (max-width: 1100px) {
-  .pagination-numbers {
+  .podcast__pagination__numbers {
     display: none;
   }
 }

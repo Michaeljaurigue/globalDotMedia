@@ -62,7 +62,9 @@ const Podcast = () => {
       pageNumbers.push(
         <button
           key={i}
-          className={`pagination-button ${i === currentPage ? "active" : ""}`}
+          className={`podcast__pagination__button ${
+            i === currentPage ? "active" : ""
+          }`}
           onClick={() => handlePageChange(i)}
         >
           {i}
@@ -74,7 +76,7 @@ const Podcast = () => {
   };
 
   return (
-    <div>
+    <section className="podcast">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Business Podcast - Global.Media</title>
@@ -94,14 +96,14 @@ const Podcast = () => {
         }
         link={"/images/content-marketing.jpg"}
       />
-      <div className="podcast-posts-text-container">
-        <h1 className="podcast-posts-h1">Podcasts</h1>
-        <h2 className="podcast-posts-h2">
+      <div className="podcast__text-container">
+        <h1 className="podcast__header--primary">Podcasts</h1>
+        <h2 className="podcast__header--secondary">
           Welcome to Global.Media's Business Podcast page!
         </h2>
       </div>
-      <div className="podcast-posts-container">
-        <p className="podcast-posts-p">
+      <div className="podcast__card-container">
+        <p className="podcast__paragraph">
           "Here at Global.Media, we love sharing ideas and insights to help our
           network build their businesses. The LearnIn is our new podcast series
           that aims to give you tips, strategies, hacks, and methods to make
@@ -111,7 +113,7 @@ const Podcast = () => {
           off us by handling the technical and organizing side of doing the
           podcasts. So what can you expect on The LearnIn?
         </p>
-        <p className="podcast-posts-p">
+        <p className="podcast__paragraph">
           We aim to share the methods we use to generate leads for businesses
           using LinkedIn lead generation. We know that you can follow
           instructions to the letter and still miss out on the results that you
@@ -132,7 +134,7 @@ const Podcast = () => {
           alt="globaldotmedia-app-banner"
           className="podcast-posts-img"
         />
-        <p className="podcast-posts-p">
+        <p className="podcast__paragraph">
           Global.Media App Banner: Here, you can listen to our weekly insightful
           interviews with business owners featured on Eny’s Happy Hour – a
           weekly show on www.businessradio.co.uk. Grab the downloadable podcasts
@@ -159,7 +161,7 @@ const Podcast = () => {
           and grow their business, instead of learning the hard way through
           making costly mistakes.
         </p>
-        <p className="podcast-posts-p">
+        <p className="podcast__paragraph">
           Existing business owners also benefit enormously from getting
           inspiration and advice to move their business to the next stage from
           people who have been there, seen it, and got the t-shirt! If you are a
@@ -170,39 +172,45 @@ const Podcast = () => {
           as we upload them. Of course, we welcome your comments and suggestions
           to make our shows even better.
         </p>
-        <p className="podcast-posts-p">
+        <p className="podcast__paragraph">
           Please leave your feedback in the comments section or tweet us
           @globaldotmedia, Facebook us @Global.Media, or link up with me on
           LinkedIn @enyosung. Enjoy the interviews!"
         </p>
-        <h2 ref={podcastsRef} className="podcast-posts-h2">
+        <h2 ref={podcastsRef} className="podcast__header--secondary">
           Recent Podcasts
         </h2>
 
-        <div className="podcast-posts-container">
+        <div className="podcast__card-container">
           {paginatedPodcasts.map((podcast) => (
             <Link
               to={podcast.id}
               key={podcast.id}
               target="_blank"
               rel="noopener noreferrer"
-              className="podcast-card"
+              className="podcast__card"
             >
-              <img src={podcast.image} alt={podcast.title} />
-              <h1>{podcast.h1}</h1>
-              <p>{podcast.description}</p>
+              <img
+                className="podcast__card-image"
+                src={podcast.image}
+                alt={podcast.title}
+              />
+              <h2 className="podcast__card-header--primary">{podcast.h1}</h2>
+              <p className="podcast__card-paragraph">{podcast.description}</p>
             </Link>
           ))}
         </div>
-        <div className="pagination">
+        <div className="podcast__pagination">
           <button
-            className="pagination-button"
+            className="podcast__pagination__button"
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
           >
             Previous
           </button>
-          <div className="pagination-numbers">{renderPageNumbers()}</div>
+          <div className="podcast__pagination__numbers">
+            {renderPageNumbers()}
+          </div>
           {Array.from({ length: totalPages }, (_, index) => index + 1)
             .filter((pageNumber) =>
               Object.values(blogs).some(
@@ -212,8 +220,10 @@ const Podcast = () => {
             .map((pageNumber) => (
               <button
                 key={pageNumber}
-                className={`pagination-button ${
-                  pageNumber === currentPage ? "active" : ""
+                className={`podcast__pagination__button ${
+                  pageNumber === currentPage
+                    ? "podcast__pagination__active"
+                    : ""
                 }`}
                 onClick={() => handlePageChange(pageNumber)}
               >
@@ -222,7 +232,7 @@ const Podcast = () => {
             ))}
 
           <button
-            className="pagination-button"
+            className="podcast__pagination__button"
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
           >
@@ -230,7 +240,7 @@ const Podcast = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

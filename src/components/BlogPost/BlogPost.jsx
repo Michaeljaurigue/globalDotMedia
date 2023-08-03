@@ -84,7 +84,7 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="blog-post">
+    <section className="blog-post">
       <h1 className="blog-post__title">{title}</h1>
       <img className="blog-post__image" src={image} alt={title} />
 
@@ -183,7 +183,7 @@ const BlogPost = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

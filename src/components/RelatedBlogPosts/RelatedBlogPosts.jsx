@@ -32,24 +32,33 @@ const RelatedBlogPosts = () => {
   }, []);
 
   return (
-    <div className="recommendation-container">
-      <h1 className="">Recommended Blog Posts</h1>
-      <div className="recommendation-row">
+    <div className="recommendation">
+      <h1 className="recommendation__title">Recommended Blog Posts</h1>
+      <div className="recommendation__row">
         {recommendations.map((id) => {
           const blog = blogsData.blogs[id];
           return (
-            <div key={id} className="recommendation-card">
-              <h2>{blog.title}</h2>
-              <img src={blog.image} alt={blog.title} />
-              <div >
-                <Link className="button-link" to={blog.id}>Read More</Link>
+            <div key={id} className="recommendation__card">
+              <h2 className="recommendation__card-title">{blog.title}</h2>
+              <img
+                className="recommendation__card-image"
+                src={blog.image}
+                alt={blog.title}
+              />
+              <div className="recommendation__card-link-wrapper">
+                <Link className="recommendation__card-link" to={blog.id}>
+                  Read More
+                </Link>
               </div>
             </div>
           );
         })}
       </div>
-      <div className="button-container">
-        <button onClick={generateRecommendations}>
+      <div className="recommendation__button-container">
+        <button
+          className="recommendation__button"
+          onClick={generateRecommendations}
+        >
           Generate More Recommendations
         </button>
       </div>

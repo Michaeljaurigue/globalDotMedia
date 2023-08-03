@@ -1,17 +1,17 @@
-.LandingPage__container_1 {
+.section {
   max-width: 1200px;
   margin: 50px auto;
   text-align: center;
   padding: 0 40px;
 }
 
-.LandingPage__h1 {
+.section__title {
   font-size: 2rem;
   margin: 50px;
   text-align: center;
 }
 
-.LandingPage__p {
+.section__text {
   margin-bottom: 1.5rem; /* Adding some spacing after each paragraph */
   line-height: 1.6; /* Increasing the line height for better readability */
   text-align: center; /* Justifying the text */

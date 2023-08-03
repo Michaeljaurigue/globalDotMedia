@@ -29,45 +29,45 @@ function FormMain() {
   };
 
   return (
-    <div className="form_main__container">
-      <form className="contact_main-form" ref={form} onSubmit={sendEmail}>
-        <h2 className="form_main_title">Book Your Free Consultation</h2>
+    <div className="form-main__container">
+      <form className="form-main" ref={form} onSubmit={sendEmail}>
+        <h2 className="form-main__title">Book Your Free Consultation</h2>
         {messageSent ? (
-          <p className="form_main_message">Your message was sent!</p>
+          <p className="form-main__message">Your message was sent!</p>
         ) : (
           <>
-            <div className="form_main-group">
+            <div className="form-main__group">
               <label htmlFor="name">Name:</label>
               <input type="text" id="name" name="from_name" required />
             </div>
-            <div className="form_main-group">
-              <div className="form_main-group-row">
-                <div className="form_main-group-item">
+            <div className="form-main__group">
+              <div className="form-main__group-row">
+                <div className="form-main__group-item">
                   <label htmlFor="email">Email:</label>
                   <input type="email" id="email" name="user_email" required />
                 </div>
-                <div className="form_main-group-item">
+                <div className="form-main__group-item">
                   <label htmlFor="phone">Phone:</label>
                   <input type="tel" id="phone" name="phone" required />
                 </div>
               </div>
             </div>
-            <div className="form_main-group">
+            <div className="form-main__group">
               <label htmlFor="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
             </div>
-            <div className="form_main-group">
-              {/* <div className="form_main-group-row">
-                <div className="form_main-group-item">
+            <div className="form-main__group">
+              {/* <div className="form-main__group-row">
+                <div className="form-main__group-item">
                   <label htmlFor="captcha">I'm not a robot:</label>
                   <input type="text" id="captcha" name="captcha" required />
                 </div>
-                <div className="form_main-group-item">
+                <div className="form-main__group-item">
                   Add your CAPTCHA component here
                 </div>
               </div> */}
             </div>
-            <input className="form_main-button" type="submit" value="Send" />
+            <input className="form-main__button" type="submit" value="Send" />
           </>
         )}
       </form>

@@ -15,7 +15,7 @@ const PodcastPost = ({ id }) => {
   } = podcastsData.podcasts[id];
 
   return (
-    <div className="podcast-post">
+    <section className="podcast-post">
       <h1 className="podcast-post__title">{title}</h1>
       <img className="podcast-post__image" src={image} alt={title} />
       <p className="podcast-post__description">{description}</p>
@@ -43,7 +43,7 @@ const PodcastPost = ({ id }) => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

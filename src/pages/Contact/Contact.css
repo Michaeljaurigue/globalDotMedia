@@ -1,6 +1,6 @@
 /* Contact.css */
 
-.contact_container {
+.contact {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,20 +13,7 @@
   color: white; /* set the text color that contrasts with your background */
 }
 
-/* 
-.contact-h1,
-.contact-h2,
-.contact-h3 {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1em 0;
-  text-align: center;
-  line-height: 1.5;
-} */
-
-.contact-h1 {
+.contact__title {
   font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -34,7 +21,7 @@
   align-items: center;
 }
 
-.contact-h2 {
+.contact__subtitle {
   font-size: 1.2em;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -43,7 +30,7 @@
   text-align: center;
 }
 
-.contact-h3 {
+.contact__info {
   font-size: 1.2em;
   max-width: 500px;
   color: rgb(255, 255, 255);
@@ -54,21 +41,21 @@
 
 @media (max-width: 768px) {
   /* adjust this value as needed */
-  .contact-h1 {
+  .contact__title {
     font-size: 2em;
   }
 
-  .contact-h2 {
+  .contact__subtitle {
     font-size: 1.2em;
   }
 
-  .contact-h3 {
+  .contact__info {
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
-  .contact_container {
+  .contact {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -79,17 +66,17 @@
     color: white; /* set the text color that contrasts with your background */
   }
 
-  .contact-h1 {
+  .contact__title {
     margin-top: 10px;
     font-size: 20px;
   }
 
-  .contact-h2 {
+  .contact__subtitle {
     font-size: 10px;
     margin: 2px;
   }
 
-  .contact-h3 {
+  .contact__info {
     font-size: 10px;
     margin: 2px;
   }

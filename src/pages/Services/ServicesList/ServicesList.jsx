@@ -2,15 +2,13 @@ import React from "react";
 import CardItem from "../../../components/CardItem/CardItem";
 import "./ServicesList.css";
 
-
 function ServicesList() {
- 
   return (
-    <div className="cards">
-      <h1 className="card__title">Our Services</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+    <div className="services-list">
+      <h1 className="services-list__title">Our Services</h1>
+      <div className="services-list__container">
+        <div className="services-list__wrapper">
+          <ul className="services-list__items">
             <CardItem
               src="/images/services-1.jpg"
               text="Social media has become an indispensable component in every business’ marketing mix. Customers expect businesses to have an active presence on facebook, Twitter, Pinterest, etc."
@@ -34,8 +32,8 @@ function ServicesList() {
           </ul>
         </div>
 
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+        <div className="services-list__wrapper">
+          <ul className="services-list__items">
             <CardItem
               src="/images/services-4.jpg"
               text="Email marketing is so much more than sending newsletters filled with pretty pictures and hype words, in the hope that they will motivate someone into action."
@@ -59,8 +57,8 @@ function ServicesList() {
           </ul>
         </div>
 
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+        <div className="services-list__wrapper">
+          <ul className="services-list__items">
             <CardItem
               src="/images/services-7.jpg"
               text="Running a business without a clear plan is like going on a journey without having a destination or idea about how you are going to get there."
@@ -84,8 +82,8 @@ function ServicesList() {
           </ul>
         </div>
 
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+        <div className="services-list__wrapper">
+          <ul className="services-list__items">
             <CardItem
               src="/images/services-10.jpg"
               text="Video has become the most effective way to get your message to your ideal customers. However, video can not work for your business if people can’t find them."

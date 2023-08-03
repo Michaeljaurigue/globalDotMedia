@@ -1,5 +1,5 @@
 import React from "react";
-import "./VideoComponent.css"; 
+import "./VideoComponent.css";
 
 const VideoComponent = (props) => {
   return (
@@ -9,6 +9,7 @@ const VideoComponent = (props) => {
         height="450"
         src={props.src}
         title={props.title}
+        className="video-iframe"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen

@@ -1,4 +1,4 @@
-.home__section-steps-left {
+.steps-container-left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,7 @@
   animation: slideInAnimation 1s ease-in-out forwards;
 }
 
-.home__section-steps-left-container {
+.steps-container-left__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
   margin-right: 50px; /* Reduce the margin */
 }
 
-.home__section-steps-left-container-header {
+.steps-container-left__header {
   text-align: center;
   color: #000000c1;
   font-size: 40px; /* Reduce the font size */
@@ -28,7 +28,7 @@
   animation: fadeInUp 2s ease-out forwards;
 }
 
-.home__section-steps-left-container-p {
+.steps-container-left__text {
   font-size: 16px; /* Reduce the font size */
   text-align: center;
   opacity: 0;
@@ -36,11 +36,11 @@
   animation: fadeInUp 2s ease-out forwards;
 }
 
-.home__section-steps-right-container {
+.steps-container-left__image-container {
   text-align: right;
 }
 
-.home__section-steps-right-container-img {
+.steps-container-left__image {
   max-width: 300px; /* Adjust the size as needed */
   height: auto;
   animation: imageAnimation 1s ease-in-out infinite alternate;
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 600px) {
   /* Adjust the breakpoint to target iPhone SE */
-  .home__section-steps-left {
+  .steps-container-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +89,7 @@
     padding: 30px 20px; /* Adjust the padding */
   }
 
-  .home__section-steps-left-container {
+  .steps-container-left__content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -97,15 +97,15 @@
     margin-bottom: 30px; /* Reduce the margin */
   }
 
-  .home__section-steps-left-container-header {
+  .steps-container-left__header {
     font-size: 30px; /* Reduce the font size */
   }
 
-  .home__section-steps-left-container-p {
+  .steps-container-left__text {
     font-size: 14px; /* Reduce the font size */
   }
 
-  .home__section-steps-right-container-img {
+  .steps-container-left__image {
     max-width: 200px; /* Reduce the image size */
   }
 }

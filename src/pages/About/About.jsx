@@ -7,7 +7,7 @@ import VideoComponent from "../../components/VideoComponent/VideoComponent";
 
 function About() {
   return (
-    <>
+    <section className="about">
       <Helmet>
         <meta charSet="utf-8" />
         <title>About - Global.Media</title>
@@ -18,23 +18,27 @@ function About() {
         />
       </Helmet>
       <HeroHeader
+        className="about__hero-header"
         link={"/images/about-1.jpg"}
         h1={"Your Sales Machine!"}
         h2={"A full-service creative media marketing and Advertising agency."}
         p={"We are a new breed of marketers bred for the digital marketplace."}
       />
-      <h1 className="text-center">LinkedIn Lead Generation</h1>
+      <h2 className="about__heading">LinkedIn Lead Generation</h2>
       <VideoComponent
+        className="about__video-component"
         src={"https://www.youtube.com/embed/0bpZpvaOr8M"}
         title={"Online Training Courses"}
       />
-      <h1 className="text-center">Marketing Courses for Business</h1>
+      <h2 className="about__heading">Marketing Courses for Business</h2>
       <VideoComponent
+        className="about__video-component"
         src={"https://www.youtube.com/embed/JsZIrMiAwdU"}
         title={"Online Training Courses"}
       />
 
       <LandingPage
+        className="about__landing-page"
         h1first={"About Us"}
         pfirst={
           <>
@@ -318,8 +322,8 @@ function About() {
         }
       />
 
-      <FormMain />
-    </>
+      <FormMain className="about__form-main" />
+    </section>
   );
 }
 

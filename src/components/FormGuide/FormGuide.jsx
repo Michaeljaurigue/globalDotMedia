@@ -30,49 +30,49 @@ function FormGuide() {
 
   return (
     <>
-      <form className="form" ref={form} onSubmit={sendEmail}>
-        <div className="form_container">
-          <h2 className="form_title">Contact Us</h2>
+      <form className="form-guide" ref={form} onSubmit={sendEmail}>
+        <div className="form-guide__container">
+          <h2 className="form-guide__title">Contact Us</h2>
           {messageSent ? (
-            <p className="form_message">Your message was sent!</p>
+            <p className="form-guide__message">Your message was sent!</p>
           ) : (
             <>
-              <fieldset className="form_fieldset">
+              <fieldset className="form-guide__fieldset">
                 <input
                   type="text"
                   name="from_name"
                   id="name"
                   placeholder="Name"
-                  className="form_input"
+                  className="form-guide__input"
                   required
                   minLength="2"
                   maxLength="30"
                 />
               </fieldset>
 
-              <fieldset className="form_fieldset">
+              <fieldset className="form-guide__fieldset">
                 <input
                   type="email"
                   name="user_email"
                   id="email"
                   placeholder="Email"
-                  className="form_input"
+                  className="form-guide__input"
                   required
                 />
               </fieldset>
 
-              <fieldset className="form_fieldset">
+              <fieldset className="form-guide__fieldset">
                 <textarea
                   name="message"
                   id="comment"
                   placeholder="Send a Message"
-                  className="form_input"
+                  className="form-guide__input"
                   required
                 ></textarea>
               </fieldset>
 
               <input
-                className="form_button"
+                className="form-guide__button"
                 buttonstyle="btn--primary"
                 buttonsize="btn--large"
                 type="submit"

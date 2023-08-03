@@ -1,4 +1,4 @@
-.home__section-steps-left {
+.steps-container-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,41 +7,41 @@
   padding: 50px 0;
 }
 
-.home__section-steps-right-container {
+.steps-container-right__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
   padding: 10px;
-  max-width: 400px; /* Adjust the size as needed */
+  max-width: 400px;
 }
 
-.home__section-steps-right-container-header {
+.steps-container-right__header {
   text-align: center;
   color: #000000c1;
-  font-size: 40px; /* Reduce the font size */
+  font-size: 40px;
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 2s ease-out forwards;
 }
 
-.home__section-steps-right-container-p {
-  font-size: 16px; /* Reduce the font size */
+.steps-container-right__text {
+  font-size: 16px;
   text-align: center;
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 2s ease-out forwards;
 }
 
-.home__section-steps-left-container {
+.steps-container-right__image-container {
   text-align: right;
 }
 
-.home__section-steps-left-container-img {
-  max-width: 300px; /* Adjust the size as needed */
+.steps-container-right__image {
+  max-width: 300px;
   height: auto;
   animation: imageAnimation 1s ease-in-out infinite alternate;
-  margin-bottom: 30px; /* Reduce the margin */
+  margin-bottom: 30px;
 }
 
 @keyframes slideInAnimation {
@@ -64,34 +64,44 @@
   }
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 600px) {
-  /* Adjust the breakpoint to target iPhone SE */
-  .home__section-steps-left {
+  .steps-container-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto; /* Remove the fixed height */
-    padding: 30px 20px; /* Adjust the padding */
+    height: auto;
+    padding: 30px 20px;
   }
 
-  .home__section-steps-right-container {
+  .steps-container-right__content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 0px;
-    margin-bottom: 30px; /* Reduce the margin */
+    margin-bottom: 30px;
   }
 
-  .home__section-steps-right-container-header {
-    font-size: 30px; /* Reduce the font size */
+  .steps-container-right__header {
+    font-size: 30px;
   }
 
-  .home__section-steps-right-container-p {
-    font-size: 14px; /* Reduce the font size */
+  .steps-container-right__text {
+    font-size: 14px;
   }
 
-  .home__section-steps-left-container-img {
-    max-width: 200px; /* Reduce the image size */
+  .steps-container-right__image {
+    max-width: 200px;
   }
 }

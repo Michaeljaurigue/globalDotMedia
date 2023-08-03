@@ -5,7 +5,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact_container">
+    <section className="contact">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Contact - Global.Media</title>
@@ -16,17 +16,17 @@ const Contact = () => {
         />
       </Helmet>
 
-      <h1 className="contact-h1">Contact</h1>
-      <h2 className="contact-h2">
+      <h1 className="contact__title">Contact</h1>
+      <h2 className="contact__subtitle">
         We would really like to hear from you, so please call/text, send the
         form, or email us here.
       </h2>
-      <h3 className="contact-h3">
+      <h3 className="contact__info">
         Call or text: 07599 527195. Post: Eden House, Forge Lane, Saltash, PL12
         6LX
       </h3>
       <FormMain />
-    </div>
+    </section>
   );
 };
 

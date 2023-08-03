@@ -24,7 +24,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__items">
         <div className="footer__media">
           <div className="footer__logo">
@@ -127,7 +127,7 @@ function Footer() {
           </form>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

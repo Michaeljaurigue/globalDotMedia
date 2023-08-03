@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Maadblog = () => {
   const { blogs } = blogsData;
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 10;
+  const postsPerPage = 9;
   const totalPages = Math.ceil(Object.keys(blogs).length / postsPerPage);
   const startIndex = (currentPage - 1) * postsPerPage;
   const endIndex = startIndex + postsPerPage;
@@ -47,7 +47,7 @@ const Maadblog = () => {
   }, [currentPage]);
 
   return (
-    <div>
+    <section className="maadblog">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Maad Blog - Global.Media</title>
@@ -64,22 +64,26 @@ const Maadblog = () => {
         }
         link={"/images/market-research.jpg"}
       />
-      <h1 ref={blogsRef} className="blog-posts-h1">
+      <h1 ref={blogsRef} className="maadblog__header">
         Blog Posts
       </h1>
-      <div className="blog-posts-container">
+      <div className="maadblog__posts-container">
         {paginatedPosts.map((blog) => (
-          <Link key={blog.id} to={blog.id} className="blog-card">
-            <img src={blog.image} alt={blog.title} />
-            <h1>{blog.h1}</h1>
-            <p>{blog.description}</p>
+          <Link key={blog.id} to={blog.id} className="maadblog__post-card">
+            <img
+              className="maadblog__post-image"
+              src={blog.image}
+              alt={blog.title}
+            />
+            <h1 className="maadblog__post-title">{blog.h1}</h1>
+            <p className="maadblog__post-description">{blog.description}</p>
           </Link>
         ))}
       </div>
 
-      <div className="pagination">
+      <div className="maadblog__pagination">
         <button
-          className="pagination-button previous"
+          className="maadblog__pagination-button maadblog__pagination-button--previous"
           onClick={handlePreviousPage}
           disabled={currentPage === 1}
         >
@@ -89,8 +93,10 @@ const Maadblog = () => {
           (pageNumber) => (
             <button
               key={pageNumber}
-              className={`pagination-numbers ${
-                pageNumber === currentPage ? "active" : ""
+              className={`maadblog__pagination-numbers ${
+                pageNumber === currentPage
+                  ? "maadblog__pagination-numbers--active"
+                  : ""
               }`}
               onClick={() => handlePageChange(pageNumber)}
             >
@@ -99,14 +105,14 @@ const Maadblog = () => {
           )
         )}
         <button
-          className="pagination-button next"
+          className="maadblog__pagination-button maadblog__pagination-button--next"
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
         >
           Next
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

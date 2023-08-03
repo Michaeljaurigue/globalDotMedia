@@ -7,11 +7,11 @@ function AdditionalServices() {
   useScrollToTop();
 
   return (
-    <div className="cards">
-      <h1 className="card__title">Additional Services</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+    <section className="additional-services">
+      <h1 className="additional-services__title">Additional Services</h1>
+      <div className="additional-services__container">
+        <div className="additional-services__wrapper">
+          <ul className="additional-services__items">
             <CardItem
               src="/images/home-4.jpg"
               text="We source, design and send 2000 emails 4 times a month to your target market – we collect and verify target recipients based on industry, job title, and location. Choose your Email Marketing options "
@@ -26,7 +26,7 @@ function AdditionalServices() {
               path="https://play.google.com/store/apps/details?id=com.eaziapps.cms.android5faac55814c14"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="additional-services__items">
             <CardItem
               src="/images/home-6.jpg"
               text="Our accredited marketing courses are developed in partnership with the world-renowned Internet Business School. You can also choose our new 1 to 1 Digital Marketing Training."
@@ -43,7 +43,7 @@ function AdditionalServices() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

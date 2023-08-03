@@ -37,19 +37,17 @@ function StepsContainerRight(props) {
         variants={boxVariant2}
         initial="hidden"
         animate={control}
-        className="home__section-steps-left"
+        className="steps-container-right"
       >
-        <div className="home__section-steps-left-container">
+        <div className=" steps-container-right__image-container">
           <img
-            className="home__section-steps-left-container-img"
+            className="steps-container-right__image"
             src={props.src || "/public/images/home-4.jpg"}
             alt="home-4"
           />
         </div>
-        <div className="home__section-steps-right-container">
-          <h1 className="home__section-steps-right-container-header">
-            {props.header}
-          </h1>
+        <div className="steps-container-right__content">
+          <h1 className="steps-container-right__header">{props.header}</h1>
           <p className="home__section-steps-right-container-p">{props.p}</p>
         </div>
       </motion.div>

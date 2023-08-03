@@ -43,20 +43,24 @@ function HeroHeader(props) {
   }, [inView2]);
 
   return (
-    <div className="hero__container">
-      <img src={props.link} alt="Hero Background" className="hero-home-img" />
-      <div className="hero__container_items">
+    <section className="hero">
+      <img
+        src={props.link}
+        alt="Hero Background"
+        className="hero__background-image"
+      />
+      <div className="hero__content">
         <motion.div
           ref={ref1}
           variants={boxVariant1}
           initial="hidden"
           animate={isVisible1 ? "visible" : "hidden"}
-          className="hero__container_left"
+          className="hero__content-left"
         >
-          <h1>{props.h1}</h1>
-          <h2>{props.h2}</h2>
-          <p>{props.p}</p>
-          <div className="hero-btns">
+          <h1 className="hero__heading">{props.h1}</h1>
+          <h2 className="hero__sub-heading">{props.h2}</h2>
+          <p className="hero__text">{props.p}</p>
+          <div className="hero__buttons">
             <Button
               className="btns"
               buttonstyle="btn--outline"
@@ -67,7 +71,7 @@ function HeroHeader(props) {
             </Button>
           </div>
         </motion.div>
-        <div className="hero__container_right">
+        <div className="hero__content-right">
           <motion.div
             ref={ref2}
             variants={boxVariant2}
@@ -78,7 +82,7 @@ function HeroHeader(props) {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -36,25 +36,31 @@ const TestimonSlider = () => {
   }, []);
 
   return (
-    <div className="testimon-container">
+    <div className="testimonial-slider">
       {testimonials.map((testimonial, index) => (
         <div
-          className={`testimon ${index === current ? "active" : ""}`}
+          className={`testimonial-slider__item ${
+            index === current ? "testimonial-slider__item--active" : ""
+          }`}
           key={index}
         >
-          <p className="testimon-quote">{testimonial.quote}</p>
-          <div className="testimon-author">
-            <span className="testimon-icon">👤</span>
+          <p className="testimonial-slider__quote">{testimonial.quote}</p>
+          <div className="testimonial-slider__author">
+            <span className="testimonial-slider__icon">👤</span>
             <h4>{testimonial.author}</h4>
           </div>
-          <h5 className="testimon-designation">{testimonial.designation}</h5>
+          <h5 className="testimonial-slider__designation">
+            {testimonial.designation}
+          </h5>
         </div>
       ))}
-      <div className="dots">
+      <div className="testimonial-slider__dots">
         {testimonials.map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === current ? "active" : ""}`}
+            className={`testimonial-slider__dot ${
+              index === current ? "testimonial-slider__dot--active" : ""
+            }`}
             onClick={() => setCurrent(index)}
           ></span>
         ))}

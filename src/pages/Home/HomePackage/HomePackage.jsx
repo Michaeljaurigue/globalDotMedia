@@ -2,15 +2,13 @@ import React from "react";
 import CardItem from "../../../components/CardItem/CardItem";
 import "./HomePackage.css";
 
-
 function HomePackage() {
-
   return (
-    <div className="cards">
-      <div className="card__title">Included in the Package</div>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+    <section className="home-package">
+      <div className="home-package__title">Included in the Package</div>
+      <div className="home-package__container">
+        <div className="home-package__wrapper">
+          <ul className="home-package__items">
             <CardItem
               src="/images/home-1.jpg"
               text="Get a modern website that is specifically designed to turn prospects into customers"
@@ -34,7 +32,7 @@ function HomePackage() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

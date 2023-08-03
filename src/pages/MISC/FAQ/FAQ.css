@@ -1,24 +1,21 @@
 .faq__container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  /* .faq {
-    margin-top: 20px;
-  } */
-  
-  .faq__container-h1 {
-    text-align: center;
-    /* margin: 50px; */
-  }
-  
-  .faq__container-h3 {
-    margin-top: 30px;
-  }
-  
-  .faq__container-p {
-    /* margin-top: 10px; */
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.faq__header,
+.faq__question,
+.faq__answer,
+.faq__list {
+  text-align: center;
+  margin: 50px;
+}
+
+.faq__list-item {
+  margin: 20px;
+  list-style: none;
+  color: purple;
+}

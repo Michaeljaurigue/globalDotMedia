@@ -12,6 +12,7 @@ import FormMain from "../../components/FormMain/FormMain";
 import HeroHeader from "../../components/HeroHeader/HeroHeader";
 import { Helmet } from "react-helmet";
 import useScrollToTop from "../../utils/useScrollToTop";
+import ClientTestimonials from "../../components/ClientTestimonials/ClientTestimonials";
 
 function Home() {
   useScrollToTop();
@@ -41,7 +42,7 @@ function Home() {
   }, [control, inView]);
 
   return (
-    <div>
+    <section className="home">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Home - Global.Media</title>
@@ -59,12 +60,12 @@ function Home() {
           "A website designed to convert leads into customers, plus daily social media posts and a fully managed advertising campaign all for one low monthly fee."
         }
       />
-      <div className="home__section-one">
-        <div className="home__section-one-container"></div>
-        <h1 className="home__section-one-h1">
+      <div className="home__section">
+        <div className="home__section-container"></div>
+        <h1 className="home__section-header">
           Relax, we have your marketing covered.
         </h1>
-        <p className="home__section-one-p">
+        <p className="home__section-text">
           Get everything you need to promote your business without having to
           spend hours learning complex software and keeping up with the latest
           technology, We take care of everything for you so you can get on with
@@ -73,12 +74,12 @@ function Home() {
       </div>
       <HomePackage />
       <AdditionalServices />
-      <div className="home__section-one">
-        <div className="home__section-one-container"></div>
-        <h1 className="home__section-one-h1">
+      <div className="home__section">
+        <div className="home__section-container"></div>
+        <h2 className="home__section-header">
           A simple 4 step process that doesn't take up hours of your valuable
           time.
-        </h1>
+        </h2>
       </div>
       <StepsContainerLeft
         header="Step One: We build your website"
@@ -102,12 +103,12 @@ function Home() {
         p="Our ad specialist will analyse the best approach to an act your perfect customers and then design and launch your campaign."
         src="/images/home-8.jpg"
       />
-      <div className="home__section-one">
-        <div className="home__section-one-container"></div>
-        <h1 className="home__section-one-h1">
+      <div className="home__section">
+        <div className="home__section-container"></div>
+        <h2 className="home__section-header">
           A fixed price so you know exactly where you stand.
-        </h1>
-        <p className="home__section-one-p">
+        </h2>
+        <p className="home__section-text">
           The marketing package costs £300 per month or £3000 per year. The
           service deliverables are as follows: a fast, modern website, including
           hosting and an SSL certificate; daily social media posts on Facebook
@@ -124,10 +125,10 @@ function Home() {
         initial="hidden"
         animate={control}
       >
-        {/* <ClientTestimonials /> */}
+        <ClientTestimonials />
       </motion.div>
       <FormMain />
-    </div>
+    </section>
   );
 }
 

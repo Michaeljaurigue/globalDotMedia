@@ -1,20 +1,15 @@
-.terms-container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  /* h2 {
-  }
-  
-  h3 {
-    color: #666;
-  }
-  
-  p {
-    color: #777;
-    line-height: 1.5;
-  } */
-  
+.refund-policy {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.refund-policy__title,
+.refund-policy__text,
+.refund-policy__section-title {
+  text-align: center;
+  margin: 50px;
+}

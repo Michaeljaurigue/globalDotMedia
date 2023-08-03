@@ -33,20 +33,19 @@ function StepsContainerLeft(props) {
   return (
     <>
       <motion.div
-              ref={ref}
-              variants={boxVariant2}
-              initial="hidden"
-              animate={control}
-              className="home__section-steps-left">
-        <div className="home__section-steps-left-container">
-          <h1 className="home__section-steps-left-container-header">
-            {props.header}
-          </h1>
-          <p className="home__section-steps-left-container-p">{props.p}</p>
+        ref={ref}
+        variants={boxVariant2}
+        initial="hidden"
+        animate={control}
+        className="steps-container-left"
+      >
+        <div className="steps-container-left__content">
+          <h1 className="steps-container-left__header">{props.header}</h1>
+          <p className="steps-container-left__text">{props.p}</p>
         </div>
-        <div className="home__section-steps-right-container">
+        <div className="steps-container-left__image-container">
           <img
-            className="home__section-steps-right-container-img"
+            className="steps-container-left__image"
             src={props.src || "/public/images/home-4.jpg"}
             alt={props.alt || "Global.Media Marketing Image"}
           />
