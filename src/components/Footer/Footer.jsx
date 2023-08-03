@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-function Footer() {
+function Footer({ weatherData }) {
   const logoRef = useRef(null);
 
   useEffect(() => {
@@ -77,7 +77,10 @@ function Footer() {
         {/* About Section */}
         <div className="footer__section">
           <h2>About</h2>
-          <p>London Office: 207 Regent Street, London W1B 3HH</p>
+          <div className="footer__weather">
+            It's {weatherData.temp} F at our London office.
+          </div>
+          <p>Address: 207 Regent Street, London W1B 3HH</p>
           <p>Cornwall Office: Eden House, Forge Lane, Saltash, PL12 6LX</p>
           <p>
             Tel: 020 3745 7678 & 03333 448270 (Office) 07599 527 195 (Direct)

@@ -39,7 +39,26 @@ import TermsAndConditions from "../pages/MISC/TermsAndConditions/TermsAndConditi
 import NotFound from "../pages/NotFound/NotFound";
 import Footer from "../components/Footer/Footer";
 
+import { useState, useEffect } from "react";
+import { APIKEY } from "../utils/constants";
+import { LATITUDE, LONGITUDE } from "../utils/constants";
+import { getForecastWeather, parseWeatherData } from "../utils/weatherApi";
+
 function App() {
+  const [weatherData, setWeatherData] = useState({});
+
+  useEffect(() => {
+    if (LATITUDE && LONGITUDE) {
+      getForecastWeather(LATITUDE, LONGITUDE, APIKEY)
+        .then((data) => {
+          setWeatherData(parseWeatherData(data));
+        })
+        .catch((error) => {
+          console.log("Error fetching forecast weather data:", error);
+        });
+    }
+  }, []);
+
   return (
     <div className="app">
       <Router>
@@ -145,7 +164,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
 
-        <Footer />
+        <Footer weatherData={weatherData} />
 
         <CookieConsent
           location="bottom"

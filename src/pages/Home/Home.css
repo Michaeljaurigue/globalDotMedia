@@ -8,6 +8,7 @@
   flex-direction: column;
   padding: 50px;
   max-width: 1200px;
+  font-family: "Cabinet-Grotesk", sans-serif;
 }
 
 .home__section-container {
@@ -25,6 +26,7 @@
   font-weight: 700;
   color: #212529;
   text-align: center;
+  font-family: "Cabinet-Grotesk", sans-serif;
 }
 
 .home__section-text {

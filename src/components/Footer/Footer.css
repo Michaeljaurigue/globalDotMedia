@@ -129,6 +129,14 @@
   background-color: #e9e9e9;
 }
 
+.footer__weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .footer__items {
     flex-direction: column;
