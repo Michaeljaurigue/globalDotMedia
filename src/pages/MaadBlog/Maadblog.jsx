@@ -80,7 +80,7 @@ const Maadblog = () => {
           </Link>
         ))}
       </div>
-
+      {/* //fixed the pagination and BEM */}
       <div className="maadblog__pagination">
         <button
           className="maadblog__pagination-button maadblog__pagination-button--previous"
