@@ -1,5 +1,19 @@
 {
   "blogs": {
+    "/episode-zero-why-should-you-listen-to-this-linkedin-guru": {
+      "id": "/episode-zero-why-should-you-listen-to-this-linkedin-guru",
+      "url": "https://globaldotmedia.com//episode-zero-why-should-you-listen-to-this-linkedin-guru",
+      "path": "/episode-zero-why-should-you-listen-to-this-linkedin-guru",
+      "h1": "Episode Zero - Why should you listen to this LinkedIn Guru?",
+      "description": "You can think your way to success in marketing. It is also true that you can attract failure in your LinkedIn marketing if that is what you attract. The Law Of Attraction states that",
+      "image": "/images/podcastImages/Learnin0.jpg",
+      "date": "2021-02-21",
+      "author": "Eny Osung",
+      "p": "Top LinkedIn Guru, Eny Osung will give you some key reasons why this podcast is a must listen to anyone who is looking to grow their business and have more meaningful conversations with top prospects on LinkedIn. Eny will give you an insight into what you will learn from this LearnIn series and share some little known facts about businesses most powerful networking tool.",
+      "applePodcastsUrl": "https://podcasts.apple.com/gb/podcast/episode-zero-why-should-you-listen-to-this-linkedin-guru/id1552279309?i=1000507753758",
+      "spotifyUrl": "https://open.spotify.com/episode/7KBvwiEZ7quITncBEUdkYn?si=99fab816adeb4893",
+      "podcast": true
+    },
     "/beny-talks-on-the-joyful-path-podcast-with-lydia": {
       "id": "/beny-talks-on-the-joyful-path-podcast-with-lydia/",
       "title": "Eny talks with Lydia on The Joyful Path Podcast",
