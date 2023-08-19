@@ -14,6 +14,7 @@
   flex: 1;
   padding: 10px;
   max-width: 400px;
+  margin-left: 50px; /* Reduce the margin */
 }
 
 .steps-container-right__header {
@@ -44,7 +45,7 @@
   margin-bottom: 30px;
 }
 
-@keyframes slideInAnimation {
+/* @keyframes slideInAnimation {
   0% {
     opacity: 0;
     transform: translateX(-100px);
@@ -73,7 +74,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   .steps-container-right {

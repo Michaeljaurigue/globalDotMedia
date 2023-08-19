@@ -32,13 +32,14 @@ function StepsContainerRight(props) {
 
   return (
     <>
-      <motion.div
+      {/* <motion.div
         ref={ref}
         variants={boxVariant2}
         initial="hidden"
         animate={control}
         className="steps-container-right"
-      >
+      > */}
+      <div className="steps-container-right">
         <div className=" steps-container-right__image-container">
           <img
             className="steps-container-right__image"
@@ -50,7 +51,8 @@ function StepsContainerRight(props) {
           <h1 className="steps-container-right__header">{props.header}</h1>
           <p className="home__section-steps-right-container-p">{props.p}</p>
         </div>
-      </motion.div>
+        </div>
+      {/* </motion.div> */}
     </>
   );
 }

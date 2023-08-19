@@ -86,22 +86,22 @@ function Home() {
         p="We build you a modern website that is specifically designed to turn
         prospects into customers. We take care of everything for you so you
         can get on with running your business."
-        src="/images/home-4.jpg"
+        src="/images/services-3.jpg"
       />
       <StepsContainerRight
         header="Step Two: Creative"
         p="Our design and copywriting team will create a modern website designed to convert visitors into leads and leads into customers."
-        src="/images/home-6.jpg"
+        src="/images/services-14.jpg"
       />
       <StepsContainerLeft
         header="Step Three: Social Media"
         p="Every day our social media experts will post unique content specific to your business and interesting to your followers."
-        src="/images/home-7.jpg"
+        src="/images/services-13.jpg"
       />
       <StepsContainerRight
         header="Step Four: Digital Advertising"
         p="Our ad specialist will analyse the best approach to an act your perfect customers and then design and launch your campaign."
-        src="/images/home-8.jpg"
+        src="/images/search-engine-optimization.jpg"
       />
       <div className="home__section">
         <div className="home__section-container"></div>

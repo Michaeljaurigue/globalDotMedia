@@ -32,13 +32,14 @@ function StepsContainerLeft(props) {
 
   return (
     <>
-      <motion.div
+      {/* <motion.div
         ref={ref}
         variants={boxVariant2}
         initial="hidden"
         animate={control}
         className="steps-container-left"
-      >
+      > */}
+      <div className="steps-container-left">
         <div className="steps-container-left__content">
           <h1 className="steps-container-left__header">{props.header}</h1>
           <p className="steps-container-left__text">{props.p}</p>
@@ -50,7 +51,8 @@ function StepsContainerLeft(props) {
             alt={props.alt || "Global.Media Marketing Image"}
           />
         </div>
-      </motion.div>
+        </div>
+      {/* </motion.div> */}
     </>
   );
 }
