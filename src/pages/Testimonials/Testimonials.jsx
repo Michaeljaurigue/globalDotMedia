@@ -81,7 +81,7 @@ const Testimonials = () => {
               {/* Person emoji */}
               {testimonial.author}
             </p>
-            <div className="video-container">
+            {/* <div className="video-container">
               <iframe
                 src={testimonial.embedSrc}
                 title={`Video testimonial ${index + 1}`}
@@ -89,7 +89,7 @@ const Testimonials = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
