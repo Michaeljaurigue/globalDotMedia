@@ -125,7 +125,7 @@ function Home() {
         initial="hidden"
         animate={control}
       >
-        <ClientTestimonials />
+        {/* <ClientTestimonials /> */}
       </motion.div>
       <FormMain />
     </section>
