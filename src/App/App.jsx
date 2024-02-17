@@ -44,8 +44,11 @@ import { APIKEY } from "../utils/constants";
 import { LATITUDE, LONGITUDE } from "../utils/constants";
 import { getForecastWeather, parseWeatherData } from "../utils/weatherApi";
 
+import api from "../utils/api";
+
 function App() {
   const [weatherData, setWeatherData] = useState({});
+  const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     if (LATITUDE && LONGITUDE) {
@@ -58,6 +61,14 @@ function App() {
         });
     }
   }, []);
+
+  function handleFetchBlogs() {
+    api
+      .getBlogs()
+      .then((data) => {
+        console.log(data);
+      })
+  }
 
   return (
     <div className="app">
