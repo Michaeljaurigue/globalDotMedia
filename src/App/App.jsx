@@ -7,6 +7,10 @@ import Navbar from "../components/Navbar/Navbar";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import CreateBlog from "../pages/Dashboard/CreateBlog";
+
+
 import BookPublishingAndMarketingService from "../pages/Services/book-publishing-and-marketing-service/book-publishing-and-marketing-service";
 import SocialMediaMarketing from "../pages/Services/social-media-marketing/social-media-marketing";
 import DigitalMarketingTraining from "../pages/Services/digital-marketing-training/digital-marketing-training";
@@ -79,6 +83,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about/" element={<About />} />
           <Route path="/our-services/" element={<Services />} />
+          <Route path="/dashboard/" element={<Dashboard />} />
+          <Route path="/create-blog/" element={<CreateBlog />} />
           <Route
             path="/book-publishing-and-marketing-service/"
             element={<BookPublishingAndMarketingService />}
