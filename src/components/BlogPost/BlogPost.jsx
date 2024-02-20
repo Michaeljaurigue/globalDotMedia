@@ -1,10 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import blogsData from "../../blogs.json";
 import "./BlogPost.css";
 import RelatedBlogPosts from "../RelatedBlogPosts/RelatedBlogPosts";
+import api from "../../utils/api";
 
 const BlogPost = () => {
+  // New Code to work with backend API from MongoDB with IDs.... 
+  ///////////////////////////////////////////////////////////////////////
+  // const [blog, setBlog] = useState(null);
+  // const { id = "" } = useParams();
+
+  // useEffect(() => {
+  //   const fetchBlogs = async () => {
+  //     try {
+  //       const fetchedBlogs = await api.getAllBlogs(id);
+  //       setBlog(fetchedBlogs);
+  //       console.log("fetchedBlogs:", fetchedBlogs);
+  //       console.log("id:", id);
+  //     } catch (error) {
+  //       console.log("Error fetching blog:", error);
+  //     }
+  //   };
+
+  //   fetchBlogs();
+  // }, [id]);
+
+  // if (!blog) {
+  //   return <div>Loading...</div>;
+  // }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  // const [blogs, setBlogs] = useState([]);
+
+  // function handleFetchBlogs(id) {
+  //   api
+  //     .getOneBlog(id)
+  //     .then((id) => {
+  //       setBlogs(
+  //         blogs.filter((id) => id.id !== id.id)
+  //       )
+  //     })
+  //     .catch((error) => {
+  //       console.log("Error fetching blogs, fml:", error);
+  //     });
+  // }
+
+  // useEffect(() => {
+  //   handleFetchBlogs();
+  // }, []);
+
+  // const { slug = "" } = useParams();
+  // const slugPath = slug ? `${slug}` : "";
+  // const blog = handleFetchBlogs([slugPath]);
+
+  // if (!blog) {
+  //   return <div>Blog post not found</div>;
+  // }
+  //////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  //Code to work with Blogs.json
   const { slug = "" } = useParams();
   const slugPath = slug ? `/${slug}` : "";
   const blog = blogsData.blogs[slugPath];
@@ -45,7 +101,7 @@ const BlogPost = () => {
     embedSrc,
     applePodcastsUrl,
     spotifyUrl,
-  } = blog;
+  } = blog || {};
 
   const shareOnFacebook = () => {
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
@@ -85,106 +141,112 @@ const BlogPost = () => {
 
   return (
     <section className="blog-post">
-      <h1 className="blog-post__title">{title}</h1>
-      <img className="blog-post__image" src={image} alt={title} />
+      {blog && ( // Check if blog is not null
+        <>
+          <h1 className="blog-post__title">{blog.title}</h1>
+          <img className="blog-post__image" src={blog.image} alt={blog.title} />
 
-      <div className="blog-post__info">
-        {author && <span className="blog-post__author">{author}</span>}
-        {date && <span className="blog-post__date">{date}</span>}
-        {h1 && <h2 className="blog-post__subtitle">{h1}</h2>}
-        {h2 && <h3 className="blog-post__subtitle">{h2}</h3>}
-        {h3 && <h4 className="blog-post__subtitle">{h3}</h4>}
-        {p && <p className="blog-post__content">{p}</p>}
-        {h5 && <h4 className="blog-post__subtitle">{h5}</h4>}
-        {p2 && <p className="blog-post__content">{p2}</p>}
-        {h6 && <h4 className="blog-post__subtitle">{h6}</h4>}
-        {p3 && <p className="blog-post__content">{p3}</p>}
-        {h7 && <h4 className="blog-post__subtitle">{h7}</h4>}
-        {p4 && <p className="blog-post__content">{p4}</p>}
-        {h8 && <h4 className="blog-post__subtitle">{h8}</h4>}
-        {p5 && <p className="blog-post__content">{p5}</p>}
-        {h9 && <h4 className="blog-post__subtitle">{h9}</h4>}
-        {p6 && <p className="blog-post__content">{p6}</p>}
-        {h10 && <h4 className="blog-post__subtitle">{h10}</h4>}
-        {p7 && <p className="blog-post__content">{p7}</p>}
-        {h11 && <h4 className="blog-post__subtitle">{h11}</h4>}
-        {p8 && <p className="blog-post__content">{p8}</p>}
-        {p9 && <p className="blog-post__content">{p9}</p>}
-        {p10 && <p className="blog-post__content">{p10}</p>}
-        {p11 && <p className="blog-post__content">{p11}</p>}
-        {p12 && <p className="blog-post__content">{p12}</p>}
-        {h4 && <h4 className="blog-post__subtitle">{h4}</h4>}
-        {embedSrc && (
-          <iframe
-            className="blog-post__video"
-            src={embedSrc}
-            title={title}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-            allowFullScreen
-          ></iframe>
-        )}
-        {applePodcastsUrl && spotifyUrl && (
-          <div className="podcast-post__links">
-            <h2>Listen to the podcast on:</h2>
-            <a
-              href={applePodcastsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="podcast-post__logo"
-                src="/images/apple-podcasts-logo.png"
-                alt="Apple Podcasts"
-              />
-              Apple Podcasts
-            </a>
-            <a href={spotifyUrl} target="_blank" rel="noopener noreferrer">
-              <img
-                className="podcast-post__logo"
-                src="/images/spotify-logo.png"
-                alt="Spotify"
-              />
-              Spotify
-            </a>
+          <div className="blog-post__info">
+            {blog.author && <span className="blog-post__author">{blog.author}</span>}
+            {blog.date && <span className="blog-post__date">{blog.date}</span>}
+            {blog.h1 && <h2 className="blog-post__subtitle">{blog.h1}</h2>}
+            {blog.h2 && <h3 className="blog-post__subtitle">{blog.h2}</h3>}
+            {blog.h3 && <h4 className="blog-post__subtitle">{blog.h3}</h4>}
+            {blog.p && <p className="blog-post__content">{blog.p}</p>}
+            {blog.h5 && <h4 className="blog-post__subtitle">{blog.h5}</h4>}
+            {blog.p2 && <p className="blog-post__content">{blog.p2}</p>}
+            {blog.h6 && <h4 className="blog-post__subtitle">{blog.h6}</h4>}
+            {blog.p3 && <p className="blog-post__content">{blog.p3}</p>}
+            {blog.h7 && <h4 className="blog-post__subtitle">{blog.h7}</h4>}
+            {blog.p4 && <p className="blog-post__content">{blog.p4}</p>}
+            {blog.h8 && <h4 className="blog-post__subtitle">{blog.h8}</h4>}
+            {blog.p5 && <p className="blog-post__content">{blog.p5}</p>}
+            {blog.h9 && <h4 className="blog-post__subtitle">{blog.h9}</h4>}
+            {blog.p6 && <p className="blog-post__content">{blog.p6}</p>}
+            {blog.h10 && <h4 className="blog-post__subtitle">{blog.h10}</h4>}
+            {blog.p7 && <p className="blog-post__content">{blog.p7}</p>}
+            {blog.h11 && <h4 className="blog-post__subtitle">{blog.h11}</h4>}
+            {blog.p8 && <p className="blog-post__content">{blog.p8}</p>}
+            {blog.p9 && <p className="blog-post__content">{blog.p9}</p>}
+            {blog.p10 && <p className="blog-post__content">{blog.p10}</p>}
+            {blog.p11 && <p className="blog-post__content">{blog.p11}</p>}
+            {blog.p12 && <p className="blog-post__content">{blog.p12}</p>}
+            {blog.h4 && <h4 className="blog-post__subtitle">{blog.h4}</h4>}
+            {blog.embedSrc && (
+              <iframe
+                className="blog-post__video"
+                src={blog.embedSrc}
+                title={blog.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                allowFullScreen
+              ></iframe>
+            )}
+            {blog.applePodcastsUrl && blog.spotifyUrl && (
+              <div className="podcast-post__links">
+                <h2>Listen to the podcast on:</h2>
+                <a
+                  href={blog.applePodcastsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="podcast-post__logo"
+                    src="/images/apple-podcasts-logo.png"
+                    alt="Apple Podcasts"
+                  />
+                  Apple Podcasts
+                </a>
+                <a href={blog.spotifyUrl} target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="podcast-post__logo"
+                    src="/images/spotify-logo.png"
+                    alt="Spotify"
+                  />
+                  Spotify
+                </a>
+              </div>
+            )}
+            <RelatedBlogPosts relatedIds={blog.relatedIds} />{" "}
+            <div className="blog-post__share">
+              <button
+                className="blog-post__share-button blog-post__share-button--facebook"
+                onClick={shareOnFacebook}
+              >
+                <i className="fab fa-facebook-f"></i>
+              </button>
+              <button
+                className="blog-post__share-button blog-post__share-button--linkedin"
+                onClick={shareOnLinkedIn}
+              >
+                <i className="fab fa-linkedin"></i>
+              </button>
+              <button
+                className="blog-post__share-button blog-post__share-button--twitter"
+                onClick={shareOnTwitter}
+              >
+                <i className="fab fa-twitter"></i>
+              </button>
+              <button
+                className="blog-post__share-button blog-post__share-button--instagram"
+                onClick={shareOnInstagram}
+              >
+                <i className="fab fa-instagram"></i>
+              </button>
+              <button
+                className="blog-post__share-button blog-post__share-button--email"
+                onClick={shareByEmail}
+              >
+                <i className="fas fa-envelope"></i>
+              </button>
+            </div>
           </div>
-        )}
-        <RelatedBlogPosts relatedIds={blog.relatedIds} />{" "}
-        <div className="blog-post__share">
-          <button
-            className="blog-post__share-button blog-post__share-button--facebook"
-            onClick={shareOnFacebook}
-          >
-            <i className="fab fa-facebook-f"></i>
-          </button>
-          <button
-            className="blog-post__share-button blog-post__share-button--linkedin"
-            onClick={shareOnLinkedIn}
-          >
-            <i className="fab fa-linkedin"></i>
-          </button>
-          <button
-            className="blog-post__share-button blog-post__share-button--twitter"
-            onClick={shareOnTwitter}
-          >
-            <i className="fab fa-twitter"></i>
-          </button>
-          <button
-            className="blog-post__share-button blog-post__share-button--instagram"
-            onClick={shareOnInstagram}
-          >
-            <i className="fab fa-instagram"></i>
-          </button>
-          <button
-            className="blog-post__share-button blog-post__share-button--email"
-            onClick={shareByEmail}
-          >
-            <i className="fas fa-envelope"></i>
-          </button>
-        </div>
-      </div>
+        </>
+      )}
     </section>
   );
-};
+
+}
 
 export default BlogPost;
+

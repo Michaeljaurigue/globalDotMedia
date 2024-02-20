@@ -24,8 +24,15 @@ export async function request(url, options) {
     return processServerResponse(res);
 }
 
-function getBlogs() {
-    return request(`${baseUrl}/items`, {
+function getAllBlogs() {
+    return request(`${baseUrl}/`, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+    });
+}
+
+function getOneBlogById(id) {
+    return request(`${baseUrl}/${id}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
     });
@@ -35,7 +42,8 @@ function getBlogs() {
 
 const api = {
     request,
-    getBlogs,
+    getAllBlogs,
+    getOneBlogById,
 };
 
 export default api;
