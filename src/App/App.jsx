@@ -5,6 +5,9 @@ import CookieConsent from "react-cookie-consent";
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Home from "../pages/Home/Home";
+import Login from "../components/Login/login";
+import SignUp from "../components/SignUp/SignUp";
+
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
 import Dashboard from "../pages/Dashboard/Dashboard";
@@ -79,6 +82,8 @@ function App() {
           <Route path="/our-services/" element={<Services />} />
           <Route path="/dashboard/" element={<Dashboard />} />
           <Route path="/create-blog/" element={<CreateBlog />} />
+          <Route path="/login/" element={<Login />} />
+          <Route path="/signup/" element={<SignUp />} />
           <Route
             path="/book-publishing-and-marketing-service/"
             element={<BookPublishingAndMarketingService />}

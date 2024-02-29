@@ -3,10 +3,6 @@ const baseUrl =
         ? "https://api.globaldotmedia.com"
         : "http://localhost:3001";
 
-//deployed-backend-url is a URL to your deployed back end
-
-// const baseUrl = "http://localhost:3001";
-
 const processServerResponse = (res) => {
     if (res.ok) {
         try {
@@ -15,7 +11,7 @@ const processServerResponse = (res) => {
             return Promise.reject(`Error parsing response: ${error}`);
         }
     } else {
-        return Promise.reject(`Network error: ${res.status}`);
+        return Promise.reject(`Network error: ${res.status} - ${res.statusText}`);
     }
 };
 
@@ -24,6 +20,7 @@ export async function request(url, options) {
     return processServerResponse(res);
 }
 
+// Existing functions
 function getAllBlogs() {
     return request(`${baseUrl}/`, {
         method: "GET",
@@ -38,12 +35,29 @@ function getOneBlogById(id) {
     });
 }
 
+// New functions for login and signup
+function login(email, password) {
+    return request(`${baseUrl}/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+    });
+}
 
+function signup(name, email, password) {
+    return request(`${baseUrl}/signup`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+    });
+}
 
 const api = {
     request,
     getAllBlogs,
     getOneBlogById,
+    login,
+    signup,
 };
 
 export default api;
