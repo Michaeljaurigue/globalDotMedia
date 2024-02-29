@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import blogsData from "../../blogs.json";
 import "./BlogPost.css";
 import RelatedBlogPosts from "../RelatedBlogPosts/RelatedBlogPosts";
-import api from "../../utils/api";
+//import api from "../../utils/api";
 
 const BlogPost = () => {
   // New Code to work with backend API from MongoDB with IDs.... 
@@ -68,8 +68,12 @@ const BlogPost = () => {
     return <div>Blog post not found</div>;
   }
 
+  //ES lint error: 'title' is missing in props validation
+  // eslint-disable-next-line
   const {
+    // eslint-disable-next-line
     title,
+    // eslint-disable-next-line
     url,
     h1,
     image,
