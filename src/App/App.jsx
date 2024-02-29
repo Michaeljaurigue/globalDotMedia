@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
+import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute";
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
@@ -50,10 +52,15 @@ import { useState, useEffect } from "react";
 import { APIKEY } from "../utils/constants";
 import { LATITUDE, LONGITUDE } from "../utils/constants";
 import { getForecastWeather, parseWeatherData } from "../utils/weatherApi";
+import { ValidationContext } from "../contexts/ValidationContext";
 
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [activeModal, setActiveModal] = useState(null);
+
+
 
 
 
@@ -69,100 +76,112 @@ function App() {
     }
   }, []);
 
+  function handleLogin() {
+    setActiveModal("login");
+  }
+
+  function handleSignup() {
+    setActiveModal("signup");
+  }
 
 
   return (
     <div className="app">
-      <Router>
-        <Navbar />
+      <CurrentUserContext.Provider value={{ isLoggedIn }}>
+        <Router>
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about/" element={<About />} />
-          <Route path="/our-services/" element={<Services />} />
-          <Route path="/dashboard/" element={<Dashboard />} />
-          <Route path="/create-blog/" element={<CreateBlog />} />
-          <Route path="/login/" element={<Login />} />
-          <Route path="/signup/" element={<SignUp />} />
-          <Route
-            path="/book-publishing-and-marketing-service/"
-            element={<BookPublishingAndMarketingService />}
-          />
-          <Route
-            path="/our-services/social-media-marketing/"
-            element={<SocialMediaMarketing />}
-          />
-          <Route
-            path="/digital-marketing-training/"
-            element={<DigitalMarketingTraining />}
-          />
-          <Route
-            path="/our-services/creative-media-advertising/"
-            element={<CreativeMediaAdvertising />}
-          />
-          <Route
-            path="/our-services/digital-marketing-packages/"
-            element={<DigitalMarketingPackages />}
-          />
-          <Route
-            path="/our-services/linkedin-lead-generation/"
-            element={<LinkedInLeadGeneration />}
-          />
-          <Route
-            path="/our-services/content-marketing/"
-            element={<ContentMarketing />}
-          />
-          <Route
-            path="/our-services/local-marketing/"
-            element={<LocalMarketing />}
-          />
-          <Route
-            path="/our-services/market-research/"
-            element={<MarketResearch />}
-          />
-          <Route
-            path="/our-services/email-marketing/"
-            element={<EmailMarketing />}
-          />
-          <Route
-            path="/our-services/mobile-marketing/"
-            element={<MobileMarketing />}
-          />
-          <Route
-            path="/our-services/offline-marketing-consultancy/"
-            element={<OfflineMarketingConsultancy />}
-          />
-          <Route
-            path="/our-services/online-training/"
-            element={<OnlineTraining />}
-          />
-          <Route
-            path="/our-services/pay-per-click-marketing/"
-            element={<PayPerClickMarketing />}
-          />
-          <Route
-            path="/our-services/search-engine-optimization/"
-            element={<SearchEngineOptimization />}
-          />
-          <Route
-            path="/our-services/video-marketing/"
-            element={<VideoMarketing />}
-          />
-          <Route
-            path="/our-services/website-development/"
-            element={<WebsiteDevelopment />}
-          />
+          <Routes>
+            <Route path="/" element={isLoggedIn ? <Home /> : <Dashboard />} />
 
-          <Route path="/maad-blog/" element={<MaadBlog
-          />} />
+            <Route path="/about/" element={<About />} />
+            <Route path="/our-services/" element={<Services />} />
 
-          <Route path="/:slug/*" element={<BlogPost
-          />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="/dashboard/" element={<Dashboard />} />
+              <Route path="/create-blog/" element={<CreateBlog />} />
+            </Route>
 
-          <Route path="/testimonials/" element={<Testimonials />} />
 
-          <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
-          {/* <Route
+            <Route
+              path="/book-publishing-and-marketing-service/"
+              element={<BookPublishingAndMarketingService />}
+            />
+            <Route
+              path="/our-services/social-media-marketing/"
+              element={<SocialMediaMarketing />}
+            />
+            <Route
+              path="/digital-marketing-training/"
+              element={<DigitalMarketingTraining />}
+            />
+            <Route
+              path="/our-services/creative-media-advertising/"
+              element={<CreativeMediaAdvertising />}
+            />
+            <Route
+              path="/our-services/digital-marketing-packages/"
+              element={<DigitalMarketingPackages />}
+            />
+            <Route
+              path="/our-services/linkedin-lead-generation/"
+              element={<LinkedInLeadGeneration />}
+            />
+            <Route
+              path="/our-services/content-marketing/"
+              element={<ContentMarketing />}
+            />
+            <Route
+              path="/our-services/local-marketing/"
+              element={<LocalMarketing />}
+            />
+            <Route
+              path="/our-services/market-research/"
+              element={<MarketResearch />}
+            />
+            <Route
+              path="/our-services/email-marketing/"
+              element={<EmailMarketing />}
+            />
+            <Route
+              path="/our-services/mobile-marketing/"
+              element={<MobileMarketing />}
+            />
+            <Route
+              path="/our-services/offline-marketing-consultancy/"
+              element={<OfflineMarketingConsultancy />}
+            />
+            <Route
+              path="/our-services/online-training/"
+              element={<OnlineTraining />}
+            />
+            <Route
+              path="/our-services/pay-per-click-marketing/"
+              element={<PayPerClickMarketing />}
+            />
+            <Route
+              path="/our-services/search-engine-optimization/"
+              element={<SearchEngineOptimization />}
+            />
+            <Route
+              path="/our-services/video-marketing/"
+              element={<VideoMarketing />}
+            />
+            <Route
+              path="/our-services/website-development/"
+              element={<WebsiteDevelopment />}
+            />
+
+            <Route path="/maad-blog/" element={<MaadBlog
+            />} />
+
+            <Route path="/:slug/*" element={<BlogPost
+            />} />
+
+            <Route path="/testimonials/" element={<Testimonials />} />
+
+            <Route path="/maad-blog/businesspodcasts/" element={<Podcast />} />
+            {/* <Route
             path="/the-learnin-podcast-episode-3-making-the-law-of-attraction-work-for-you-on-linkedin/"
             element={<PodcastOne />}
           />
@@ -171,47 +190,61 @@ function App() {
             element={<Podcast2 />}
           /> */}
 
-          <Route path="/contact/" element={<Contact />} />
-          <Route path="/faq/" element={<FAQ />} />
-          <Route path="/refund-policy/" element={<RefundPolicy />} />
-          <Route path="/cookie-policy/" element={<CookiePolicy />} />
-          <Route
-            path="/terms-and-conditions/"
-            element={<TermsAndConditions />}
-          />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="/contact/" element={<Contact />} />
+            <Route path="/faq/" element={<FAQ />} />
+            <Route path="/refund-policy/" element={<RefundPolicy />} />
+            <Route path="/cookie-policy/" element={<CookiePolicy />} />
+            <Route
+              path="/terms-and-conditions/"
+              element={<TermsAndConditions />}
+            />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
 
-        <Footer weatherData={weatherData} />
+          <Footer weatherData={weatherData} />
 
-        <CookieConsent
-          location="bottom"
-          buttonText="I Understand"
-          cookieName="GlobalDotMediaCookieConsent"
-          style={{ background: "#2B373B" }}
-          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-          expires={150}
-          enableDeclineButton
-          onAccept={(acceptedByScrolling) => {
-            if (acceptedByScrolling) {
-              console.log("Accept was triggered by user scrolling");
-            } else {
-              console.log("Accept was triggered by clicking the Accept button");
-            }
-          }}
-          onDecline={() => {
-            console.log("User declined cookies");
-          }}
-        >
-          This website uses cookies to enhance the user experience.{" "}
-          <span style={{ fontSize: "10px" }}>
-            {" "}
-            <a href="/cookie-policy" style={{ color: "#fff" }}>
-              Learn more
-            </a>
-          </span>
-        </CookieConsent>
-      </Router>
+          <CookieConsent
+            location="bottom"
+            buttonText="I Understand"
+            cookieName="GlobalDotMediaCookieConsent"
+            style={{ background: "#2B373B" }}
+            buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+            expires={150}
+            enableDeclineButton
+            onAccept={(acceptedByScrolling) => {
+              if (acceptedByScrolling) {
+                console.log("Accept was triggered by user scrolling");
+              } else {
+                console.log("Accept was triggered by clicking the Accept button");
+              }
+            }}
+            onDecline={() => {
+              console.log("User declined cookies");
+            }}
+          >
+            This website uses cookies to enhance the user experience.{" "}
+            <span style={{ fontSize: "10px" }}>
+              {" "}
+              <a href="/cookie-policy" style={{ color: "#fff" }}>
+                Learn more
+              </a>
+            </span>
+          </CookieConsent>
+        </Router>
+
+
+        {activeModal === "login" && (
+          <ValidationContext.Provider value={setActiveModal}>
+            <Login onLogin={handleLogin} />
+          </ValidationContext.Provider>
+        )}
+
+        {activeModal === "signup" && (
+          <ValidationContext.Provider value={setActiveModal}>
+            <SignUp onSignUp={handleSignup} />
+          </ValidationContext.Provider>
+        )}
+      </CurrentUserContext.Provider>
     </div>
   );
 }

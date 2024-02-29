@@ -1,19 +1,19 @@
 import { createContext } from "react";
-import { configValidate } from "../utils/constants";
+import { CONFIGVALIDATE } from "../utils/constants";
 
 const ValidationContext = createContext();
 
 function showInputError(inputElement, errorMessage) {
   const errorElement = document.querySelector(`.${inputElement.id}__error`);
-  inputElement.classList.add(configValidate.inputErrorClass);
+  inputElement.classList.add(CONFIGVALIDATE.inputErrorClass);
   errorElement.textContent = errorMessage;
-  errorElement.classList.add(configValidate.errorClass);
+  errorElement.classList.add(CONFIGVALIDATE.errorClass);
 }
 
 function hideInputError(inputElement) {
   const errorElement = document.querySelector(`.${inputElement.id}__error`);
-  inputElement.classList.remove(configValidate.inputErrorClass);
-  errorElement.classList.remove(configValidate.errorClass);
+  inputElement.classList.remove(CONFIGVALIDATE.inputErrorClass);
+  errorElement.classList.remove(CONFIGVALIDATE.errorClass);
   errorElement.textContent = "";
 }
 

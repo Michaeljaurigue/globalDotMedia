@@ -35,6 +35,17 @@ function getOneBlogById(id) {
     });
 }
 
+function checkToken(token) {
+    return request(`${baseUrl}/users`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`
+        },
+    });
+}
+
+
 // New functions for login and signup
 function login(email, password) {
     return request(`${baseUrl}/login`, {
@@ -58,6 +69,7 @@ const api = {
     getOneBlogById,
     login,
     signup,
+    checkToken,
 };
 
 export default api;

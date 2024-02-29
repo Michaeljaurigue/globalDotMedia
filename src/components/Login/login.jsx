@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import api from '../../utils/api'; // Adjust the path based on your file structure
 import './login.css'; // Import the CSS file here
 import { useNavigate } from 'react-router-dom';
+import checkToken from '../../utils/api';
 
-function LoginComponent() {
+function LoginComponent({ onLogin, isLoggedIn }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
@@ -16,6 +17,9 @@ function LoginComponent() {
             // Store the token, for example, in localStorage (consider security implications)
             localStorage.setItem('token', response.token);
             // Redirect to the dashboard or home page
+            checkToken(response.token);
+            //if successful create a variable called setIsLoggedI
+            isLoggedIn(true);
             navigate('/dashboard'); // Adjust the route as necessary
         } catch (error) {
             console.error('Login failed:', error);
