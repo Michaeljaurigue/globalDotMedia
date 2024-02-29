@@ -59,7 +59,6 @@ const BlogPost = () => {
   // }
   //////////////////////////////////////////////////////////////////////////////////////////////
 
-
   //Code to work with Blogs.json
   const { slug = "" } = useParams();
   const slugPath = slug ? `/${slug}` : "";
@@ -74,6 +73,15 @@ const BlogPost = () => {
     url,
     h1,
     image,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
     h2,
     h3,
     h4,
@@ -151,27 +159,6 @@ const BlogPost = () => {
             {blog.date && <span className="blog-post__date">{blog.date}</span>}
             {blog.h1 && <h2 className="blog-post__subtitle">{blog.h1}</h2>}
             {blog.h2 && <h3 className="blog-post__subtitle">{blog.h2}</h3>}
-            {blog.h3 && <h4 className="blog-post__subtitle">{blog.h3}</h4>}
-            {blog.p && <p className="blog-post__content">{blog.p}</p>}
-            {blog.h5 && <h4 className="blog-post__subtitle">{blog.h5}</h4>}
-            {blog.p2 && <p className="blog-post__content">{blog.p2}</p>}
-            {blog.h6 && <h4 className="blog-post__subtitle">{blog.h6}</h4>}
-            {blog.p3 && <p className="blog-post__content">{blog.p3}</p>}
-            {blog.h7 && <h4 className="blog-post__subtitle">{blog.h7}</h4>}
-            {blog.p4 && <p className="blog-post__content">{blog.p4}</p>}
-            {blog.h8 && <h4 className="blog-post__subtitle">{blog.h8}</h4>}
-            {blog.p5 && <p className="blog-post__content">{blog.p5}</p>}
-            {blog.h9 && <h4 className="blog-post__subtitle">{blog.h9}</h4>}
-            {blog.p6 && <p className="blog-post__content">{blog.p6}</p>}
-            {blog.h10 && <h4 className="blog-post__subtitle">{blog.h10}</h4>}
-            {blog.p7 && <p className="blog-post__content">{blog.p7}</p>}
-            {blog.h11 && <h4 className="blog-post__subtitle">{blog.h11}</h4>}
-            {blog.p8 && <p className="blog-post__content">{blog.p8}</p>}
-            {blog.p9 && <p className="blog-post__content">{blog.p9}</p>}
-            {blog.p10 && <p className="blog-post__content">{blog.p10}</p>}
-            {blog.p11 && <p className="blog-post__content">{blog.p11}</p>}
-            {blog.p12 && <p className="blog-post__content">{blog.p12}</p>}
-            {blog.h4 && <h4 className="blog-post__subtitle">{blog.h4}</h4>}
             {blog.embedSrc && (
               <iframe
                 className="blog-post__video"
@@ -207,6 +194,37 @@ const BlogPost = () => {
                 </a>
               </div>
             )}
+            {blog.image2 && <img className="blog-post__image" src={blog.image2} alt={blog.title} />}
+            {blog.h3 && <h4 className="blog-post__subtitle">{blog.h3}</h4>}
+            {blog.p && <p className="blog-post__content">{blog.p}</p>}
+            {blog.image3 && <img className="blog-post__image" src={blog.image3} alt={blog.title} />}
+            {blog.h5 && <h4 className="blog-post__subtitle">{blog.h5}</h4>}
+            {blog.p2 && <p className="blog-post__content">{blog.p2}</p>}
+            {blog.image4 && <img className="blog-post__image" src={blog.image4} alt={blog.title} />}
+            {blog.h6 && <h4 className="blog-post__subtitle">{blog.h6}</h4>}
+            {blog.p3 && <p className="blog-post__content">{blog.p3}</p>}
+            {blog.image5 && <img className="blog-post__image" src={blog.image5} alt={blog.title} />}
+            {blog.h7 && <h4 className="blog-post__subtitle">{blog.h7}</h4>}
+            {blog.p4 && <p className="blog-post__content">{blog.p4}</p>}
+            {blog.image6 && <img className="blog-post__image" src={blog.image6} alt={blog.title} />}
+            {blog.h8 && <h4 className="blog-post__subtitle">{blog.h8}</h4>}
+            {blog.p5 && <p className="blog-post__content">{blog.p5}</p>}
+            {blog.image7 && <img className="blog-post__image" src={blog.image7} alt={blog.title} />}
+            {blog.h9 && <h4 className="blog-post__subtitle">{blog.h9}</h4>}
+            {blog.p6 && <p className="blog-post__content">{blog.p6}</p>}
+            {blog.image8 && <img className="blog-post__image" src={blog.image8} alt={blog.title} />}
+            {blog.h10 && <h4 className="blog-post__subtitle">{blog.h10}</h4>}
+            {blog.p7 && <p className="blog-post__content">{blog.p7}</p>}
+            {blog.image9 && <img className="blog-post__image" src={blog.image9} alt={blog.title} />}
+            {blog.h11 && <h4 className="blog-post__subtitle">{blog.h11}</h4>}
+            {blog.p8 && <p className="blog-post__content">{blog.p8}</p>}
+            {blog.p9 && <p className="blog-post__content">{blog.p9}</p>}
+            {blog.p10 && <p className="blog-post__content">{blog.p10}</p>}
+            {blog.p11 && <p className="blog-post__content">{blog.p11}</p>}
+            {blog.p12 && <p className="blog-post__content">{blog.p12}</p>}
+            {blog.image10 && <img className="blog-post__image" src={blog.image10} alt={blog.title} />}
+            {blog.h4 && <h4 className="blog-post__subtitle">{blog.h4}</h4>}
+
             <RelatedBlogPosts relatedIds={blog.relatedIds} />{" "}
             <div className="blog-post__share">
               <button

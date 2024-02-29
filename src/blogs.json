@@ -1,7 +1,7 @@
 {
   "blogs": {
-    "/beny-talks-on-the-joyful-path-podcast-with-lydia": {
-      "id": "/beny-talks-on-the-joyful-path-podcast-with-lydia/",
+    "/eny-talks-on-the-joyful-path-podcast-with-lydia": {
+      "id": "/eny-talks-on-the-joyful-path-podcast-with-lydia/",
       "title": "Eny talks with Lydia on The Joyful Path Podcast",
       "url": "https://globaldotmedia.com/eny-talks-on-the-joyful-path-podcast-with-lydia/",
       "description": "Feature image of Eny on the Joyful Path Podcast interview",
@@ -11,7 +11,15 @@
       "h3": "9th December 2022",
       "h4": "in Advice, Articles, Blog, Lead Generation, LinkedIn, Marketing, Marketing Agency Cornwall, Marketing agency London, Podcast, Positive Mindset, Small Business, Social media marketing, The law of attraction, US Entrepreneur, YouTube",
       "p": "As a business owner and human being, I strive to achieve my goals. At the same time, I fulfil my duty to inspire other entrepreneurs and people who are thinking of starting their own businesses to dare to dream about taking their venture onto a global level. I believe we can all achieve great things in our lives and be widely successful in anything we are willing to work hard in I have been blessed to meet many other beautiful minds on a similar journey to build a legacy while spreading positivity and joy to everyone they meet. And so it is that I am fortunate that Lydia Lowery Busler invited me t share my backstory, beliefs and journey into a joyful life on her The Joyful Path Podcast. Enjoy the fun we had on the podcast episode. Discover The Joyful Path Podcasts @ https://www.youtube.com/@thejoyfulpath",
-      "keywords": ["Eny", "Lydia", "Joyful Path Podcast", "interview"],
+      "h5": "Other posts you will enjoy:",
+      "p2": "Smallbiz-emarketing provides expert market research, marketing on all digital platforms and offline advertising consultancy specifically for small businesses and start-ups for whom money is tight. Check out our Services page to see how our digital marketing services can help your business to get more customers and sell more, faster. Why not sign up for our FREE monthly newsletter using the simple form in the Footer? You can also follow us on social networks. Finally, we’d love for you to share this post with your network using the share buttons below.",
+      "p3": "We’d love to have your feedback and suggestions about this post. What are your experiences of using podcasting for your business? What results have you had from appearing as a guest on podcasts? Please leave your comments in the Comments Section below.",
+      "keywords": [
+        "Eny",
+        "Lydia",
+        "Joyful Path Podcast",
+        "interview"
+      ],
       "author": "EnyOsung",
       "date": "2022-12-09",
       "categories": [
@@ -31,10 +39,10 @@
         "US Entrepreneur",
         "YouTube"
       ],
+      "embedSrc": "https://www.youtube.com/embed/0jnVbVYqwtE",
       "featured": false,
       "podcast": true
     },
-
     "/how-to-use-new-linkedin-campaign-manager": {
       "id": "/how-to-use-new-linkedin-campaign-manager/",
       "title": "How to use new LinkedIn Campaign Manager",
@@ -90,7 +98,12 @@
       "h3": "18th May 2022",
       "h4": "in Advice, Articles, Blog, Lead Generation, LinkedIn, Marketing, Pay per click, Social media marketing",
       "p": "Marketing is always evolving. The most successful marketers are also constantly changing their marketing strategy to have the best chance of their target market seeing them and buying. As an avid LinkedIn user, I have seen the professional network implement changes and updates that now actively deter users from using Linkedin’s features for exemplary marketing results. Furthermore, many LinkedIn accounts were thrown into LinkedIn jail during the May Bank Holiday for reasons that no one knows. In a constantly changing world, learning how to adapt and enjoy something better is to our advantage. This blog explores the significant changes on LinkedIn that threaten LinkedIn users’ potential to get clients from your LinkedIn connections. You will find out why you may want to consider moving beyond LinkedIn and exploring a complete marketing mix to continue to get prospects for your business.",
-      "keywords": ["LinkedIn", "Marketing strategy", "Change", "Marketing mix"],
+      "keywords": [
+        "LinkedIn",
+        "Marketing strategy",
+        "Change",
+        "Marketing mix"
+      ],
       "author": "EnyOsung",
       "date": "2022-05-18",
       "categories": [
@@ -157,7 +170,11 @@
       ],
       "author": "EnyOsung",
       "date": "2021-11-20",
-      "categories": ["Blog", "Small Business", "Social media marketing"],
+      "categories": [
+        "Blog",
+        "Small Business",
+        "Social media marketing"
+      ],
       "featured": false
     },
     "/internet-marketing-profits-course-free-30-day-trial": {
@@ -216,7 +233,12 @@
       "h3": "7th February 2021",
       "h4": "in Advice, Articles, Blog, Business tips, Entrepreneurs, Lead Generation, LinkedIn, Marketing, Marketing Agency Cornwall, Marketing agency London, Small Business, Social media marketing, Startups, video blog",
       "p": "LinkedIn is a highly effective social platform to connect with and engage your ideal clients, with B2B marketers reporting that eighty per cent of their leads come from LinkedIn. Yet fewer than 10% of LinkedIn users use it for marketing. Every content developer strives to share great insights into their work. Alas, many wise heads know that it is virtually impossible to convey the message in a captivating way through the written word alone. In a blog post like this, it is a struggle to explain the strategies that help our clients to generate a sustainable stream of high-value prospects from our Linkedin marketing service. Things like how to get connections, our clients’ approach, mindset and focus on getting results, from which I get so much excitement and want to share with the world don’t resonate when you read them. In this context, I feel like the luckiest person on earth to have our client Chris share his LinkedIn...",
-      "keywords": ["LinkedIn", "Marketing", "Lead Generation", "Chris Lewis"],
+      "keywords": [
+        "LinkedIn",
+        "Marketing",
+        "Lead Generation",
+        "Chris Lewis"
+      ],
       "author": "EnyOsung",
       "date": "2021-02-07",
       "categories": [
@@ -622,7 +644,6 @@
       "embedSrc": "",
       "featured": false
     },
-
     "/top-strategies-for-marketers-to-beat-stress-naturally": {
       "id": "/top-strategies-for-marketers-to-beat-stress-naturally",
       "title": "Top Strategies for Marketers to beat Stress – Naturally",
@@ -643,11 +664,15 @@
       ],
       "author": "EnyOsung",
       "date": "2020-02-10",
-      "categories": ["Blog", "Entrepreneurs", "Stress", "video blog"],
+      "categories": [
+        "Blog",
+        "Entrepreneurs",
+        "Stress",
+        "video blog"
+      ],
       "embedSrc": "https://www.youtube.com/embed/R_kp9-HTbkQ",
       "featured": false
     },
-
     "/5-common-linkedin-marketing-mistakes-how-to-avoid-them": {
       "id": "/5-common-linkedin-marketing-mistakes-how-to-avoid-them",
       "title": "5 Common LinkedIn Marketing Mistakes & How to Avoid Them",
@@ -682,7 +707,6 @@
       "embedSrc": "https://www.youtube.com/embed/OwH1Gsw1RYo",
       "featured": false
     },
-
     "/12-biggest-lessons-i-learned-doing-trade-shows": {
       "id": "/12-biggest-lessons-i-learned-doing-trade-shows",
       "title": "12 Biggest Lessons I Learned Doing Trade Shows",
@@ -785,7 +809,11 @@
       "h3": "7th September 2019",
       "h4": "in Blog, Business networking, Marketing Magic Tip, video blog",
       "p": "Networking brings people from different organisations together to share ideas, build relationships and do business with each other. We network with plenty of people every day with almost every one increasingly doing social media networking. Whether you are building relationships online or offline, the principles are essentially the same if you want to get maximum benefits for your business. Lots of people network up and down the country. Unfortunately not everyone achieves the benefits networking can bring to you to your business. If you are new to networking or if you are a seasoned networker who wants to sell more to your fellow networkers, you are in the right place. This Marketing Magic Tips video blog shines the light on business networking and why it works for so many companies. You will also learn real-world strategies to get the most from networking events.",
-      "keywords": ["Business Networking", "Strategies", "Marketing Magic Tips"],
+      "keywords": [
+        "Business Networking",
+        "Strategies",
+        "Marketing Magic Tips"
+      ],
       "author": "EnyOsung",
       "date": "7th September 2019",
       "categories": [
@@ -808,7 +836,12 @@
       "h3": "7th September 2019",
       "h4": "in Blog, Branding, Design Genie, logo design, Startups, video blog",
       "p": "It can be so tempting to rush your business to start marketing once you have the completed company registration and bought a domain. It is understandable and human to be eager to get the customers and sales in. Marketing is crucial to achieve your revenue objectives. However, jump into marketing too soon and you risk wasting money and disappointing clients. On the flipside, wait too long and you risk competitors stealing a march on you in the marketplace. In the eagerness to create what you envision as your global entrepreneurial revolution, many business owners are faced with the same question: when is the right time to start marketing your business? Read on to discover the reasons my answer is: slow down, take a step back, and think, do you have these 10 brand elements in place?",
-      "keywords": ["Brand Issues", "Marketing", "Company", "Design Genie Tips"],
+      "keywords": [
+        "Brand Issues",
+        "Marketing",
+        "Company",
+        "Design Genie Tips"
+      ],
       "author": "EnyOsung",
       "date": "7th September 2019",
       "categories": [
@@ -833,7 +866,12 @@
       "h3": "30th August 2019",
       "h4": "in Blog, Business tips, Entrepreneurs, Guest post, LinkedIn, Marketing, Social media marketing, Startups",
       "p": "LinkedIn is a powerful tool for job seekers. It is also increasingly been recognized as the premier Business-to-business lead generation platform on the planet. With the right strategy, this network will help you find the company of your dreams, whether you are looking for clients or employer. Unfortunately, for many LinkedIn … “does not work.” However, it is fixable! LinkedIn is a social network for finding and maintaining business contacts. The number of registered users is more than 500 million worldwide. So you can bet that your ideal audience is on there. You just have to find them, connect with them and interact with them. That is easier said than done, however. Consider the seven errors that lead to failure and frustration on LinkedIn...",
-      "keywords": ["LinkedIn", "Marketing", "Mistakes", "Strategies"],
+      "keywords": [
+        "LinkedIn",
+        "Marketing",
+        "Mistakes",
+        "Strategies"
+      ],
       "author": "EnyOsung",
       "date": "30th August 2019",
       "categories": [
@@ -909,7 +947,6 @@
       "embedSrc": "https://www.youtube.com/embed/KSgdQ-yBD34",
       "featured": false
     },
-
     "/knowing-when-to-use-stock-photos-design-genie-tips": {
       "id": "/knowing-when-to-use-stock-photos-design-genie-tips",
       "title": "Knowing When To Use Stock Photos – Design Genie Tips",
@@ -939,7 +976,6 @@
       "embedSrc": "https://www.youtube.com/embed/VWkHl2uAv4U",
       "featured": false
     },
-
     "/how-do-you-design-an-amazing-logo-5-key-principles-you-must-follow-design-genie-tips": {
       "id": "/how-do-you-design-an-amazing-logo-5-key-principles-you-must-follow-design-genie-tips",
       "title": "How Do You Design An Amazing Logo? 5 Key Principles You Must Follow – Design Genie Tips",
@@ -976,7 +1012,6 @@
       "embedSrc": "https://www.youtube.com/embed/i4GARUPsMjk",
       "featured": false
     },
-
     "/interview-with-hadi-naqvi": {
       "id": "/interview-with-hadi-naqvi",
       "title": "Interview with Hadi Naqvi",
@@ -1051,7 +1086,6 @@
       "embedSrc": "https://www.youtube.com/embed/i4GARUPsMjk",
       "featured": false
     },
-
     "/why-reviews-you-can-trust-are-vital-for-your-business-and-how-to-get-them": {
       "id": "/why-reviews-you-can-trust-are-vital-for-your-business-and-how-to-get-them",
       "title": "Why Reviews You Can Trust Are Vital For Your Business & how to get them",
@@ -1091,7 +1125,6 @@
       "embedSrc": "https://www.youtube.com/embed/D-vNqmijFxE",
       "featured": false
     },
-
     "/interview-with-ryan-nichols": {
       "id": "/interview-with-ryan-nichols",
       "title": "Interview with Ryan Nichols",
@@ -1128,7 +1161,6 @@
       "featured": false,
       "podcast": true
     },
-
     "/interview-with-marc-jarrett": {
       "id": "/interview-with-marc-jarrett",
       "title": "Interview with Marc Jarrett",
@@ -1163,7 +1195,6 @@
       "featured": false,
       "podcast": true
     },
-
     "/getting-keeping-the-linkedin-lead-generation-advantage": {
       "id": "/getting-keeping-the-linkedin-lead-generation-advantage",
       "title": "Getting & Keeping The LinkedIn Lead Generation Advantage",
@@ -1176,7 +1207,6 @@
       "h4": "in Advertising, Advice, Articles, Blog, Business networking, Business tips, Entrepreneurs, How-to-Guides, LinkedIn, Marketing, Marketing Magic Tip, Pay per click, Small Business, Social media marketing, Startups, video blog",
       "p": "Almost every business owner I speak with know say that they know they should be on LinkedIn. A conversation with a business contact recently helped me to understand the issue that makes many people reluctant to throw their marketing efforts and investment into LinkedIn. My friend, a LinkedIn user, told me in no uncertain terms that most of the people we both know through the business networking circuit ‘don’t get it’. That they are still asking: What is the point of wasting time on LinkedIn? What difference will it make to my business? This revelation is the driver for this post, as I firmly believe that LinkedIn offers a unique marketing strategy that no other social media marketing approach can give, hence the massively rewarding results that are available for companies. Read on to find out what makes LinkedIn a unique marketing approach, the LinkedIn advantage for business and how you too can get the full benefits for your business. Social media marketing Few will argue against the benefits of social media for business these days, although I still come across a few people every so often who challenge the boundaries of reason and reality. For those who ask, excellent visibility and reach to your target audience, mostly free of charge are the benefits of doing social media marketing. That said, we are competing for attention when we post to the noisy world of Facebook, Twitter, Instagram, LinkedIn, Pinterest, and the other social channels. I accept that investing in ads drastically increases reach and visibility, especially to people who are likely to pay attention to your ads if you have got your targeting spot on. As we well know, people seeing your ads is one thing. It would be best if you had several other things to fall into place at the same time to have any chance of making a sale especially when it comes to selling high-value services. These include the desire to buy your product or service, the interested person seeing you as trustworthy and credible. The adage that people buy from people is perhaps the most crucial missing component when selling on social media – we do not often get the chance to build a relationship with those potential buyers on fast moving social platforms. When one or more of these components are missing, we typically get clicks, views and page visits with few conversions if any at all. The dilemma of having to spend even more on ads in remarketing to put the missing ingredient I over time then faces you. I am an evangelist about LinkedIn marketing because it is the only social media platform that offers the chance to navigate all of these issues quickly if you know how to use the platform properly. Advantages of LinkedIn Much is written about the fact that the majority of B2B marketers choose LinkedIn over other social media channels because they generate substantially more website visitors, prospects and high-value sales on LinkedIn. Despite the overwhelming testimonies and..."
     },
-
     "/traditional-marketing-is-not-dead-but-it-is-dying": {
       "id": "/traditional-marketing-is-not-dead-but-it-is-dying",
       "title": "Traditional Marketing Is Not Dead, But It Is Dying – Marketing Magic Tips",
@@ -1191,7 +1221,6 @@
       "embedSrc": "https://www.youtube.com/embed/ydcYy_a3jZI",
       "featured": false
     },
-
     "/interview-with-ekow-armah": {
       "id": "/interview-with-ekow-armah",
       "title": "Interview with Ekow Armah",
@@ -1205,7 +1234,6 @@
       "p": "Ekow Armah is a multi-business entrepreneur who runs a record label (Big Groove Records), a fashion brand (If Lifestyles), and works as a science teacher at a secondary school. He is passionate about making people happy with his music and produces music under various bands. Ekow's mission is to get ordinary people to wear If? clothing and celebrate life-changing moments. He enjoys watching sports, music and science documentaries, and playing the piano. In this interview, Ekow shares his experiences in business, including highs, learning points, and tips for current and aspiring business owners.",
       "podcast": true
     },
-
     "/interview-with-patrick-giwa": {
       "id": "/interview-with-patrick-giwa",
       "title": "Interview with Patrick Giwa",
@@ -1218,7 +1246,6 @@
       "h4": "in Advice, Business Radio, Business tips, Marketing, Podcast, Small Business, Startups",
       "p": "Patrick Giwa is the Managing Partner of Pees Media, a web design company. His motivation to start the company came from collecting data for his PhD research and wanting to buy a computer for his cousin in Africa. He now donates a portion of his profits to fund computers for children in Africa. Patrick is passionate about technology and entrepreneurship and helps small-to-medium-sized businesses develop a web presence and grow their brand. He combines his expertise in web design with an understanding of his clients' business needs. In addition to his work, Patrick engages with technology entrepreneurs, discussing motivation, idea formulation, marketing, sales, and growth. He aspires to become a venture capitalist and support tech ecosystems. In this interview, Patrick shares his entrepreneurial journey, including successes, failures, and valuable tips for current and aspiring business owners."
     },
-
     "/outsource-marketing-or-in-house-marketing-for-business-marketing-magic-tips": {
       "id": "/outsource-marketing-or-in-house-marketing-for-business-marketing-magic-tips",
       "title": "Choosing to Outsource Marketing or In-House Marketing for Business - Marketing Magic Tips",
@@ -1232,7 +1259,6 @@
       "h4": "in Advice, Articles, Blog, Business tips, Entrepreneurs, facebook marketing, How-to-Guides, Marketing, Marketing Magic Tip, Small Business, Social media marketing, Startups, video blog",
       "p": "Are you torn between outsourcing your marketing or keeping it in-house? As a startup entrepreneur, you have multiple roles to juggle, and marketing is a crucial task for acquiring clients. While it may seem possible to handle all aspects of marketing yourself, it's often challenging to excel at everything. This blog post explores the signs that indicate the need to outsource your marketing and the benefits of working with a marketing agency. Small businesses face the strain of limited resources and the importance of marketing for growth. By outsourcing, you can access expertise, save time, and focus on core business activities. The right marketing agency can provide a range of techniques tailored to your business needs, create a detailed plan, and offer a dedicated point of contact for effective communication. Don't settle for mediocre marketing results, consider outsourcing to propel your business forward!"
     },
-
     "/why-you-shouldnt-be-afraid-to-be-different-on-social-media": {
       "id": "/why-you-shouldnt-be-afraid-to-be-different-on-social-media",
       "title": "Why You Shouldn’t Be Afraid To Be Different on Social Media",
@@ -1246,7 +1272,6 @@
       "h4": "in Advice, Articles, Blog, Business tips, Entrepreneurs, How-to-Guides, LinkedIn, Marketing, Small Business, Social media marketing, Startups",
       "p": "Social media promises so many benefits to small and medium-sized businesses that use it correctly. Your Instagram, Facebook, Twitter and LinkedIn page can be your shop-front and is often the first thing potential customers see of your company. So unsurprisingly, we all want to give the best first impression that we can. In my role as a social media marketing consultant, clients who are intent on being copycats increasingly frustrate me. They appear to be missing the point of social media marketing and how to use it to build their brand. Instead of wanting to stand out from the competition, more and more businesses are falling into the trap of being the same as everyone else.\n\nI am writing this post to remind businesses that great marketing stands out. Confidence to carve out and follow your path online is often the solid foundation for getting engagement, sales and ultimately more business on social media. Let us see how being genuinely unique works.\n\nHerding sheep\nThe copycat mentality is far from unique to my clients as I recently found out in an article on MSN titled: This Instagram Account Shows How So Many Travel Photos Are Almost The same. The report showed what we all know, that many people are posting stock photos on their social media pages, mainly because they have seen that one or more other pages have got likes with them. The author insists that “the account isn’t here to shame people for taking like-minded photos, or to even shame influencers themselves. Instead, its purpose appears to be to get us all thinking a little more creatively”.\n\nSometimes, copying others is somewhat creepy and is nothing short of stealing.\n\nA recent report of an Instagram feed that has been plagiarised shows when being a copycat goes so far that it borders on insanity. This example of a copycat who has clearly gone over the top will shock you.\n\n“Linzi Cowan posted on Facebook with screenshots from the Instagram account ‘honeybasra18xo’, where almost every photo was an exact replica of one from her sister Chloe Cowan’s Instagram feed… the mystery user recreated poses, outfits and even captions from her sister Chloe. The stranger even went as far as to act out scenes from photographs of Chloe and her recently-deceased father”.\n\nThe fact that copycats exist on social media is not new. What is different for me is that I am getting more and more clients who want me to post ONLY stock photos on their social media feeds, something I object to because I believe it does more harm than good. I will explain the dangers in the following section.\n\nI almost feel sorry for those of my beloved clients when they ask me to look at a competitor’s social.."
     },
-
     "/interview-with-sam-thorpe": {
       "id": "/interview-with-sam-thorpe",
       "title": "Interview with Sam Thorpe",
@@ -1273,7 +1298,6 @@
       "h4": "in Advice, Business Radio, Business tips, Lingerie, Marketing, Podcast, Small Business, Startups",
       "p": "Temi, devised her business idea in 2009 before starting the business, EvieAmore in earnest a year later. Following several challenges that threatened to derail her ambitious plans in Nigeria, Temi returned to the UK to re-strategize. She has been running the business on a part-time basis so that she can combine it with her day job commitments. Despite the many years that have passed since the company started trading and the massive effort that she has put into building the business, Temi admits that she only really decided to run EvieAmore as a real business in 2016. Find out how this start-stop approach to running a business has impacted EvieAmore.\n\nEvieAmore is a bra-fitting consultant and retail service (focus on buxom belles or larger cup sizes). Temi is passionate about lingerie but most importantly the reward she gets from making a woman feel good when the fit is right. Women typically arrive for a fitting shy, embarrassed and with less self-esteem due to bad experiences or frustration. Some women have been the wrong-sized for more half their lifetime which makes offering a solution or personal service more rewarding.\n\nThe journey comprises of understanding her personal needs, right style and size which impact her day-2-day living. All this has an impact on her general well-being and I see an instant lift and confidence once we get it right.\n\nWhat differentiates Temi from the high street? Her understanding of the frustrations experienced by her clients, having gone through the same journey herself. She is solution focussed by nature so this was a challenge she is excited to undertake. Temi has gained a better understanding of fit which is more than just the bra. She considers her clients as an individual, lifestyle, breast shape, emotional state and much more.\n\nWhen she is not working, Temi enjoys listening to music, going to jazz festivals and jumping on scary fairground rides. She also loves travelling around the work.\n\nListen as Temi shares her experiences in business. She talks about the challenges she ha experienced as well as the successes that keep her going. You won’t want to miss the fantastic tips she has for current, aspiring and soon-to-be business owners. Enjoy.\n\nMore info:\nW: http://evieamore.com\n\nFb:@Evieamore Fits"
     },
-
     "/why-colours-matter-how-to-choose-your-brand-colours": {
       "id": "/why-colours-matter-how-to-choose-your-brand-colours",
       "title": "Why Colours Matter & How to Choose Your Brand Colours",
@@ -1308,7 +1332,6 @@
       "embedSrc": "",
       "featured": false
     },
-
     "/5-top-strategies-to-get-more-clients-on-linkedin": {
       "id": "/5-top-strategies-to-get-more-clients-on-linkedin",
       "title": "Top 5 Strategies To Get More Clients on LinkedIn",
@@ -1503,7 +1526,6 @@
       "embedSrc": "",
       "featured": false
     },
-
     "/why-marketing-stagnates-how-to-get-back-on-track-marketing-magic-tip": {
       "id": "/why-marketing-stagnates-how-to-get-back-on-track-marketing-magic-tip",
       "title": "Why Marketing Stagnates & how to get back on track – Marketing Magic Tip",
@@ -1658,7 +1680,14 @@
       "h3": "2nd December 2018",
       "h4": "in Advice, Articles, Blog, Business tips, Entrepreneurs, facebook marketing, Marketing Magic Tip, Small Business, Social media marketing, Startups",
       "p": "We live in an age when only 24% of businesses see positive ROI from marketing efforts. This post discusses challenges in measuring results, choosing the right marketing method, and understanding the marketing process. Calculating ROI for marketing can be complex and requires patience. Businesses have a vast range of marketing options from which to choose today, making it challenging to identify the right marketing strategy. A good grasp of the parts of effective marketing campaigns is the foundation for analysing what is not working in a marketing campaign. This knowledge urges you to adopt an experimental testing approach. Every marketing campaign can be broken down into four parts: Targeting, Message, Offer, and Hook. Understanding these four components can help unlock the return on investment for any business.",
-      "keywords": ["Marketing", "ROI", "Targeting", "Message", "Offer", "Hook"],
+      "keywords": [
+        "Marketing",
+        "ROI",
+        "Targeting",
+        "Message",
+        "Offer",
+        "Hook"
+      ],
       "author": "EnyOsung",
       "date": "2nd December 2018",
       "categories": [
@@ -1783,7 +1812,6 @@
       "featured": false,
       "podcast": true
     },
-
     "/10-strategies-for-facebook-ads-that-convert-marketing-magic-tips": {
       "id": "/10-strategies-for-facebook-ads-that-convert-marketing-magic-tips",
       "title": "10 Strategies for Facebook ads that Convert- Marketing Magic Tips",
@@ -1896,7 +1924,6 @@
       "featured": false,
       "podcast": true
     },
-
     "/interview-adrian-thompson": {
       "id": "/interview-adrian-thompson",
       "title": "Interview with Adrian Thompson",
@@ -3196,7 +3223,10 @@
       ],
       "author": "EnyOsung",
       "date": "2018-01-21",
-      "categories": ["Blog", "Events"],
+      "categories": [
+        "Blog",
+        "Events"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -3574,7 +3604,9 @@
       ],
       "author": "EnyOsung",
       "date": "2017-11-20",
-      "categories": ["Events"],
+      "categories": [
+        "Events"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -3642,7 +3674,9 @@
       ],
       "author": "EnyOsung",
       "date": "2017-09-28",
-      "categories": ["Events"],
+      "categories": [
+        "Events"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -4064,7 +4098,10 @@
       ],
       "author": "EnyOsung",
       "date": "2017-04-11",
-      "categories": ["Events", "Pay per click"],
+      "categories": [
+        "Events",
+        "Pay per click"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -4481,7 +4518,11 @@
       ],
       "author": "EnyOsung",
       "date": "2017-02-10",
-      "categories": ["Blog", "Small Business", "Startups"],
+      "categories": [
+        "Blog",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -4642,7 +4683,11 @@
       ],
       "author": "EnyOsung",
       "date": "2016-12-23",
-      "categories": ["Blog", "Small Business", "Startups"],
+      "categories": [
+        "Blog",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -4850,7 +4895,12 @@
       ],
       "author": "EnyOsung",
       "date": "2016-09-03",
-      "categories": ["Advice", "Business Radio", "Podcast", "Small Business"],
+      "categories": [
+        "Advice",
+        "Business Radio",
+        "Podcast",
+        "Small Business"
+      ],
       "embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbusinessradio%2Feny-with-mark-wileman%2F",
       "featured": false,
       "podcast": true
@@ -4932,7 +4982,12 @@
       ],
       "author": "EnyOsung",
       "date": "2016-08-15",
-      "categories": ["Advice", "Business Radio", "Podcast", "Small Business"],
+      "categories": [
+        "Advice",
+        "Business Radio",
+        "Podcast",
+        "Small Business"
+      ],
       "embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbusinessradio%2Fgary-beckett-with-eny%2F",
       "featured": false,
       "podcast": true
@@ -4971,7 +5026,12 @@
       ],
       "author": "EnyOsung",
       "date": "2016-06-27",
-      "categories": ["Advice", "Blog", "Entrepreneurs", "Small Business"],
+      "categories": [
+        "Advice",
+        "Blog",
+        "Entrepreneurs",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5053,7 +5113,11 @@
       ],
       "author": "KeiranWynyard",
       "date": "2016-06-07",
-      "categories": ["Business Radio", "Podcast", "Small Business"],
+      "categories": [
+        "Business Radio",
+        "Podcast",
+        "Small Business"
+      ],
       "embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbusinessradio%2Fkieran-wynyard-and-eny%2F",
       "featured": false,
       "podcast": true
@@ -5095,7 +5159,11 @@
       ],
       "author": "KeiranWynyard",
       "date": "2016-06-01",
-      "categories": ["Business Radio", "Podcast", "Small Business"],
+      "categories": [
+        "Business Radio",
+        "Podcast",
+        "Small Business"
+      ],
       "embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbusinessradio%2Fends-happy-hour-on-business-radio%2F",
       "featured": false,
       "podcast": true
@@ -5135,7 +5203,11 @@
       ],
       "author": "KeiranWynyard",
       "date": "2016-05-24",
-      "categories": ["Business Radio", "Podcast", "Small Business"],
+      "categories": [
+        "Business Radio",
+        "Podcast",
+        "Small Business"
+      ],
       "embedSrc": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbusinessradio%2Fenys-happy-hour%2F",
       "featured": false,
       "podcast": true
@@ -5219,7 +5291,12 @@
       ],
       "author": "EnyOsung",
       "date": "2016-05-02",
-      "categories": ["Advice", "Blog", "Small Business", "Startups"],
+      "categories": [
+        "Advice",
+        "Blog",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5254,7 +5331,12 @@
       ],
       "author": "EnyOsung",
       "date": "2016-04-10",
-      "categories": ["Advice", "Blog", "Entrepreneurs", "Small Business"],
+      "categories": [
+        "Advice",
+        "Blog",
+        "Entrepreneurs",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5290,7 +5372,11 @@
       ],
       "author": "EnyOsung",
       "date": "2016-01-31",
-      "categories": ["Advice", "Entrepreneurs", "Small Business"],
+      "categories": [
+        "Advice",
+        "Entrepreneurs",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": true
@@ -5363,7 +5449,9 @@
       ],
       "author": "EnyOsung",
       "date": "2015-12-24",
-      "categories": ["Small Business"],
+      "categories": [
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": true
@@ -5479,7 +5567,12 @@
       ],
       "author": "EnyOsung",
       "date": "2015-11-30",
-      "categories": ["Advice", "Entrepreneurs", "Small Business", "Startups"],
+      "categories": [
+        "Advice",
+        "Entrepreneurs",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5553,7 +5646,10 @@
       ],
       "author": "EnyOsung",
       "date": "2015-10-31",
-      "categories": ["Advice", "Small Business"],
+      "categories": [
+        "Advice",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5587,7 +5683,11 @@
       ],
       "author": "EnyOsung",
       "date": "2015-10-14",
-      "categories": ["Advice", "Small Business", "Startups"],
+      "categories": [
+        "Advice",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5621,12 +5721,15 @@
       ],
       "author": "EnyOsung",
       "date": "2015-10-05",
-      "categories": ["Advice", "How-to-Guides", "Small Business"],
+      "categories": [
+        "Advice",
+        "How-to-Guides",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
     },
-
     "/psychological-pricing-strategies-guide-9-secrets-to-sell-more": {
       "id": "/psychological-pricing-strategies-guide-9-secrets-to-sell-more",
       "title": "Psychological Pricing Strategies Guide - 9 Secrets to Sell More",
@@ -5657,7 +5760,11 @@
       ],
       "author": "EnyOsung",
       "date": "2015-10-03",
-      "categories": ["How-to-Guides", "Small Business", "Startups"],
+      "categories": [
+        "How-to-Guides",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5721,7 +5828,11 @@
       ],
       "author": "EnyOsung",
       "date": "26th August 2015",
-      "categories": ["Advice", "Articles", "Small Business"],
+      "categories": [
+        "Advice",
+        "Articles",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5752,7 +5863,12 @@
       ],
       "author": "EnyOsung",
       "date": "16th August 2015",
-      "categories": ["Articles", "Entrepreneurs", "Small Business", "Startups"],
+      "categories": [
+        "Articles",
+        "Entrepreneurs",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -5955,7 +6071,12 @@
       ],
       "author": "EnyOsung",
       "date": "4th August 2015",
-      "categories": ["Advice", "Articles", "Small Business", "Startups"],
+      "categories": [
+        "Advice",
+        "Articles",
+        "Small Business",
+        "Startups"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -6028,7 +6149,11 @@
       ],
       "author": "EnyOsung",
       "date": "13th July 2015",
-      "categories": ["Advice", "Podcast", "Small Business"],
+      "categories": [
+        "Advice",
+        "Podcast",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -6092,7 +6217,12 @@
       ],
       "author": "EnyOsung",
       "date": "30th June 2015",
-      "categories": ["Advice", "Articles", "How-to-Guides", "Small Business"],
+      "categories": [
+        "Advice",
+        "Articles",
+        "How-to-Guides",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -6124,7 +6254,12 @@
       ],
       "author": "EnyOsung",
       "date": "26th June 2015",
-      "categories": ["Advice", "Articles", "How-to-Guides", "Small Business"],
+      "categories": [
+        "Advice",
+        "Articles",
+        "How-to-Guides",
+        "Small Business"
+      ],
       "embedSrc": "https://www.slideshare.net/crexperts/golden-questions-that-reveal-exactly-why-your-websites-visitors-arent-converting",
       "featured": false,
       "podcast": false
@@ -6159,7 +6294,10 @@
       ],
       "author": "EnyOsung",
       "date": "25th June 2015",
-      "categories": ["Advice", "Small Business"],
+      "categories": [
+        "Advice",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
@@ -6194,7 +6332,12 @@
       ],
       "author": "EnyOsung",
       "date": "22nd June 2015",
-      "categories": ["Advice", "Articles", "How-to-Guides", "Small Business"],
+      "categories": [
+        "Advice",
+        "Articles",
+        "How-to-Guides",
+        "Small Business"
+      ],
       "embedSrc": "",
       "featured": false,
       "podcast": false
