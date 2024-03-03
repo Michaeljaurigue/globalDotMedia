@@ -3,7 +3,7 @@ import api from '../../utils/api'; // Adjust the path based on your file structu
 import './SignUp.css'; // Import the CSS file here
 import { useNavigate } from 'react-router-dom';
 
-function SignupComponent({ signup }) {
+function SignupComponent({ onSignUp }) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

@@ -61,7 +61,11 @@ function App() {
   const [activeModal, setActiveModal] = useState(null);
 
 
-
+  useEffect(() => {
+    // Check for the user's token or authentication state in local storage
+    const isUserLoggedIn = /* Logic to determine if the user is logged in */ true;
+    setIsLoggedIn(isUserLoggedIn);
+  }, []);
 
 
   useEffect(() => {
@@ -235,7 +239,7 @@ function App() {
 
         {activeModal === "login" && (
           <ValidationContext.Provider value={setActiveModal}>
-            <Login onLogin={handleLogin} />
+            <Login onLogin={handleLogin} isLoggedIn={setIsLoggedIn}/>
           </ValidationContext.Provider>
         )}
 
