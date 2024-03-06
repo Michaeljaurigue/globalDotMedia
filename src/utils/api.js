@@ -28,8 +28,8 @@ function getAllBlogs() {
     });
 }
 
-function getOneBlogById(id) {
-    return request(`${baseUrl}/${id}`, {
+function getOneBlogBySlug(slug) {
+    return request(`${baseUrl}/${slug}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
     });
@@ -66,7 +66,7 @@ function signup(name, email, password) {
 const api = {
     request,
     getAllBlogs,
-    getOneBlogById,
+    getOneBlogBySlug,
     login,
     signup,
     checkToken,
