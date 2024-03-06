@@ -3,63 +3,39 @@ import { useParams } from "react-router-dom";
 import blogsData from "../../blogs.json";
 import "./BlogPost.css";
 import RelatedBlogPosts from "../RelatedBlogPosts/RelatedBlogPosts";
-//import api from "../../utils/api";
+// import api from "../../utils/api";
 
 const BlogPost = () => {
   // New Code to work with backend API from MongoDB with IDs.... 
   ///////////////////////////////////////////////////////////////////////
   // const [blog, setBlog] = useState(null);
-  // const { id = "" } = useParams();
+  // const { slug = "" } = useParams();
 
   // useEffect(() => {
   //   const fetchBlogs = async () => {
   //     try {
-  //       const fetchedBlogs = await api.getAllBlogs(id);
-  //       setBlog(fetchedBlogs);
-  //       console.log("fetchedBlogs:", fetchedBlogs);
-  //       console.log("id:", id);
+  //       console.log(slug)
+  //       const fetchedBlog = await api.getOneBlogBySlug(slug);
+
+  //       console.log(fetchedBlog)
+  //       setBlog(fetchedBlog);
+  //       console.log("fetchedBlog:", fetchedBlog);
+  //       console.log("slug:", slug);
   //     } catch (error) {
   //       console.log("Error fetching blog:", error);
   //     }
   //   };
 
   //   fetchBlogs();
-  // }, [id]);
+  // }, [slug]);
 
   // if (!blog) {
   //   return <div>Loading...</div>;
   // }
 
   //////////////////////////////////////////////////////////////////////////////////////////////
-  // const [blogs, setBlogs] = useState([]);
 
-  // function handleFetchBlogs(id) {
-  //   api
-  //     .getOneBlog(id)
-  //     .then((id) => {
-  //       setBlogs(
-  //         blogs.filter((id) => id.id !== id.id)
-  //       )
-  //     })
-  //     .catch((error) => {
-  //       console.log("Error fetching blogs, fml:", error);
-  //     });
-  // }
-
-  // useEffect(() => {
-  //   handleFetchBlogs();
-  // }, []);
-
-  // const { slug = "" } = useParams();
-  // const slugPath = slug ? `${slug}` : "";
-  // const blog = handleFetchBlogs([slugPath]);
-
-  // if (!blog) {
-  //   return <div>Blog post not found</div>;
-  // }
-  //////////////////////////////////////////////////////////////////////////////////////////////
-
-  //Code to work with Blogs.json
+  // Code to work with Blogs.json
   const { slug = "" } = useParams();
   const slugPath = slug ? `/${slug}` : "";
   const blog = blogsData.blogs[slugPath];
