@@ -96,15 +96,20 @@ function App() {
           <Navbar />
 
           <Routes>
-            <Route path="/" element={isLoggedIn ? <Home /> : <Dashboard />} />
+            <Route path="/" element={isLoggedIn ? <Dashboard /> : <Home />} />
 
             <Route path="/about/" element={<About />} />
             <Route path="/our-services/" element={<Services />} />
 
+            <Route path="/login/" element={<Login onLogin={handleLogin} isLoggedIn={setIsLoggedIn} />} />
+            <Route path="/signup/" element={<SignUp onSignUp={handleSignup} />} />
+            <Route path="/dashboard/" element={<Dashboard />} />
+            <Route path="/create-blog/" element={<CreateBlog />} />
+            {/* 
             <Route element={<ProtectedRoute />}>
               <Route path="/dashboard/" element={<Dashboard />} />
               <Route path="/create-blog/" element={<CreateBlog />} />
-            </Route>
+            </Route> */}
 
 
             <Route
@@ -237,7 +242,7 @@ function App() {
         </Router>
 
 
-        {activeModal === "login" && (
+        {/* {activeModal === "login" && (
           <ValidationContext.Provider value={setActiveModal}>
             <Login onLogin={handleLogin} isLoggedIn={setIsLoggedIn}/>
           </ValidationContext.Provider>
@@ -247,7 +252,7 @@ function App() {
           <ValidationContext.Provider value={setActiveModal}>
             <SignUp onSignUp={handleSignup} />
           </ValidationContext.Provider>
-        )}
+        )} */}
       </CurrentUserContext.Provider>
     </div>
   );
